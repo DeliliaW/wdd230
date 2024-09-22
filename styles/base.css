@@ -1,0 +1,31 @@
+body {
+    width: 500px;
+    background-color: beige;
+    border: 1px solid;
+    padding: .5rem;
+    margin: 5px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+header {
+    background-color: aquamarine;
+}
+img {
+    width: 100px;
+}
+#card1 {
+    grid-row: 2;
+}
+#card2 {
+    grid-row: 3;
+}
+ul {
+    list-style-type: none;
+}
+.card {
+    border: 1px solid;
+    margin: 10px;
+}
+nav {
+    
+}
