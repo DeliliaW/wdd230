@@ -1,17 +1,36 @@
+.content {
+    max-width: 1600 px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    @import url('https://fonts.googleapis.com/css?family=Roboto+"open sans"');
+
+}
 body {
-    width: 500px;
-    background-color: beige;
-    border: 1px solid;
+    width: 700px;
+    background-color: white;
     padding: .5rem;
     margin: 5px;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-family: 
+    
 }
 
 header {
-    background-color: aquamarine;
+    background-color: rgb(185, 247, 226);
+    max-height: 140px;
 }
 img {
     width: 100px;
+    border-radius: 10px;
+    opacity: 95%;
+    margin-left: 100px;
+    margin-top: 20px;       
+}
+
+h1 {
+    display: inline-block;
+    font-size: 35px;
+    color: rgb(206, 21, 21);
+    padding-left: 40px;
 }
 #card1 {
     grid-row: 2;
@@ -27,5 +46,28 @@ ul {
     margin: 10px;
 }
 nav {
-    
+    background-color: black;
+    margin-top: -70px;
+}
+nav a {
+   display: block;
+   text-align: center;
+   padding: 12px;
+   font-size: 25px;
+   color: white;
+}
+h2, h3 {
+    text-align: center;
+}
+h2 { 
+}
+footer {
+    background-color: rgb(206, 21, 21);
+    height: 150px;
+}
+footer p {
+    text-align: center;
+    color: rgb(185, 247, 226);
+    padding: 10px;
+
 }
