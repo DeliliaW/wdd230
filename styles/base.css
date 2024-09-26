@@ -18,6 +18,8 @@ header {
     background-color: rgb(185, 247, 226);
     max-height: 140px;
     display: flex;
+    align-items: center;
+   
 }
 img {
     width: 100px;
