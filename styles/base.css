@@ -17,6 +17,7 @@ body {
 header {
     background-color: rgb(185, 247, 226);
     max-height: 140px;
+    display: flex;
 }
 img {
     width: 100px;
@@ -27,7 +28,7 @@ img {
 }
 
 h1 {
-    display: inline-block;
+    display: flex;
     font-size: 35px;
     color: rgb(206, 21, 21);
     padding-left: 40px;
