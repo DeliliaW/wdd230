@@ -1,16 +1,15 @@
-.content {
-    max-width: 1600 px;
+style {
+   font-family: 'Roboto+open sans', sans-serif; 
+}
+
+body {
+    max-width: 1600px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    @import url('https://fonts.googleapis.com/css?family=Roboto+"open sans"');
-
-}
-body {
     width: 700px;
     background-color: white;
     padding: .5rem;
     margin: 5px;
-    font-family: 
     
 }
 
