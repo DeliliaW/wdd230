@@ -1,5 +1,6 @@
 style {
-   font-family: 'Roboto+"open sans"', sans-serif; 
+   font-family: Montserrat_Alternates, moderustic, sans-serif;
+}
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 header {
     background-color: rgb(185, 247, 226);
-    max-height: 140px;
+
     display: flex;
     align-items: center;
    
@@ -49,7 +50,6 @@ ul {
 }
 nav {
     background-color: black;
-    margin-top: -70px;
 }
 nav a {
    display: block;
