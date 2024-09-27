@@ -1,0 +1,10 @@
+@media screen and (min-width: 500px){
+   header{ 
+    background-color: rgb(206, 21, 21);
+   } 
+   footer {
+    background-color: rgb(185, 247, 226);
+   }
+}  h1 {
+    color: rgb(185, 247, 226)
+}
