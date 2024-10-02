@@ -1,3 +1,13 @@
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 100 to 900 */
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bold ;
+  font-style: normal;
+}
+
 body {
     max-width: 1600px;
     display: grid;
@@ -8,6 +18,7 @@ body {
     margin: 5px;
     
 }
+
 .container {
     display: flex;
     justify-content: center; /* Centers the child element horizontally */
@@ -15,66 +26,83 @@ body {
 
 .main-element {
     width: 80%; /* Set your desired width */
+    display: horizontal;
 }
+
 header {
-    background-color: rgb(185, 247, 226);
+    background-color: #219ebc;
     display: flex;
-    align-items: center;
-   
+    align-items: center;  
 }
+
 img {
     width: 100px;
     border-radius: 10px;
     opacity: 95%;
     margin-left: 100px;
-    margin-top: 20px;       
+    margin-top: 20px;
+    padding-bottom: 10px;   
 }
 
 h1 {
     display: flex;
     font-size: 35px;
-    color: rgb(206, 21, 21);
+    color: black;
     padding-left: 40px;
 }
+
 #card1 {
     grid-row: 2;
 }
+
 #card2 {
     grid-row: 3;
+    
 }
+
 ul {
     list-style-type: none;
 }
+
 .card {
+    display: grid;
     border: 1px solid;
-    margin: 10px;
+    margin: 10px auto;
 }
+
 nav {
     background-color: black;
-    margin-top: -20px;
     display: flex;
 
 }
 nav a {
-   display: block;
+   display: flex;
    text-align: center;
    padding: 12px;
    font-size: 25px;
    color: white;
 }
+
+.nav2 .list {
+    display: flex;
+    list-style-type: none;
+}
+
 h2, h3 {
     text-align: center;
 }
-h2 { 
-    
+
+h3 { 
+    background-color: #219ebc;
 }
+
 footer {
-    background-color: rgb(206, 21, 21);
+    background-color: #219ebc;
     height: 150px;
 }
+
 footer p {
     text-align: center;
-    color: rgb(185, 247, 226);
+    color: black;
     padding: 10px;
-
 }
