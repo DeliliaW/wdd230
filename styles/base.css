@@ -57,7 +57,7 @@ h1 {
 
 #card2 {
     grid-row: 3;
-    
+
 }
 
 ul {
@@ -83,8 +83,7 @@ nav a {
    color: white;
 }
 
-.nav2 .list {
-    display: flex;
+.list {
     list-style-type: none;
 }
 
