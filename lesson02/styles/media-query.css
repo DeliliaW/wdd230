@@ -6,7 +6,7 @@ header, main, footer {
     margin: 1rem auto;
     border: 1px solid #bbb;
     padding: 1rem;
-    background-color: blue;
+    background-color: rgb(158, 158, 235);
 }
 main {
     display: grid;
