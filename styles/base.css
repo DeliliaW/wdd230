@@ -12,7 +12,7 @@ body {
     max-width: 1600px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 700px;
+    width: 1200px;
     background-color: white;
     padding: .5rem;
     margin: 5px;
