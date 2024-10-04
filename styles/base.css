@@ -1,9 +1,6 @@
-/* <uniquifier>: Use a unique and descriptive class name
-   <weight>: Use a value from 100 to 900 */
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight:bold;
   font-style: normal;
 }
@@ -18,16 +15,6 @@ body {
     margin: 5px;
     
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-} 
-.main-element {
-    display: horizontal;
-   
-}
-
 
 header {
     background-color: #219ebc;
@@ -71,17 +58,19 @@ ul {
     margin: 10px auto;
 }
 
-#navlist {
+#navList {
     background-color: black;
     display: flex;
     list-style-type: none;
     text-decoration: none;
+    justify-content: center;
 }
 nav a{   
     padding: 20px;
    font-size: 25px;
    color: white;
 }
+
 
 .list {
     list-style: none;

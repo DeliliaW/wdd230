@@ -24,12 +24,12 @@ main  {
    }
 }
 
-/* Desktop view  */
+/* Desktop view */ 
 @media screen and (min-width: 900px) {
     main {
     grid-template-columns: 1fr 1fr 1fr;
  }
-}
+} 
 
 p {
  text-align: justify;

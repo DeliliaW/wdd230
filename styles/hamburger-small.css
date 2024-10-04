@@ -1,0 +1,43 @@
+@media screen and (max-width: 600px) {
+    header, 
+    nav, 
+    main,
+    footer {
+        flex-direction: column;
+       
+    }
+}
+    .navList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+    }
+
+    #menu {
+        display: block;
+        padding-left: 10px;
+        font-size: 1.5rem;
+	    border: 0;
+	    background: none;
+	    color: #000;
+	    position: absolute;
+	    top: 1rem;
+	    right: 1rem;
+
+    }
+    nav a {
+        display: block;
+        justify-items: auto;
+    }
+
+    #menu::before {
+        content: '☰';
+        padding: 5px;
+    }
+
+    #menu.open::before {
+        content: '❌';
+    }
+    
