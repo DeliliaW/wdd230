@@ -4,7 +4,7 @@
 .montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight:bold ;
+  font-weight:bold;
   font-style: normal;
 }
 
@@ -21,18 +21,19 @@ body {
 
 .container {
     display: flex;
-    justify-content: center; /* Centers the child element horizontally */
+    justify-content: center;
+} 
+.main-element {
+    display: horizontal;
+   
 }
 
-.main-element {
-    width: 80%; /* Set your desired width */
-    display: horizontal;
-}
 
 header {
     background-color: #219ebc;
     display: flex;
-    align-items: center;  
+    align-items: center;
+    max-height: fit-content;
 }
 
 img {
@@ -70,22 +71,16 @@ ul {
     margin: 10px auto;
 }
 
-nav {
+#navlist {
     background-color: black;
     display: flex;
-
+    list-style-type: none;
+    text-decoration: none;
 }
-#navlist {
-    
-}
-nav a {
-   display: flex;
-   text-align: center;
-   padding: 12px;
+nav a{   
+    padding: 20px;
    font-size: 25px;
    color: white;
-}
-    
 }
 
 .list {
@@ -98,6 +93,7 @@ h2, h3 {
 
 h3 { 
     background-color: #219ebc;
+    height: 50px;
 }
 
 footer {
