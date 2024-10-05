@@ -44,7 +44,7 @@
   }
 
   p {
-    color: bold black;
+    color: black;
     font-size: larger;
   }
   main {
@@ -61,7 +61,7 @@
 
   }
   h2 {
-    color: bold black;
+    color: black;
     background-color: #81A4CD;
     padding-top: 1%;
     padding-bottom: 1%;
