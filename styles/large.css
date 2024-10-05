@@ -1,0 +1,21 @@
+@media screen and (min-width: 460px) {
+ body {
+    max-width: 70%;
+    margin: 0 auto;
+ }
+ #navList {
+    flex-direction: row;
+ }
+ .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+ }
+ #card1 {
+    grid-column: 1/2;
+ }
+ #card2 {
+    grid-column: 2/3;
+    grid-row: 1;
+    }
+ }
+

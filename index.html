@@ -10,9 +10,7 @@
     <link rel="icon" type="image/flower-icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/hamburger-small.css">
-    <link rel="stylesheet" href="styles/hamburger-large.css">
+    <link rel="stylesheet" href="styles/large.css">
     <meta property="og:title" content="Web Frontend Development homepage">
     <meta property="og:type" content="website" >
     <meta property="og:url" content="https://deliliaw.github.io/wdd230/index.html">
@@ -24,30 +22,31 @@
         <img src="images/DeliliaWerner.jpg" alt="Delilia Werner profile pic">
         <h1>Delilia Werner</h1> 
         <div id="menu"></div>
+        <button type="button" id="hamButton"></button> 
     </header>
     <nav>
-        <button type="button" id="hamButton"></button>
         <ul id="navList">
         <li><a href="Home:#">Home</a></li>
         <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li> 
-        <li><a href="Chamber:chamber/">Chamber</a></li>
+        <li><a href="Chamber: chamber/">Chamber</a></li>
         <li><a href="https://BYUI.edu">BYU-Idaho</a></li>
         <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37">Scripture</a></li>
-        <script src="scripts/hamburger.js"></script>
+        
         </ul>
     </nav>
        
     <main>
       
-        <div class="container">
+        
         <h2>WDD 230: Web Frontend Development</h2>
+        <div class="container">
           
         <section id="card1" class="card">
             <h3>Learning Activities</h3>
             <ul class="list">
                 <li id="Holy-Layout">01: <a href="https://deliliaw.github.io/wdd230/lesson01/holygrail.html">Holy Layout</a> | <a href="https://codepen.io/Delilia/pen/ZEgzYBw">JS Pen</a></li>
                 <li id="design-principles">02: <a href="https://deliliaw.github.io/wdd230/lesson02/media-query.html">Media Query</a> | <a href="https://deliliaw.github.io/wdd230/lesson02/design-principles.html">Design Principles</a></li>
-                <li id="Code-Pen">03: <a href="https://codepen.io/Delilia/pen/VwoeXYj">Code Pen</a></li>
+        <li id="Code-Pen">03: <a href="https://codepen.io/Delilia/pen/VwoeXYj">Code Pen</a> | <a href="https://wireframe.cc/pro/pp/57189d184831638/">Chamber of Commerce</a></li>
                 <li id="###">04: <a href="#">></a></li>
                 <li id="####">05: <a href="#">></a></li>
                 <li id="#####">06: <a href="#">></a></li>
@@ -63,13 +62,15 @@
          
         </div>
     </main>
-    <div class="mapcontainer"></div>
+    <div class="mapcontainer">
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d107567.12681798503!2d-83.74454001261326!3d32.59358362920267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1727924267770!5m2!1sen!2sus" width="450" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <p>&#169; <span id="year"></span><br> Delilia Werner<br>Georgia<br></p>
         <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 
 </html>

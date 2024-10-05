@@ -56,10 +56,15 @@
 
   }
   h1 {
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 
   }
   h2 {
-    color: #81A4CD;
+    color: bold black;
+    background-color: #81A4CD;
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+
   }
