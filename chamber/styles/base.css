@@ -1,19 +1,31 @@
 #content {
     max-width: 1600px;
     margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr ifr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
+
+header {
+    background-color: #054A91;
+}
+
 nav a {
     text-align: center;
-    color: ;
+    color: #FFFFFF;
     text-decoration: none;
-    padding: 35px;
+    background-color:#81A4CD;
+    display: block;
 }
 #hero {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
 }
 #hero-box {
     grid-column: 1/4;
+}
+
+#hero-img {
+    grid-column: 1/4;
     grid-row: 1/3;
-    margin-top: 100px;
+
 }
