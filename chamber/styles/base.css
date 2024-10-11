@@ -10,7 +10,7 @@ nav a {
 }
 #hero {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #hero-box {
     grid-column: 1/4;
