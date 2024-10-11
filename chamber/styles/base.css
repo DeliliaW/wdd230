@@ -1,0 +1,19 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+    color: ;
+    text-decoration: none;
+    padding: 35px;
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    margin-top: 100px;
+}
