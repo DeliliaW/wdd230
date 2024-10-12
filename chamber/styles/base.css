@@ -29,3 +29,10 @@ nav a {
     grid-row: 1/3;
 
 }
+
+footer {
+    background-color: #F17300;
+    text-align: center;
+    padding-top: 1%;
+    padding-top: 1%;
+}
