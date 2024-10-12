@@ -1,7 +1,7 @@
 #content {
     max-width: 1600px;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr ifr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -14,7 +14,7 @@ nav a {
     color: #FFFFFF;
     text-decoration: none;
     background-color:#81A4CD;
-    display: block;
+    display: inline-block;
 }
 #hero {
     display: grid;
