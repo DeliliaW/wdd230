@@ -9,6 +9,14 @@ header {
     background-color: #054A91;
 }
 
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+
+
 nav a {
     text-align: center;
     color: #FFFFFF;
@@ -17,7 +25,7 @@ nav a {
     display: inline-block;
 }
 #hero {
-    display: grid;
+    display: flex;
     
 }
 #hero-box {
@@ -27,6 +35,8 @@ nav a {
 #hero-img {
     grid-column: 1/4;
     grid-row: 1/3;
+    max-width:fit-content;
+    max-height:fit-content;
 
 }
 
@@ -36,3 +46,14 @@ footer {
     padding-top: 1%;
     padding-top: 1%;
 }
+header, main, footer {
+    max-width: 80%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
