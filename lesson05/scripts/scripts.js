@@ -1,14 +1,14 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('');
+const list = document.querySelector('#list');
 
-button,addEventListener('click', function ()  { ... });
+button.addEventListener('click', function ()  {'submit'});
 
-if (input.value != '') ( ... );
+if (input.value != '') (' => ');
 
-const li = document.createElement('li');
+const li  = document.createElement('li');
 const deleteButton = document.createDocumentFragment('button');
-li.textContent = input.value;
+const li.textContent = input.value;
 deleteButton.textContent = 'X';
 li.append(deleteButton);
 list.append(li);
