@@ -1,5 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap');
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #054A91;
+  --secondary-color: #81A4CD;
+  --accent1-color: #F17300;
+  --accent2-color: #DBE4EE;
+}
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
 #content {
-    max-width: 1600px;
+    max-width:none;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -13,17 +46,26 @@ h1 {
     text-align: center;
     font-size: 40px;
     color: #FFFFFF;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
-
-
 
 nav a {
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
-    background-color:#81A4CD;
     display: block;
-}
+} 
+
+body {
+    max-width: 1600px;
+    font-family: "Lato";
+    background-color: white;
+
+  }
+
+
+
 #hero {
     display: flex;
     
@@ -35,7 +77,7 @@ nav a {
 #hero-img {
     grid-column: 1/4;
     grid-row: 1/3;
-    max-width: 100%;
+    max-width: 1600px;
     height: auto;
     padding-bottom: 2%;
 
@@ -44,18 +86,18 @@ nav a {
 footer {
     background-color: #F17300;
     text-align: center;
-    padding-top: 1%;
-    padding-top: 1%;
-}
-header, main, footer {
-    max-width: 100%;
-    margin: 1rem auto;
-    padding: 1rem;
-}
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
 
 }
+
+header, main, footer {
+    grid-column: 1/4;
+    margin: 1rem auto;
+}
+
+  h2 {
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    grid-column: 1/2;
+  }
 
