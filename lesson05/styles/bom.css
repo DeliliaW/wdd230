@@ -15,10 +15,12 @@ body {
 
 h1 {
     font-size: 1.5rem;
+    padding-bottom: 10px;
+
 }
 
 main {
-    margin: 1 rem auot;
+    margin: 1 rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background-color: #ddd;
