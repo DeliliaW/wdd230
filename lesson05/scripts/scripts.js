@@ -4,11 +4,11 @@ const list = document.querySelector('#list');
 
 button.addEventListener('click', function ()  {'submit'});
 
-if (input.value != '') (' => ');
+if (input.value != '') (' ... ');
 
 const li  = document.createElement('li');
 const deleteButton = document.createDocumentFragment('button');
-const li.textContent = input.value;
+li.textContent = input.value;
 deleteButton.textContent = 'X';
 li.append(deleteButton);
 list.append(li);
