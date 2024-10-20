@@ -1,4 +1,7 @@
-document.getElementById('hamburger').addEventListener('click', function() {
-    const menu = document.getElementById('menu');
-    menu.classList.toggle('active');
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+menu.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
