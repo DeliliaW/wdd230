@@ -1,7 +1,12 @@
-const hamMenu = document.querySelector('ham-menu');
-const offScreenMenu = document.querySelector('.off-scree-menu');
+const hamburgerToggle = document.querySelector("#hamburger-toggle");
+const navbar = document.querySelector("#navbar");
+hamburgerToggle.addEventListener("click", onHamburgerClick);
 
-hamMenu.addEventListener('click', () => {
-	hamMenu.classList.toggle('active');
-	offScreenMenu.classList.toggle('active');
-});
+function onHamburgerClick() {
+ if (!navbar.classList.contains("open")) {
+  navbar.classList.add("open");
+ } else {
+    navbar.classList.remove("open");
+ }
+}  
+    
