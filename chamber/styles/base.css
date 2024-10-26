@@ -119,14 +119,14 @@ header, main, footer {
 }
 
 .navbar {
-  background: #81A4CD;
+  background:#81A4CD;
   color: #ffffff;
   position: relative;
 }
 
 .navbar ul {
-  margin: unset;
-  padding: unset;
+  margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
 }
@@ -137,13 +137,13 @@ header, main, footer {
 
 .navbar a {
   padding: 1em;
-  color:inherit;
+  color: inherit;
   text-decoration: none;
-  display: inline-block;
+  display:inline-block;
 }
 
 .navbar a:hover {
-  background: #F17300;
+  background: #706e6e;
 }
 
 .navbar .hamburger {
@@ -157,12 +157,12 @@ header, main, footer {
 }
 
 .navbar .hamburger svg {
-stroke: #F17300;  
+ stroke:#F17300; 
 }
 
 .navbar .hamburger .icon-close {
   display: none;
-} 
+}
 
 @media screen and (max-width: 650px) {
   .navbar.open ul {
