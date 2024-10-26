@@ -63,7 +63,8 @@ ul {
 
 .navbar {
     background: lightblue;
-    color: #219ebc;
+    color: black;
+    font-weight: 700;
     position: relative;
 }
 
@@ -80,13 +81,13 @@ ul {
 
 .navbar a {
     padding: 1em;
-    color:inherit;
+    color:black; 
     text-decoration: none;
     display: inline-block;
 }
 
 .navbar a:hover {
-    background: #a8a3a3;
+    background: #ffffff;
 }
 
 .navbar .hamburger {
@@ -152,7 +153,7 @@ h2, h3 {
 h3 { 
     background-color: #219ebc;
     height: 50px;
-    margin: unset;
+    margin: 0;
     padding-top: 1em;
 }
 .mapcontainer {
@@ -171,7 +172,7 @@ footer p {
     text-align: center;
     color: black;
     padding: 10px;
-    font-size: larger;
+    font-weight: bold;
 }
 
 
