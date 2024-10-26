@@ -15,6 +15,7 @@ header {
     align-items: center;
     justify-content: center;
     padding: 0;
+    
 }
 
 img {
@@ -24,7 +25,7 @@ img {
     opacity: .95;
     margin-left: 100px;
     margin-top: 20px;
-    padding-bottom: 10px;   
+    padding-bottom: 10px;
 }
 
 .hero img {
@@ -78,15 +79,15 @@ ul {
 .navbar {
     background: lightblue;
     color: black;
-    font-weight: 700;
-    position: relative;
-}
+    font-weight: 700; 
+  }
 
 .navbar ul {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
+    justify-content: center;
 }
 
 .navbar .nav-toggle {
@@ -98,10 +99,6 @@ ul {
     color:black; 
     text-decoration: none;
     display: inline-block;
-}
-
-.navbar a:visited {
-    color:blue
 }
 
 .navbar a:hover {
@@ -119,7 +116,7 @@ ul {
 }
 
 .navbar .hamburger svg {
-  stroke: #ffffff;
+  stroke:chartreuse;
 }
 
 .navbar .hamburger .icon-close {
