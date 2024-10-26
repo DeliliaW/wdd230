@@ -86,6 +86,10 @@ ul {
     display: inline-block;
 }
 
+.navbar a:visited {
+    color:blue
+}
+
 .navbar a:hover {
     background: #ffffff;
 }
