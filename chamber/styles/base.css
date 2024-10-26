@@ -137,9 +137,13 @@ header, main, footer {
 
 .navbar a {
   padding: 1em;
-  color: inherit;
+  color:#ffffff;
   text-decoration: none;
   display:inline-block;
+}
+
+.navbar a:visited {
+  color: blue;
 }
 
 .navbar a:hover {
