@@ -18,7 +18,8 @@ header {
 }
 
 img {
-    width: 100px;
+    width: 100%;
+    height:auto;
     border-radius: 10px;
     opacity: .95;
     margin-left: 100px;
