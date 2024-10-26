@@ -161,7 +161,8 @@ header, main, footer {
 }
 
 .navbar .hamburger svg {
- stroke:#F17300; 
+ stroke:#F17300;
+ background: #fff; 
 }
 
 .navbar .hamburger .icon-close {
