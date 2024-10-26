@@ -32,15 +32,16 @@
   
 
 #content {
-    max-width:none;
-    margin: unset;
+    max-width: 1005;
+    margin: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
 
 header {
     background-color: #054A91;
-    margin: unset;
+    margin: 0;
+    position: relative;
 }
 
 h1 {
@@ -69,7 +70,7 @@ body {
 }
 
 #hero-img {
-    max-width: fit-content;
+    max-width: 100%;
     height: auto;
     padding-bottom: 1%;
 
@@ -78,6 +79,8 @@ body {
 footer {
     background-color: #F17300;
     text-align: center;
+    font-weight: bold;
+    padding: 1em;
 
 }
 
@@ -94,13 +97,19 @@ header, main, footer {
     grid-column: 1/2;
   }
 
-  #mode {
+  #modeButton {
+    background:#81A4CD;
+    border: none;
+  }
+
+ #mode {
 	position: absolute;
-	top: 3rem;
-	right: 60rem;
+	top: 1em;
+	right: 1em;
 	font-size: 3rem;
 	cursor: pointer;
 	font-size: 1.5rem;
+  background: 0;
 }
 
 .dark-mode {
@@ -141,8 +150,8 @@ header, main, footer {
   position: absolute;
   top: 0;
   right: 0;
-  border: unset;
-  background: unset;
+  border: 0;
+  background: 0;
   cursor: pointer;
   display: none;
 }
