@@ -155,32 +155,40 @@ stroke: #F17300;
   display: none;
 } 
 
-@media screen and (max-width: 640px) {
- .navbar.open ul {
-  display: block;
- }
-}
- .navbar.open .nav-toggle {
-  display: block;
- }
+@media screen and (max-width: 650px) {
+  .navbar.open ul {
+      display:block;
+  }
 
- .navbar.open a {
-  display: block;
- }
+  .navbar.open .nav-toggle {
+      display: block;
+  }
 
-.navbar .nav-toggle {
-  display: none; 
+  .navbar.open a {
+      display: block;
+  }
+  .navbar .nav-toggle {
+      display: none;
  } 
 
  .navbar .hamburger {
   display: block;
  }
 
+
+ .navbar .hamburger .icon-open {
+      display: block; 
+ }
+
+ .navbar .hamburger .icon-close {
+  display: none;
+ }
+
  .navbar.open .hamburger .icon-open {
   display: none;
  }
 
- .navbar.open .hamburger .icon-close {
-  display: block;
- }
-
+ .navbar.open  .hamburger .icon-close {
+      display: block;
+ } 
+}
