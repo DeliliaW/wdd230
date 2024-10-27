@@ -9,3 +9,9 @@ function calculateWindChill(temperature, windSpeed) {
         return "N/A"; // Wind chill calculation is not valid for these inputs
     }
 }
+document.getElementById('calculateButton').addEventListener('click', function() {
+    const temperature = parseFloat(document.getElementById('temperature').value);
+    const windSpeed = parseFloat(document.getElementById('windSpeed').value);
+    const windChill = calculateWindChill(temperature, windSpeed);
+    document.getElementById('result').innerText = `Wind Chill: ${windChill} °F`;
+});
