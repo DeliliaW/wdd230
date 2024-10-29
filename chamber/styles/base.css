@@ -66,7 +66,8 @@ body {
 .hero {
   position: relative;
   width: 100%;
-  overflow: hidden; /* Prevents overflow if the image exceeds the container */
+  height: auto:
+  overflow: hidden; 
 }
 
 .hero img {
