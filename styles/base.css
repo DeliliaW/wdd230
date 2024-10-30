@@ -66,6 +66,10 @@ h1 {
     grid-row: 2/3;
  }
 
+ .label {
+   padding-top: 1rem;
+   padding-left: 2rem;
+ }
 ul {
     list-style-type: none;
 }
