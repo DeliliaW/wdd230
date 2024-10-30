@@ -41,11 +41,15 @@ img {
     position: relative;
 }
 
-.hero-label {
+.overlay-text {
    position: absolute;
    top: 20px;
    left: 20px;
    color: #ffffff;
+   font-size: larger;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
 }
 
 h1 {
