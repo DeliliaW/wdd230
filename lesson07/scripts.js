@@ -8,28 +8,34 @@ chaptersArray.forEach (chapter => {
 });
 
 button.addEventListener('click', () => {
+    const chapterValue = input.value.trim();   
     if (input.value != '') { 
-        displayList(input.value);
-        chaptersArray.push(input.value);
+        displayList(chapterValue);
+        chaptersArray.push(chapterValue);
         setChapterList ();
        input.value = '';
        input.focus();
+    }  else {
+      alert('Enter a chapter!')
     }
 });    
 function displayList(item)  {
     let li = document.createElement('li');
     let deleteButton = document.createElement('button');
+
     li.textContent = item;
-    deleteButton.textContent = '❌';
     deleteButton.classList.add('delete');
     li.append(deleteButton);
     list.append(li);
+
     deleteButton.addEventListener('click', function () {
         list.removeChild(li);
-        deleteChapter(li.textContent);
+        deleteChapter(item);
         input.focus ();
     });
 } 
+
+console.log('deletedChapter')
 
 function setChapterList()  {
     localStorage.setItem('myFavBOMList', JSON.stringify(chaptersArray));
@@ -40,12 +46,8 @@ function getChapterList() {
 }
 
 function deleteChapter(chapter)  {
-  chapter.slice(0, chapter.length - 1);
-  chaptersArray = chaptersArray.filter((item) => item !== chapter);
-  setChapterList ();
-  if (chaptersArray.length === 0) {
-    localStorage.removeItem('myFavBOMList');
-  }
+  chaptersArray = chaptersArray.filter(item => item !== chapter);
+  setChapterList();
 }  
   
 

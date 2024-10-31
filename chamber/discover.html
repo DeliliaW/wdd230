@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <meta name="author" content="Delilia Werner">
+    <title>Delilia Werner WDD - 230 - Web Frontend Development - Chamber of Commerce</title>
+    <meta name="description" content= "Check out everything to do and see in the big town that has that small town feel!">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Web Frontend Development homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deliliaw.github.io/wdd230/index.html">
+    <meta property="og:image" content="https://2.bp.blogspot.com/_OLc2TjnHOgQ/S9RRJok9JhI/AAAAAAAAzio/g7JbK37bN6Y/w1200-h630-p-k-no-nu/Welcome+to+Warner+Robins+Georgia+sign,+Houston+County+GA..JPG">
+</head>
+
+<body>
+    <header>
+        <h1>Warner Robins Chamber of Commerce</h1>
+        <div id="mode">
+        <button id="modeButton">💡/🕶️</button>
+        </div>
+      <div id="content">
+          <div class="hero">
+            <picture>
+                <source media="(max-width: 480px)" srcset="/lesson06/images/wdd230-org-small.webp">
+                <source media="(max-width: 800px)" srcset="/lesson06/images/wdd230-org-medium.webp">
+                <img src="/lesson06/images/wdd230-org-large.webp" alt="coworkers meeting" width="1200" height="800" class="responsive-image"> 
+            </picture>
+            <div class="overlay-text">Large</div>
+           </div>
+        </div>
+        <nav id="navbar"  class="navbar">
+            <ul class="nav-toggle">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        <button id="hamburger-toggle"  class="hamburger">
+            <span class="icon-open">    
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                  </svg>
+                </span>
+                <span class="icon-close"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" width="24" height="24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"  stroke="currentColor">
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                  </svg>
+                </span>
+            </button>
+        </nav>
+    </header> 
+    <main>
+        <div class="middle">
+          <div id= "sidebar">
+            <div id="sites">Places to Go</div>
+           <div id="events">Things to Do</div>
+           <div id="calendar">Mark the Date</div>
+           
+
+
+         </div>
+          <div id="gallery">
+            <picture>
+                <img src="" alt="" width="" height="" class="responsive-image" loading="lazy">
+                <img src="" alt="" width="" height="" class="responsive-image" loading="lazy">
+                <img src="" alt="" width="" height="" class="responsive-image" loading="lazy">
+                <img src="" alt="" width="" height="" class="responsive-image" loading="lazy">
+                <img src="" alt="" width="" height="" class="responsive-image" loading="lazy">
+                <img src="" alt="" width="" height="" class="responsive-image" loading="lazy">
+              </picture>
+         </div>
+        </div>  
+    </main> 
+       
+<footer>
+    <p>Delilia Werner</p>
+    <p>This is a project for WDD230 Frontend Web Development</p>
+    <p>&#169; <span id="year"></span>
+    <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
+</footer>
+
+</body>
+</html>
