@@ -107,6 +107,7 @@ footer {
     text-align: center;
     font-weight: bold;
     padding: 1em;
+    border: 3px solid #054A91;
 
 }
 
@@ -115,13 +116,15 @@ header, main, footer {
     margin: 1rem auto;
 }
 
-  h2 {
-    color: black;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    grid-column: 1/2;
-  }
+h2, h3 {
+  color: #054A91;
+  padding: 10px;
+  border: 3px solid #054A91;
+    border-radius: 8px;
+    margin: 10px 10px;
+    background-color: #DBE4EE;
+    display: inline-block;
+}
 
   #modeButton {
     background:#81A4CD;
@@ -148,6 +151,7 @@ header, main, footer {
   background:#81A4CD;
   color: #ffffff;
   position: relative;
+  border: 2px solid #F17300;
 }
 
 .navbar ul {
@@ -155,6 +159,7 @@ header, main, footer {
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .navbar .nav-toggle {
@@ -162,18 +167,20 @@ header, main, footer {
 }
 
 .navbar a {
-  padding: 1em;
+  padding: 1rem;
   color:#ffffff;
   text-decoration: none;
   display:inline-block;
+
 }
 
 .navbar a:visited {
-  color: blue;
+  color:#000;
+  font-weight: 600;
 }
 
 .navbar a:hover {
-  background: #706e6e;
+  background:#F17300;
 }
 
 .navbar .hamburger {
@@ -233,11 +240,55 @@ header, main, footer {
  } 
 }
 
-.middle {
+.card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-#sidebar {
-  
+#card1, #card2, #card3 {
+  border: 2px solid #054A91;
+  padding: 10px;
+  margin: 10px;
+  background-color: #DBE4EE;
 }
+
+.sidebar {
+ grid-column: 1/2;
+  text-align: center;
+  font-weight: 600;
+  font-size: larger;
+  color: #054A91;
+  padding: 10px;
+  border: 3px solid #F17300;
+    border-radius: 8px;
+    margin: 2px 10px;
+   
+}
+
+.list {
+  list-style: none;
+  color:#054A91;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+.gallery {
+  grid-column: 2/4;
+}
+
+img {
+  border:8px solid #054A91;
+}
+
+h4 {
+  color: #054A91 ;
+}
+
+.container {
+  border: 3px solid #054A91;
+  display: inline-block;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
