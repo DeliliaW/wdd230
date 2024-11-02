@@ -85,7 +85,7 @@ body {
 }
 
 .responsive-image {
-  width: 100%; 
+  max-width: 100%; 
   height: auto;
 }
 
@@ -279,8 +279,9 @@ h2, h3 {
 .gallery {
   display: grid;
   gap: 10px;
-  max-width: 90%;
-  margin-left: 55px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   
   
 }
