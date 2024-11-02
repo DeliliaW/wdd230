@@ -270,7 +270,10 @@ h2, h3 {
   color:#054A91;
   font-weight: 500;
   text-align: center;
+}
 
+.dark-mode .list {
+  color: #ffffff;
 }
 
 .gallery {
