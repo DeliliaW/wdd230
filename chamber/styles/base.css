@@ -280,6 +280,7 @@ h2, h3 {
   display: grid;
   gap: 10px;
   max-width: 98%;
+  margin-left: 8px;
   
   
 }
