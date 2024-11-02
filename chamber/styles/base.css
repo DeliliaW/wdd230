@@ -279,8 +279,8 @@ h2, h3 {
 .gallery {
   display: grid;
   gap: 10px;
-  max-width: 98%;
-  margin-left: 8px;
+  max-width: 90%;
+  margin-left: 55px;
   
   
 }
@@ -298,5 +298,6 @@ h4 {
   display: inline-block;
   padding-left: 10px;
   margin-left: 10px;
-}
+} 
+
 
