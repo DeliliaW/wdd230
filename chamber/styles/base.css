@@ -299,6 +299,34 @@ h4 {
   display: inline-block;
   padding-left: 10px;
   margin-left: 10px;
-} 
+}
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  gap: 10px; 
+  max-width: 100%; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container {
+  position: relative;
+  display: block;
+}
+
+
+.image-container .overlay-text {
+  position: absolute; 
+  top: 10%; 
+  text-align: center;
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 24px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 10px; 
+  border-radius: 5px; 
+  text-align: center;
+
+}
 
