@@ -72,7 +72,7 @@ body {
 
 .hero img {
   width: 99%; 
-  height: auto; 
+  height-min: 400px; 
 }
 
 .hero-label {
@@ -240,19 +240,19 @@ h2, h3 {
  } 
 }
 
-.card {
+.card {                               /*   discovery page */
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-#card1, #card2, #card3 {
+#card1, #card2, #card3 {              /*   discovery page */               
   border: 2px solid #054A91;
   padding: 10px;
   margin: 10px;
   background-color: #DBE4EE;
 }
 
-.sidebar {
+.sidebar {             /*   discovery page */
  grid-column: 1/2;
   text-align: center;
   font-weight: 600;
@@ -265,7 +265,7 @@ h2, h3 {
    
 }
 
-.list {
+.list {                  
   list-style: none;
   color:#054A91;
   font-weight: 500;
@@ -276,7 +276,7 @@ h2, h3 {
   color: #ffffff;
 }
 
-.gallery {
+.gallery {              /*   discovery page */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   gap: 10px;
@@ -287,11 +287,11 @@ h2, h3 {
   
 }
 
-img {
+img {                                   /*   discovery page */
   border:8px solid #054A91;
 }
 
-h4 {
+h4 {                     
   color: #054A91 ;
 }
 
@@ -299,7 +299,7 @@ h4  .dark-mode {
   color: #FFFFFF;
 }
 
-.container {
+.container {                         /*   discovery page */
   border: 3px solid #054A91;
   display: block;
   padding-left: 10px;
@@ -307,13 +307,13 @@ h4  .dark-mode {
 }
 
 
-.image-container {
+.image-container {                 /*   discovery page */
   position: relative;
   display: block;
 }
 
 
-.image-container .overlay-text {
+.image-container .overlay-text {              /*   discovery page */
   position: absolute; 
   top: 10%; 
   text-align: center;
