@@ -309,24 +309,3 @@ h4  .dark-mode {
   margin-left: 10px;
 }
 
-
-.image-container {                 /*   discovery page */
-  position: relative;
-  display: block;
-}
-
-
-.image-container .overlay-text {              /*   discovery page */
-  position: absolute; 
-  top: 10%; 
-  text-align: center;
-  transform: translate(-50%, -50%); 
-  color: white; 
-  font-size: 24px; 
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 10px; 
-  border-radius: 5px; 
-  text-align: center;
-
-}
-
