@@ -278,8 +278,9 @@ h2, h3 {
 
 .gallery {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   gap: 10px;
-  max-width: 60%;
+  max-width: 98%;
   margin-left: auto;
   margin-right: auto;
   
@@ -294,21 +295,17 @@ h4 {
   color: #054A91 ;
 }
 
+h4  .dark-mode {
+  color: #FFFFFF;
+}
+
 .container {
   border: 3px solid #054A91;
-  display: inline-block;
+  display: block;
   padding-left: 10px;
   margin-left: 10px;
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-  gap: 10px; 
-  max-width: 100%; 
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .image-container {
   position: relative;
