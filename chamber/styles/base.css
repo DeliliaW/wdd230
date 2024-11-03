@@ -70,10 +70,10 @@ body {
   overflow: hidden;
 }
 
-.hero img {
-  width: 98%; 
-  height: auto; 
-}
+/*.hero img {
+  width: 99%; 
+  height: auto;
+} */
 
 .hero-label {
   position: absolute;
