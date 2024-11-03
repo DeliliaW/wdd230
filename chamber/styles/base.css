@@ -70,6 +70,11 @@ body {
   overflow: hidden;
 }
 
+.hero img {
+  width: 98%; 
+  height: auto; 
+}
+
 .hero-label {
   position: absolute;
   top: 20px; 
@@ -286,6 +291,14 @@ h3 {
   
 }
 
+.lazy {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: 0.5%; 
+}
+
 .sites {                                   /*   discovery page */
   border:8px solid #054A91;
   transition: transform .5s;
@@ -320,12 +333,12 @@ h4  .dark-mode {
 img {
   width: 98%;
   background: #000;
-  animation: fade-in 10s;
+  animation: fade 10s; 
 }
 
-@keyframes fade-in {
+@keyframes fade {
  0% {
-  opacity: .6;
+  opacity: 0;
  }
  
  100% {
@@ -354,6 +367,27 @@ img {
 
 .fade-in:nth-child(6) {
   animation-delay: 10s; 
+
+}
+
+.fade-in:nth-child(7) {
+  animation-delay: 12s; 
+
+}
+
+.fade-in:nth-child(8) {
+  animation-delay: 14s; 
+
+}
+
+#discover-container {
+  display: grid;
+}
+
+@media screen and (min-with: 650px) {
+  #discover-container {
+    display: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -394,11 +428,6 @@ img {
   .navbar ul {
     flex-direction: row; 
     justify-content: space-between; 
-  }
-
-  .hero img {
-    width: 98%; 
-    height: auto; 
   }
 
 }
