@@ -314,7 +314,7 @@ img {
   animation: fade 10s;
 }
 
-@keyframes fade {
+@keyframes fade-in {
  0% {
   opacity: 0;
  }
@@ -388,7 +388,7 @@ img {
   }
 
   .hero img {
-    width: 100%; 
+    width: 98%; 
     height: auto; 
   }
 
