@@ -295,10 +295,11 @@ h3 {
   transition: transforn .5s;
   box-shadow: 5px 5px 10px #81A4CD;
 }
-
+@media screen and (min-width: 640px) {
 .sites:hover {
   opacity: .6;
   transform: scale(1.1);
+}
 }
 
 h4 {                     
