@@ -296,7 +296,7 @@ h3 {
   height: auto;
   display: block;
   opacity: 0;
-  transition: 0.5%; 
+  transition: 0.5s; 
 }
 
 .sites {                                   /*   discovery page */
@@ -386,7 +386,8 @@ img {
 
 @media screen and (min-width: 650px) {
   #discover-container {
-    display: 1fr 1fr;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
