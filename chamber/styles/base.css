@@ -65,13 +65,13 @@ body {
 
 .hero {
   position: relative;
-  width: 99vw;
+  width: 98vw;
   height: auto;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .hero img {
-  width: 99%; 
+  width: 98%; 
 }
 
 .hero-label {
