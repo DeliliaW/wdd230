@@ -309,6 +309,10 @@ h4  .dark-mode {
   color: #FFFFFF;
 }
 
+#spotlight .dark-mode {
+  color: #FFFFFF;
+}
+
 .container {                         /*   discovery page */
   border: 3px solid #054A91;
   display: block;
