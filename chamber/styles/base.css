@@ -70,10 +70,6 @@ body {
   overflow: hidden;
 }
 
-.hero img {
-  width: 98%; 
-}
-
 .hero-label {
   position: absolute;
   top: 20px; 
@@ -281,16 +277,22 @@ h2, h3 {
 
 .gallery {              /*   discovery page */
   display: grid;
-  gap: 10px;
+  gap: 20px;
   max-width: 98%;
   margin-left: auto;
   margin-right: auto;
   
-  
 }
 
-img {                                   /*   discovery page */
+.sites {                                   /*   discovery page */
   border:8px solid #054A91;
+  transition: transforn .5s;
+  box-shadow: 5px 5px 10px #81A4CD;
+}
+
+.sites:hover {
+  opacity: .6;
+  transform: scale(1.1);
 }
 
 h4 {                     
@@ -311,12 +313,12 @@ h4  .dark-mode {
 img {
   width: 100%;
   background: #000;
-  animation: fade 10s;
+  animation: fade-in 10s;
 }
 
 @keyframes fade-in {
  0% {
-  opacity: 0;
+  opacity: .6;
  }
  
  100% {
