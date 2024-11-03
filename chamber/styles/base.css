@@ -380,17 +380,6 @@ img {
 
 }
 
-#discover-container {
-  display: grid;
-}
-
-@media screen and (min-width: 650px) {
-  #discover-container {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media screen and (max-width: 650px) {
   body {
     font-size: 14px; 
