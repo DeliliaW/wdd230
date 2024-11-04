@@ -334,7 +334,7 @@ h4  .dark-mode {
   margin-left: 10px;
 }
 
-img {
+.gallery img {
   width: 98%;
   background: #000;
   animation: fade 10s; 
