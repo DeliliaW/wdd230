@@ -296,8 +296,20 @@ h3 {
   
 }
 
+#golf {
+  margin-left: 440px;
+}
+
 #fun {
-  
+ margin-left: 425px;
+}
+
+#tower {
+  margin-left: 440px;
+}
+
+#commerce {
+  margin-left: 425px;
 }
 
 .lazy {
@@ -310,6 +322,7 @@ h3 {
 
 .sites {                                   /*   discovery page */
   border:8px solid #054A91;
+  border-radius: 8px;
   transition: transform .5s;
   box-shadow: 5px 5px 10px #81A4CD;
 }
