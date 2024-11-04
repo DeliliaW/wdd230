@@ -352,9 +352,13 @@ h4  .dark-mode {
 }
 
 .gallery img {
-  width: 98%;
+  width: 40%;
   background: #000;
   animation: fade 8s;
+}
+
+#tower, #commerce, #golf, #fun {
+ margin-left: 250px;
 }
 
 @keyframes fade {
