@@ -297,19 +297,11 @@ h3 {
 }
 
 #golf {
-  margin-left: 440px;
-}
-
-#fun {
- margin-left: 425px;
+  margin-left: 300px;
 }
 
 #tower {
   margin-left: 440px;
-}
-
-#commerce {
-  margin-left: 425px;
 }
 
 .lazy {
@@ -362,7 +354,7 @@ h4  .dark-mode {
 .gallery img {
   width: 98%;
   background: #000;
-  animation: fade 10s; 
+  animation: fade 8s;
 }
 
 @keyframes fade {
@@ -429,10 +421,6 @@ h4  .dark-mode {
 
   .container {
     padding: 10px; 
-  }
-
-  .gallery {
-    grid-template-columns: 1fr; 
   }
 }
 @media screen and (max-width: 860px) {
