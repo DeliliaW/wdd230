@@ -288,7 +288,7 @@ h3 {
 }
 
 .gallery {              /*   discovery page */
-  display: grid;
+  display: 1fr 1fr;
   gap: 20px;
   max-width: 98%;
   margin-left: auto;
@@ -296,13 +296,34 @@ h3 {
   
 }
 
-#golf {
-  margin-left: 300px;
+.image-container {
+  position: relative; /* Create a positioning context for the overlay */
 }
 
-#tower {
-  margin-left: 440px;
+.image-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom space in inline elements */
 }
+
+.overlay {
+  position: absolute; /* Position overlay absolutely */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position */
+  color: #FFFFFF; /* Overlay text color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s; /* Smooth transition for opacity */
+}
+
+.image-container .overlay {
+  opacity: 1; 
+}
+
 
 .lazy {
   width: 100%;
@@ -352,13 +373,9 @@ h4  .dark-mode {
 }
 
 .gallery img {
-  width: 40%;
+  width: 98%;
   background: #000;
   animation: fade 8s;
-}
-
-#tower, #commerce, #golf, #fun {
- margin-left: 250px;
 }
 
 @keyframes fade {
