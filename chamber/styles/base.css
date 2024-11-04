@@ -288,7 +288,7 @@ h3 {
 }
 
 .gallery {              /*   discovery page */
-  display: 1fr 1fr;
+  display: grid;
   gap: 20px;
   max-width: 98%;
   margin-left: auto;
