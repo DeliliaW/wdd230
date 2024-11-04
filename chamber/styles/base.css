@@ -116,6 +116,10 @@ header, main, footer {
     margin: 1rem auto;
 }
 
+.main {
+  display: inline-block;
+}
+
 h2, h3 {
   color: #054A91;
   padding: 10px;
@@ -250,7 +254,7 @@ h2, h3 {
   padding: 12px;
   margin: 10px;
   background-color: #DBE4EE;
-
+  
   border-radius: 8px;
 }
 
@@ -325,7 +329,7 @@ h4  .dark-mode {
 
 .container {                         /*   discovery page */
   border: 3px solid #054A91;
-  display: block;
+  /*display: block; */
   padding-left: 10px;
   margin-left: 10px;
 }
