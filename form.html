@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/base.css" media="all">
     <link rel="stylesheet" href="styles/large.css" media="(min-width: 600px)">
     <link rel="stylesheet" href="styles/form.css" media="all">
+    <link rel="html" href="record.html">
     <meta property="og:title" content="Web Frontend Development homepage">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://deliliaw.github.io/wdd230/index.html">
@@ -50,26 +51,28 @@
         </nav> 
        
         <h2>WDD 230: Web Frontend Development</h2>
-       <div class="form">
-        <form>
-            <label for="username">Username: </label>
+       <div class="root">
+        <form class="form" method="get" action="record.html">
+          <fieldset>
+            <legend>Information</legend>
+            <p>Fields with an asterisk* are required</p>
+            <label for="username">Username*: </label>
             <input type="text" id="username" name="username" required>
-        </form>
-        <form action="/action_page.php">   
-            <label for="password">Password: </label>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9] {8}" required >
-        </form>
-        <form>
+         
+            <label for="password">Password*: </label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required >
+    
+        
             <label for="repeat">Repeat<br> Password: </label>
-            <input type="password" id="repeat" name="repeat" placeholder="repeat password">
-        </form>
-        <form>
-            <label for="email">Email: </label>
+            <input type="password" id="repeat" name="repeat">
+        
+        
+            <label for="email">Email*: </label>
             <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
-        </form>
+        
             <label for="rating">Page Rating: </label>
         <div id="rangevalue"></div>
-            <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues">
+            <input type="range" id="rating" name="rating" min="1" max="10" value="10" step="1" list="rangevalues">
             <datalist id="rangevalues">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -82,7 +85,11 @@
             <option value="9">9</option>
             <option value="10">10</option>
         </datalist>
-        </div>
+            <button  id="button" type="submit">Log In</button>
+          </fieldset>
+        </form> 
+       </div>
+    
     <footer>
         <p>&#169; <span id="year"></span><br>Delilia Werner<br>Georgia<br></p>
         <p id="lastModified">Page last Updated:<span id="lastUpdatedDate"></span></p>

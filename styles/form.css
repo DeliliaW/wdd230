@@ -1,27 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
+.root input:invalid {
+    background-color: #fdd;  /* You could also change the background color */
+}
 
+.root fieldset {
+    border: 1px solid #ccc; /* Fieldset styling, just an example */
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
 .form  {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     padding-top: 10px;
     margin: 10px;
 
-}
+} 
 
-#name, #password, #repeat, #email {
-    margin: 8px;
+#username, #password, #repeat, #email, #rating {
+    display:block;
+    margin: 5px;
 }
 
 #rating {
-	width: 360px;
+	width: 400px;
+    margin-top: 10px;
 	margin-bottom: 0;
 }
 
 #rangevalues {
 	display: flex;
 	margin: 0 0 0 25px;
-	width: 200px;
+	width: 380px;
                                    
 }
 
@@ -29,5 +38,7 @@
 	flex: 1 1 auto;
 }
 
-
+#button {
+    margin-top: 10px;
+}
 
