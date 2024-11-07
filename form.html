@@ -74,10 +74,10 @@
             <label for="email">Email: </label>
             <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
         </form>
-        <form>
             <label for="rating">Page Rating: </label>
+        <div id="rangevalue">1</div>
             <input type="range" id="rating" name="rating" min="1" max="10" value="1" step="1" list="rangevalues">
-            <datalist id="rangevalues"></datalist>
+            <datalist id="rangevalues">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -88,8 +88,8 @@
             <option value="8">8</option>
             <option value="9">9</option>
             <option value="10">10</option>
-        </form>
-       </div>
+        </datalist>
+        </div>
     <footer>
         <p>&#169; <span id="year"></span><br>Delilia Werner<br>Georgia<br></p>
         <p id="lastModified">Page last Updated:<span id="lastUpdatedDate"></span></p>
