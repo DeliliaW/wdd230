@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
 .root input:invalid {
-    background-color: #fdd;  /* You could also change the background color */
+    background-color: #fdd; 
 }
 
 .root fieldset {
-    border: 1px solid #ccc; /* Fieldset styling, just an example */
+    border: 3px solid #219ebc; 
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.root input:focus {
+    border: 2px solid #4ca2af; 
+    background-color: #f0f8ff; 
+    outline: none;
+    box-shadow: 0 0 5px #4ca2af; 
+}
+
 
 .form  {
     display: inline-block;
@@ -17,7 +25,7 @@
 } 
 
 #username, #password, #repeat, #email, #rating {
-    display:block;
+    display: block;
     margin: 5px;
 }
 
@@ -40,5 +48,17 @@
 
 #button {
     margin-top: 10px;
+}
+
+fieldset p {
+    font-weight: 500;
+}
+.required {
+    color: red; 
+}
+
+legend {
+    color: #219ebc;
+    font-size: 1.5rem;
 }
 
