@@ -21,12 +21,15 @@
     display: inline-block;
     padding-top: 10px;
     margin: 10px;
+    
 
 } 
 
 #username, #password, #repeat, #email, #rating {
     display: block;
     margin: 5px;
+    height: 44px;
+    border-radius: 6px;
 }
 
 #rating {
@@ -74,6 +77,9 @@
 
 #button {
     margin-top: 10px;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #f0f8ff;
 }
 
 fieldset p {
