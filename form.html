@@ -52,27 +52,29 @@
        
         <h2>WDD 230: Web Frontend Development</h2>
     
-        <form class="form" method="get" action="record.html">
+        <form class="form" method="get" action="record.html" aria-labelledby="form-header">
           <fieldset>
-            <legend><b>Information</b></legend>
+            <legend id="form-header"><b>Information</b></legend>
             <p>Fields with an asterisk* are required</p>
+            
             <label for="username">Username: <span class="required">*</span></label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username" required aria-required="true" aria-label="Username input field">
          
             <label for="password">Password: <span class="required">*</span></label>
-            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required >
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required aria-required="true" aria-label="Password input field with minimum 8 characters">
     
         
             <label for="repeat">Repeat<br> Password: </label>
-            <input type="password" id="repeat" name="repeat">
+            <input type="password" id="repeat" name="repeat" aria-label="Repeat password input field">
         
         
             <label for="email">Email: <span class="required">*</span></label>
-            <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
-        
+            <input type="email" id="email" name="email" placeholder="Your byui email address" title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required aria-required="true" aria-describedby="email-desc">
+            <span id="email-desc" class="visually-hidden">Must be a valid byui.edu email address</span>
+           
             <label for="rating">Page Rating: </label>
         <div id="rangevalue">
-            <input type="range" id="rating" name="rating" min="1" max="10" value="10" step="1" list="rangevalues">
+            <input type="range" id="rating" name="rating" min="1" max="10" value="10" step="1" list="rangevalues" aria-valuemin="1" aria-valuemax="10" aria-label="Page rating slider">
             
             <div class="range-labels">
                 <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
@@ -91,7 +93,7 @@
             </datalist>
 
         </div>
-            <button  id="button" type="submit">Log In</button>
+            <button  id="button" type="submit" aria-label="Log in button">Log In</button>
           </fieldset>
         </form> 
     
