@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap');
-.root input:invalid {
+:root input:invalid {
     background-color: #fdd; 
 }
 
-.root fieldset {
+:root fieldset {
     border: 3px solid #219ebc; 
     padding: 10px;
     margin-bottom: 10px;
 }
 
-.root input:focus {
+:root input:focus {
     border: 2px solid #4ca2af; 
     background-color: #f0f8ff; 
     outline: none;
