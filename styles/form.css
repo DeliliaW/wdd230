@@ -16,13 +16,10 @@
     box-shadow: 0 0 5px #4ca2af; 
 }
 
-
 .form  {
     display: inline-block;
     padding-top: 10px;
     margin: 10px;
-    
-
 } 
 
 #username, #password, #repeat, #email, #rating {
