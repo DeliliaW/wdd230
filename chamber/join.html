@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1">
+    <meta name="author" content="Delilia Werner">
+    <title>Delilia Werner - WDD 230 - Web Frontend Development - Chamber of Commerce</title>
+    <meta name="description" content= "Check out everything to do and see in the big town that has that small town feel!">
+    <link rel="icon" type="image/x-icon" href="../favicon-chamber.ico"> 
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <meta property="og:title" content="Web Frontend Development homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deliliaw.github.io/wdd230/index.html">
+    <meta property="og:image" content="https://deliliaw.github.io/wdd230/images/WR-welcome-sign.webp">
+</head>
+    <body>
+    <header>
+        <h1>Robins Regional Chamber of Commerce</h1>
+        <div id="mode">
+        <button id="modeButton">💡/🕶️</button>
+        </div>
+      <div id="content">
+          <div class="hero">
+            <picture>
+                <source media="(max-width: 480px)" srcset="../lesson06/images/wdd230-org-small.webp">
+                <source media="(max-width: 800px)" srcset="../lesson06/images/wdd230-org-medium.webp">
+                <img src="../lesson06/images/wdd230-org-large.webp" alt="coworkers meeting" width="1200" height="800" class="responsive-image"> 
+            </picture>
+            <div class="overlay-text">Large</div>
+           </div>
+        </div>
+        <nav id="navbar"  class="navbar">
+            <ul class="nav-toggle">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="#">Page 3</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+        <button id="hamburger-toggle"  class="hamburger">
+            <span class="icon-open">    
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 6l16 0" />
+                    <path d="M4 12l16 0" />
+                    <path d="M4 18l16 0" />
+                  </svg>
+                </span>
+                <span class="icon-close"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" fill="none" width="24" height="24" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"  stroke="currentColor">
+                    <path d="M18 6l-12 12"></path>
+                    <path d="M6 6l12 12"></path>
+                  </svg>
+                </span>
+            </button>
+        </nav>
+    </header>
+    <body> 
+    <main>
+      <section>
+        <h1 class="sign-up">Join Us!</h1>
+        <form class="join" method="get" action="thankyou.html"  aria-labelledby="form-header">
+        <fieldset>
+          <legend><b>Contact Information</b></legend>
+          <p>Fields with an asterisk* are required</p>
+          <br>
+          <label for="firstname">First name: <span class="required">*</span></label>
+          <input type="text" id="fname" name="fname" required aria-required="true" aria-label="first name input field">
+          <br>
+          <label for="Lastname">Last name: <span class="required">*</span></label>
+          <input type="text" id="lname" name="lname" required aria-required="true" aria-label="last name input field">
+          <br>
+          <label for="email">Email: <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required aria-required="true" aria-describedby="email-desc">
+          <span id="email-desc" class="visually-hidden"></span>
+         <br>
+         <label>Phone: <span class="required">*</span></label>
+         <input type="tel" name="phone" placeholder="1235551234">
+         <br>
+         </fieldset>
+         <fieldset>
+            <legend><b>Business Information</b></legend>
+         <label for="Title">Title or Position: <span class="required">*</span></label>
+          <input type="text" id="title" name="title" pattern="^[a-zA-Z\s-]{7,}$ required aria-required="true" aria-label="Password input field with minimum 8 characters">
+          <br>
+         <label>Business/Organization: <span class="required">*</span></label>
+         <input type="text" id="business" name="business" placeholder="Business Name">
+         <br>
+         <label>Description of your Business/Organization: </label>
+         <textarea id="description" name="description" rows="3" cols="1" placeholder="Description of Business/Organization"></textarea>
+         <div>Membership Level: </div>
+         <label><input type="radio" name="membership" value="Non-profit">Non Profit</label>
+         <label><input type="radio" name="membership" value="Bronze">Bronze</label>
+         <label><input type="radio" name="membership" value="Silver">Silver</label>
+         <label><input type="radio" name="membership" value="Gold">Gold</label>
+         <br>
+         <input type="hidden" name="spotlight" id="spotlight" >
+         <button  id="button" type="submit" aria-label="Log in button">Join Now</button>
+         </fieldset>
+        </form>
+      </section>
+
+    </main>
+       
+    </body> 
+
+<footer>
+    <p>Delilia Werner</p>
+    <p>This is a project for WDD230 Frontend Web Development</p>
+    <p>&#169; <span id="year"></span>
+    <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
+</footer>
+<script src="..//scripts/getdates.js"></script>
+<script src="..//scripts/hamburger.js"></script>
+<script src="..//scripts/darkmode.js"></script>
+<script src="..//scripts/windchill.js"></script>
+<script src="..//scripts/overlaytext-chamber.js"></script>
+<script src="..//scripts/datenow.js"></script>
+
+</body>
+</html>
