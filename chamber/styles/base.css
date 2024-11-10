@@ -129,6 +129,15 @@ h2, h3 {
     margin: 10px 10px;
     background-color: #DBE4EE;
     display: inline-block;
+    margin-left: 20px;
+}
+
+.join-now {
+  margin-left: 50px;
+}
+
+#spotlight {
+  margin-left: 50px;
 }
 
   #modeButton {
@@ -391,8 +400,12 @@ h4  .dark-mode {
 .join {
   display: inline-block;
   grid-column: 1/2;
+  margin-left:100px;
 }
 
+.contact {
+  margin-left: 170px;
+}
 .join fieldset {
   display: block;
   color: #054A91;
@@ -452,7 +465,7 @@ input[type="radio"] {
   background-color: rgb(250, 246, 246);
  }
  .membership h2 {
-  margin-left: 200px;
+  margin-left: 170px;
   margin-bottom: 20px;
  
  }
