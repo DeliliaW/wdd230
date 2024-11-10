@@ -11,39 +11,32 @@
     font-weight: 100;
     font-style: normal;
   }
-  
   .lato-regular {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-  
   .lato-bold {
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
-  
   .lato-regular-italic {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: italic;
   }
-  
-
 #content {
     max-width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
-
 header {
     background-color: #054A91;
     margin: 0;
     position: relative;
 }
-
 h1 {
     text-align: center;
     font-size: 40px;
@@ -51,31 +44,25 @@ h1 {
     padding-top: 3%;
     padding-bottom: 3%;
 }
-
 body {
     max-width: 100%;
     font-family: "Lato";
     background-color: white;
-
   }
-
 #hero-box {
     grid-column:span;
 }
-
 .hero {
   position: relative;
   width: 98vw;
   height: auto;
   overflow: hidden;
 }
-
 .hero img {
   width: 98%; 
   height: auto;
   margin-left: 18px;
 } 
-
 .hero-label {
   position: absolute;
   top: 20px; 
@@ -84,12 +71,10 @@ body {
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px; 
 }
-
 .responsive-image {
   max-width: 100%; 
   height: auto;
 }
-
 .overlay-text {
   position: absolute; 
   top: 5%; 
@@ -102,21 +87,17 @@ body {
   border-radius: 5px; 
   text-align: center; 
 }
-
 footer {
     background-color: #F17300;
     text-align: center;
     font-weight: bold;
     padding: 1em;
     border: 3px solid #054A91;
-
 }
-
 header, main, footer {
     grid-column: 1/4;
     margin: 1rem auto;
 }
-
 .main1 {
   display: inline-block;
 }
@@ -131,11 +112,9 @@ h2, h3 {
     display: inline-block;
     margin-left: 20px;
 }
-
 .join-now {
   margin-left: 50px;
 }
-
 #spotlight {
   margin-left: 50px;
 }
