@@ -380,9 +380,8 @@ h4  .dark-mode {
   color:#F17300;
   background-color: #054A91;
   margin-top: -1rem;
-  
-
 }
+
 .main-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -393,7 +392,6 @@ h4  .dark-mode {
   display: inline-block;
   grid-column: 1/2;
 }
-
 
 .join fieldset {
   display: block;
@@ -430,7 +428,6 @@ appearance: none;
   padding-top: 1rem;
 }
 
-
 input[type="radio"] {
   display: inline-block;
   margin-top: 10px;
@@ -453,14 +450,18 @@ input[type="radio"] {
   display: inline-block;
   grid-template-columns: 2/3;
   margin-top: 90px;
+  background-color: rgb(250, 246, 246);
  }
  .membership h2 {
   margin-left: 200px;
   margin-bottom: 20px;
  
  }
- .membership h3, h4 {
+ .membership h3 {
   text-align: center;
+ }
+ .membership h4 {
+  margin-left: 20px;
  }
 
  ul li {
