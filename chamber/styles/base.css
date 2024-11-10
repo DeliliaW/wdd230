@@ -546,6 +546,21 @@ input[type="radio"] {
   .container {
     padding: 10px; 
   }
+  .main-form {
+    gap: 10px;
+  }
+  .membership, .join {
+    width: 100%;
+  }
+  .membership h2 {
+    font-size: 1.5rem;
+  }
+  .membership h3 {
+    font-size: 1.2rem;
+  }
+  .membership h4 {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 860px) {
   body {
@@ -560,5 +575,20 @@ input[type="radio"] {
     flex-direction: row; 
     justify-content: space-between; 
   }
-
+  .main-form {
+    display: block;
+  }
+  .join, .membership {
+    grid-column: 1 / -1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .membership h2, .membership h3, .membership h4 {
+    margin-bottom: 0%;
+    text-align: center;
+  }
+  .membership {
+    padding: 1rem;
+  }
 }
