@@ -57,10 +57,11 @@
         </nav>
     </header>
     <body> 
-    <main>
+    <main class="main-form">
       <section>
         <h1 class="sign-up">Join Us!</h1>
-        <form class="join" method="get" action="thankyou.html"  aria-labelledby="form-header">
+        <form method="get" action="thankyou.html"  aria-labelledby="form-header">
+            <div class="join">
         <fieldset>
           <legend><b>Contact Information</b></legend>
           <p>Fields with an asterisk* are required</p>
@@ -78,7 +79,7 @@
          <label>Phone: <span class="required">*</span></label>
          <input type="tel" name="phone" placeholder="1235551234">
          <br>
-         </fieldset>
+        </fieldset>
          <fieldset>
             <legend><b>Business Information</b></legend>
          <label for="Title">Title or Position: <span class="required">*</span></label>
@@ -90,7 +91,7 @@
          <label>Description of your Business/Organization: </label>
          <textarea id="description" name="description" rows="3" cols="1" placeholder="Description of Business/Organization"></textarea>
          <div>Membership Level: </div>
-         <label><input type="radio" name="membership" value="Non-profit">Non Profit</label>
+         <label><input type="radio" name="membership" value="Non-profit">Non-Profit</label>
          <label><input type="radio" name="membership" value="Bronze">Bronze</label>
          <label><input type="radio" name="membership" value="Silver">Silver</label>
          <label><input type="radio" name="membership" value="Gold">Gold</label>
@@ -101,10 +102,67 @@
         </form>
       </section>
       <section>
-        <fieldset>
-            <form class="benefits"></form>
-            <legend>Membership Levels</legend>
-        </fieldset>
+        <div class="membership">
+            <h2>Membership Levels</h2>
+            <h3>Non-Profit Level</h3>
+            <h4>Some of the many benefits for Non-Profit Organizations: </h4>
+            <ul>
+                <li>Benefit from the Chamber's influence with local government.</li>
+                <li>Have the opportunity to collaborate with the Chamber on community initiatives</li>
+                <li>The Chamber can facilitate introductions and partnerships with businesses</li>
+                <li>Nonprofits can co-sponsor or participate in Chamber events to increase their visibility</li>
+                <li>Collaboration on fund raising events</li>
+                <li>Introduction to key contacts</li>
+                <li>Participation in networking events</li>
+                <li>Plus more...</li>
+            </ul>
+            <h3>Bronze Level</h3>
+            <h4>Some of the many benefits for Bronze Level: </h4>
+            <ul>
+                <li>Listing in the Chamber's online business directory</li>
+                <li>Access to monthly networking events</li>
+                <li>Subscription to the Chamber’s newsletter</li>
+                <li>Free participation in online forums and discussion boards</li>
+                <li>Member-only discounts for Chamber events and workshops</li>
+                <li>Plus more...</li>
+            </ul>
+            <h3>Silver Level</h3>
+            <h4>Some of the many benefits for Silver Level: </h4>
+            <ul>
+                <li>All benefits of the Bronze Membership</li>
+                <li>Priority listing in the business directory with enhanced company profile</li>
+                <li>Invitations to member-only business seminars and webinars</li>
+                <li>Discounted advertising opportunities on the Chamber website</li>
+                <li>Access to mentorship programs and business advisory services</li>
+                <li>Participation in Chamber-hosted webinars and workshops at reduced rates</li>
+                <li>Plus more...</li>
+            </ul>
+                <h3>Gold Level</h3>
+                <h4>Some of the many benefits for Gold Level: </h4>
+                <ul>
+                    <li>All benefits of Silver Membership</li>
+                    <li>Sponsorship opportunities for Chamber events</li>
+                    <li>Company spotlight feature in the Chamber newsletter and website</li>
+                    <li>Access to exclusive leadership roundtable discussions</li>
+                    <li>Complimentary tickets to premium networking galas and dinners</li>
+                    <li>Priority consideration for Chamber awards and recognitions</li>
+
+
+
+                </ul>
+
+
+
+
+            
+        </div>
+
+
+
+
+        
+            
+    </div>
       </section>
     </main>
        
