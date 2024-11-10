@@ -76,7 +76,7 @@
           <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required aria-required="true" aria-describedby="email-desc">
           <span id="email-desc" class="visually-hidden"></span>
          <br>
-         <label>Phone: <span class="required">*</span></label>
+         <label for="phone">Phone: <span class="required">*</span></label>
          <input type="tel" name="phone" placeholder="1235551234">
          <br>
         </fieldset>
@@ -85,10 +85,10 @@
          <label for="Title">Title or Position: <span class="required">*</span></label>
           <input type="text" id="title" name="title" pattern="^[a-zA-Z\s-]{7,}$ required aria-required="true" aria-label="Password input field with minimum 8 characters">
           <br>
-         <label>Business/Organization: <span class="required">*</span></label>
+         <label for="business">Business/Organization: <span class="required">*</span></label>
          <input type="text" id="business" name="business" placeholder="Business Name">
          <br>
-         <label>Description of your Business/Organization: </label>
+         <label for="description">Description of your Business/Organization: </label>
          <textarea id="description" name="description" rows="3" cols="1" placeholder="Description of Business/Organization"></textarea>
          <div>Membership Level: </div>
          <label><input type="radio" name="membership" value="Non-profit">Non-Profit</label>
