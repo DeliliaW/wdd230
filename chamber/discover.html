@@ -56,19 +56,20 @@
                 </span>
             </button>
         </nav>
-    </header>  
+    </header>
+       
     <main id="discover-container">
         <div class="card">
           <div class="sidebar">
             <div id="card1">Places to Go</div>
-              <ul class="list">
+              <ul class="list1">
                 <li>Robins Air Force Base Museum</li>
                 <li>Rigby's Water Park</li>
                 <li>Monkey Joe's</li>
                 <li>Bucee's</li>
               </ul>
            <div id="card2">Things to Do</div>
-           <ul class="list">
+           <ul class="list2">
             <li>Go Karts</li>
             <li>Mini Golf</li>
             <li>Playgrounds</li>
@@ -77,17 +78,13 @@
             <li>Farmer's Markets</li>
           </ul>
            <div id="card3">Mark the Date</div>
-           <ul class="list">
+           <ul class="list3">
             <li>Robins Air Force Base Museum Annual fundraiser</li>
             <li>Georgia National Fair (in nearby Perry)</li>
             <li>Restaurant openings</li>
             <li>Food Truck Thursdays</li>
             <li></li>
           </ul>
-          <section>
-            <h3>Checking In</h3>
-            <div id="spotlight"></div>
-          </section>
          </div>
           <div class="gallery">
             <div class="image-container">
@@ -97,15 +94,15 @@
             <div class="image-container">
                 <img src="./images/playground.webp" alt="playgorund" width="400" height="600" class="responsive-image fade-in sites" loading="lazy"> 
                 <div class="overlay">Playground</div>
-            </div>  
+            </div> 
             <div class="image-container">
-                <img  src="./images/restaurants.webp" alt="restaurants" width="400" height="600" class="responsive-image fade-in sites" loading="lazy">
-                <div class="overlay">Restaurants</div>
+                <img  src="./images/Bucees-WR-sign.webp" alt="Buc-ees-WR" width="400" height="600" class="responsive-image fade-in sites" loading="lazy">
+                <div class="overlay">Bucees</div>
              </div>
             <div class="image-container">     
                 <img src="./images/Rigbys-go-karts.webp"  alt="people-on-go-karts" width="400" height="600" class="responsive-image fade-in sites" loading="lazy" id="fun">
                 <div class="overlay">Go Karts</div>
-            </div> 
+            </div>
             <div class="image-container"> 
                 <img src="./images/Rigbys.webp" alt="mini-golf" width="400" height="600" class="responsive-image fade-in sites" loading="lazy" id="golf">
                 <div class="overlay">Mini Golf</div>
@@ -115,19 +112,22 @@
                 <div class="overlay">Water Tower</div>
             </div>
          </div> 
-        </div>  
+        </div> 
+        <div id="container-visits">
+            <span class="v-label">#Page Visits: </span><span class="visits"></span>
+        </div>
     </main> 
     <script src="..//scripts/hamburger.js"></script>
     <script src="..//scripts/darkmode.js"></script>
     <script src="..//scripts/overlaytext-chamber.js"></script>
     <script src="..//scripts/datenow.js"></script>
     <script src="..//scripts/lazyload.js"></script>
+    <script src="..//scripts/numbervisits.js"></script>
 <footer>
     <p>Delilia Werner</p>
     <p>This is a project for WDD230 Frontend Web Development</p>
     <p>&#169; <span id="year"></span>
     <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
-</footer>
-
+    </footer>
 </body>
 </html>
