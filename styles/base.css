@@ -55,9 +55,7 @@ h1 {
     color: black;
     padding-left: 40px;
 }
-label {
-    background-color:
-}
+
 .container {
     display: grid;
     grid-template-columns: 3fr 1fr;
