@@ -449,7 +449,6 @@ input[type="radio"] {
  .membership {
   display: inline-block;
   grid-template-columns: 2/3;
-  margin-top: 90px;
   background-color: rgb(250, 246, 246);
  }
  .membership h2 {
