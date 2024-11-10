@@ -47,8 +47,6 @@ img {
    color: #ffffff;
    font-size: larger;
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-
 }
 
 h1 {
@@ -56,6 +54,9 @@ h1 {
     font-size: 35px;
     color: black;
     padding-left: 40px;
+}
+label {
+    background-color: lightblue;
 }
 .container {
     display: grid;
