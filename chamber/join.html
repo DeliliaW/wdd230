@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <meta property="og:title" content="Web Frontend Development homepage">
+    <meta property="og:title" content="Robins Regional Chamber of Commerce Join page">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://deliliaw.github.io/wdd230/index.html">
     <meta property="og:image" content="https://deliliaw.github.io/wdd230/images/WR-welcome-sign.webp">
@@ -59,16 +59,16 @@
         <h1 class="sign-up">Join Us!</h1>
     <main class="main-form">
       <section>       
-        <form method="get" action="thankyou.html"  aria-labelledby="form-header">
+        <form method="get" action="thankyou.html">
             <div class="join">
         <fieldset>
           <legend><b>Contact Information</b></legend>
           <p>Fields with an asterisk* are required</p>
           <br>
-          <label for="firstname">First name: <span class="required">*</span></label>
+          <label for="fname">First name: <span class="required">*</span></label>
           <input type="text" id="fname" name="fname" required aria-required="true" aria-label="first name input field">
           <br>
-          <label for="Lastname">Last name: <span class="required">*</span></label>
+          <label for="lname">Last name: <span class="required">*</span></label>
           <input type="text" id="lname" name="lname" required aria-required="true" aria-label="last name input field">
           <br>
           <label for="email">Email: <span class="required">*</span></label>
@@ -81,7 +81,7 @@
         </fieldset>
          <fieldset>
             <legend><b>Business Information</b></legend>
-         <label for="Title">Title or Position: <span class="required">*</span></label>
+         <label for="title">Title or Position: <span class="required">*</span></label>
           <input type="text" id="title" name="title" pattern="^[a-zA-Z\s-]{7,}$" required aria-label="Password input field with minimum 8 characters">
           <br>
          <label for="business">Business/Organization: <span class="required">*</span></label>
@@ -98,9 +98,10 @@
          <input type="hidden" name="spotlight" id="spotlight" >
          <button  id="button" type="submit" aria-label="Log in button">Join Now</button>
          </fieldset>
-         </div>       
+         </div> 
+        </form>     
       </section>
-    </form>
+   
       <section>
         <div class="membership">
             <h2>Membership Levels</h2>
