@@ -13,6 +13,20 @@ getProphetData();
 
 const displayProphets = (prophets) => {
     prophets.forEach ( (prophet) =>  {
+        let card = document.createElement('section');
+        let fullName = document.createElement('');
+        let portrait = document.createElement('img');
 
+        fullName.textContent = `${prophet._______} _____________`;
+        portrait.setAttribute('src', prophet.imageurl);
+        portrait.setAttribute('alt', `Portrait of ${prophet.__________} _______________`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '340');
+        portrait.setAttribute('height', '440');
+
+        card.appendChild(_______);
+        card.appendChild(portrait);
+
+        cards.appendChild(card);
 });
 }
