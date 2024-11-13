@@ -1,5 +1,5 @@
 const baseURL = "https://deliliaw.github.io/wdd230/";
-const linksURL = "https://deliliaw.github.io/wdd230/data/links.json";
+const linksURL = "https://deliliaw.github.io/wdd230/lesson09/data/links.json";
 
 async function getLinks() {
     const response = await fetch(linksURL);
