@@ -14,7 +14,7 @@ getProphetData();
 const displayProphets = (prophets) => {
     prophets.forEach ( (prophet) =>  {
         let card = document.createElement('section');
-        let fullName = document.createElement('');
+        let fullName = document.createElement('___');
         let portrait = document.createElement('img');
 
         fullName.textContent = `${prophet.Joseph} Smith`;
