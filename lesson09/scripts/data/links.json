@@ -81,6 +81,19 @@
         {
         "url":"lesson08/index.html",
         "title":"Form Build"
+        },
+        {
+        "lesson": "09",
+        "links": [
+        {
+        "url":  "lesson09/new-ward-members.json",
+        "title": "new-ward-members.json" 
+        },
+        {
+        "url": "lesson09/prophets.html",
+        "title": "Prophets"  
+        }
+        ]
         }
         ]
         }
