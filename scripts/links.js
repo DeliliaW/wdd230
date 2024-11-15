@@ -7,17 +7,24 @@ async function getLinks()   {
  const data = await response.json();
  displayLinks(data);
 
- const displayLinks = (weeks) => {
-    weeks.forEach ( (week) => {
-     let weekElement = document.createElement('ul');
-     let linkElement = document.createElement('li');
+ const displayLinks = (lessons) => {
+    lessons.forEach ( (lesson) => {
+     let lessonElement = document.createElement('ul');
+     let lessonTitle = document.createElement('h3');
+     lessonTitle.textContent = `Lesson $(lesson.lesson)`;
+     lesssonElement.appendChild(lessonTitle);
 
-        weekElement.textContent = `week: ${week.weekName}`;
-        linkElement.textContent = `Link: ${week.link}`;
-
-        weekElement.appendChild(linkElement);
-        list.appendChild(weekElement);
+     lesson.links.forEach((link) => {
+        let linkElement = document.createElement('li');
+        let anchor = document.createElement('a');
+        anchor.href = baseURL + link.url;
+        anchor.textContent = link.title;
+        linkElement.appendChild(anchor);
+        lessonElement.appendChild(linkElement);  
     });
+
+    list.appendChild(lessonElement);
+ });
  }
 }
 
