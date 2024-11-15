@@ -7,8 +7,8 @@ async function getLinks()   {
  const data = await response.json();
  displayLinks(data);
 
- const displayLinks = (lessons) => {
-    lessons.forEach ( (lesson) => {
+ const displayLinks = (weeks) => {
+    lessons.forEach ( (week) => {
      let lessonElement = document.createElement('ul');
      let lessonTitle = document.createElement('h3');
      lessonTitle.textContent = `Lesson $(lesson.lesson)`;
