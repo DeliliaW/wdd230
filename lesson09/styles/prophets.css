@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
 body {
   font-size: 16px;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
-}
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+} 
 
 header,
 main,
@@ -12,46 +14,63 @@ footer {
 }
 
 h1 {
-  color:rgb(132, 109, 160);
+  color:rgb(23, 23, 246);
+  display: block;
+  text-align: center;
 
 }
 
 h2 {
-  color: rgb(132, 109, 160);
+  color: rgb(23, 23, 246);
   margin: 0 0 1rem 0;
 	 border-bottom: 1px solid #bbb;
+   padding-top: 1rem;
 }
 
-p {
-  margin: 10px;
+.birthdate {
+  margin: 0;
 }
 
-main {
-  margin-left: 2rem;
+.birthplace {
+ margin: 0;
 }
 
-.grid {
+#cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  border: 1px solid rgb(24, 185, 185);
+ padding: 10px;
+ background-color: #eee;
+
 }
 
 section {
-  margin: 0.25rem;
-  padding: 0.35rem;
-  background-color: #eee;
+  margin: 0.1rem;
+  padding: 0.2rem; 
+  background-color: rgb(202, 242, 242);
   border: 1px solid #bbb;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+section p {
+  margin: 0;
+  padding-bottom: 10px;
+} 
 
 img {
   width: auto;
 	max-width: 340px;
   box-shadow: 0 0 30px #777;
-  height: 200px;
-  border: 1px solid #333;
+  height: 220px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+}
+
+li > img {
+  width: auto;
+  height: 30px;
 }
 
 footer {
