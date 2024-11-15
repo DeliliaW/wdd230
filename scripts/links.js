@@ -5,14 +5,16 @@ const list = document.querySelector('#card1');
 async function getLinks()   {
  const response = await fetch(linksURL);
  const data = await response.json();
+}
+
  displayLinks(data);
 
  const displayLinks = (weeks) => {
-    lessons.forEach ( (week) => {
+    weeks.forEach ( (week) => {
      let lessonElement = document.createElement('ul');
      let lessonTitle = document.createElement('h3');
-     lessonTitle.textContent = `Lesson $(lesson.lesson)`;
-     lesssonElement.appendChild(lessonTitle);
+     lessonTitle.textContent = `Lesson $(week.lesson)`;
+     lessonElement.appendChild(lessonTitle);
 
      lesson.links.forEach((link) => {
         let linkElement = document.createElement('li');
@@ -26,6 +28,5 @@ async function getLinks()   {
     list.appendChild(lessonElement);
  });
  }
-}
 
 getLinks();
