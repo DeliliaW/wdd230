@@ -21,7 +21,7 @@ const displayMembers = (members) => {
         let websiteURL = document.createElement('p');
         let membershiplevel = document.createElement('label');
 
-        image.setAttribute('src', member.imageurl);
+        image.setAttribute('src', member.logourl);
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '250');

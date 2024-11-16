@@ -1,7 +1,7 @@
 {
     "members": [
       {
-        "image": "https://deliliaw.github.io/wdd230/lesson09/images/the-design-gallery.webp",
+        "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/the-design-gallery.webp",
         "name": "The Design Gallery",
         "address": "592 Carl Vinson Parkway Warner Robins, Georgia 31088",
         "phonenumber": "(478)929-0915",
@@ -9,7 +9,7 @@
         "membershiplevel": "Bronze"
       },
       {
-        "image":"https://deliliaw.github.io/wdd230/lesson09/images/critter-fixer.webp",
+        "logourl":"https://deliliaw.github.io/wdd230/lesson09/images/critter-fixer.webp",
         "name": "Critter Fixer Veterinary Hospital", 
         "address": "102 Starlight Drive Bonaire, Georgia 31005",
         "phonenumber": "(478)988-0883", 
@@ -18,7 +18,7 @@
         "contact": "Dr. Terrence Ferguson"
       },
       {
-        "image": "https://deliliaw.github.io/wdd230/lesson09/images/hhc-logo.webp",
+        "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/hhc-logo.webp",
         "name": "Houston Healthcare",
         "address": "1601 Watson Boulevard Warner Robins, Georgia 31093", 
         "phonenumber": "478-922-4281",
@@ -27,7 +27,7 @@
         "contact": "James Cummings"
       },  
       {
-        "image": "https://deliliaw.github.io/wdd230/lesson09/images/lowes-logo.webp",
+        "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/lowes-logo.webp",
         "name": "Lowe's", 
         "address": "2704 Watson Boulevard Warner Robins, Georgia 31093", 
         "phonenumber": "(478) 953-6700",
@@ -36,7 +36,7 @@
         "contact": "Sue Warren"  
       },
       {
-      "image": "https://deliliaw.github.io/wdd230/lesson09/images/museum-of-aviation.webp",
+      "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/museum-of-aviation.webp",
        "name": "Museum of Aviation", 
       "address": "1742 Heritage Boulevard Robins AFB, Georgia 31098",
       "phonenumber": "(478)926-6870",
@@ -45,7 +45,7 @@
       "contact": "Ann Pearson"
     }, 
       {
-        "image": "https://deliliaw.github.io/wdd230/lesson09/images/Pro-Aire.webp",
+        "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/Pro-Aire.webp",
         "name": "Pro-Aire",
       "address": "1111 Leverett Road Warner Robins, Georgia 31088",
       "phonenumber": "(478)328-7177",
@@ -54,7 +54,7 @@
       "contact": "Amanda Sullivan" 
       },
       {
-      "image": "https://deliliaw.github.io/wdd230/lesson09/images/rfcu-logo-70.webp",
+      "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/rfcu-logo-70.webp",
       "name": "Robins Financial Credit Union", 
       "address": "803 Watson Boulevard Warner Robins, Georgia, 31093",
       "phonenumber": "(478)923-3773",
