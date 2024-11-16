@@ -1,0 +1,65 @@
+{
+    "members": [
+      {
+        "image": 
+        "name": "The Design Gallery",
+        "address": "592 Carl Vinson Parkway Warner Robins, Georgia 31088",
+        "phonenumber": "(478)929-0915",
+        "websiteURL": "https://www.thedesigngallery.biz/",
+        "membershiplevel": "Bronze"
+      },
+      {
+        "image":
+        "name": "Critter Fixer Veterinary Hospital", 
+        "address": "102 Starlight Drive Bonaire, Georgia 31005",
+        "phonenumber": "(478)988-0883", 
+        "websiteURL": "https://critterfixerveterinaryhospital.com/",
+        "membershiplevel": "Silver",
+        "contact": "Dr. Terrence Ferguson"
+      },
+      {
+        "image": 
+        "name": "Houston Healthcare",
+        "address": "1601 Watson Boulevard Warner Robins, Georgia 31093", 
+        "phonenumber": "478-922-4281",
+        "websiteURL": "https://www.hhc.org/", 
+        "membershiplevel": "Gold",
+        "contact": "James Cummings"
+      },  
+      {
+        "image": 
+        "name": "Lowe's", 
+        "address": "2704 Watson Boulevard Warner Robins, Georgia 31093", 
+        "phonenumber": "(478) 953-6700",
+        "websiteURL": "https://www.lowes.com/store/GA-Warner-Robins/0483",
+        "membershiplevel": "Silver",
+        "contact": "Sue Warren"  
+      },
+      {
+      "image": 
+       "name": "Museum of Aviation", 
+      "address": "1742 Heritage Boulevard Robins AFB, Georgia 31098",
+      "phonenumber": "(478)926-6870",
+      "websiteURL": "https://museumofaviation.org/",
+      "membershiplevel": "Gold",
+      "contact": "Ann Pearson"
+    }, 
+      {
+        "image": 
+        "name": "Pro-Aire",
+      "address": "1111 Leverett Road Warner Robins, Georgia 31088",
+      "phonenumber": "(478)328-7177",
+      "websiteURL": "https://www.facebook.com/ProAireLLC",
+      "membershiplevel": "Bronze",
+      "contact": "Amanda Sullivan" 
+      },
+      {
+      "image": 
+      "name": "Robins Financial Credit Union", 
+      "address": "803 Watson Boulevard Warner Robins, Georgia, 31093",
+      "phonenumber": "(478)923-3773",
+      "websiteURL": "https://www.robinsfcu.org/",
+      "membershiplevel": "Gold",
+      "contact": "John Mitchell"
+      } ]
+}
