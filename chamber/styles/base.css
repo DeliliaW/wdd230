@@ -605,7 +605,7 @@ input[type="radio"] {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color:rgb(152, 204, 249);
 	text-align: center;
 }
 
@@ -614,17 +614,14 @@ input[type="radio"] {
 	font-weight: 700;
 }
 
-.members {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 1rem;
-	background-color:aliceblue;
-}
-
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1rem;
+	background-color:rgb(152, 204, 249);
 }
 
 .grid section {
@@ -636,8 +633,12 @@ input[type="radio"] {
 	box-shadow: 0 0 10px #333;
 }
 
-.grid section > .directory {
+.grid section {
 	margin: 0.1rem;
+}
+
+.address, .phonenumber, .website {
+  margin: 0;
 }
 
 .list {
@@ -647,7 +648,7 @@ input[type="radio"] {
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
@@ -664,16 +665,5 @@ input[type="radio"] {
 	background-color: #bed;
 }
 
-section p {
-	font-weight: 600;
-	font-size: smaller;
-}
-
-section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
+ 
 

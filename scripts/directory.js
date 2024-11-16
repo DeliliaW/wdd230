@@ -1,13 +1,17 @@
 const url = 'https://deliliaw.github.io/wdd230/chamber/data/members.json';
-const memberCards = document.querySelector('.members');
+const displayContainer = document.querySelector('#displayContainer');
 
 async function getMemberData()  {
+    try {
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
     displayMembers(data.members);
-
+} catch (error) {
+    console.error(`Error fetching data:`, error);
 }
+}
+
 
 getMemberData();
 
@@ -39,7 +43,7 @@ const displayMembers = (members) => {
         card.appendChild(websiteURL);
         card.appendChild(membershiplevel);
 
-        memberCards.appendChild(card);
+        displayContainer.appendChild(card);
 
     });
 
