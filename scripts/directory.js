@@ -1,18 +1,19 @@
 const url = 'https://deliliaw.github.io/wdd230/chamber/data/members.json';
-const cards = document.querySelector('memberCards');
+const cards = document.querySelector('.members');
 
 async function getMemberData()  {
     const response = await fetch(url);
     const data = await response.json();
+    console.log()
     displayMembers(data.members);
 
 }
 
 getMemberData();
 
-const displayMembers = (members) => {
-    members.forEach ( (member) =>  {
-        let card = document.createElement('section');
+const displayMembers = (member) => {
+    member.forEach ( (members) =>  {
+        let members = document.createElement('section');
         let image = document.createElement('img');
         let name = document.createElement('h2');
         let address = document.createElement('p');
@@ -26,9 +27,9 @@ const displayMembers = (members) => {
         image.setAttribute('width', '250');
         image.setAttribute('height', '150');
         name.textContent = `${member.name} `;
-        address.textContent = `Address ${member.address}`,
-        phonenumber.textContent = `Phone number ${member.phonenumber}`;
-        websiteURL.textContent = `Website ${member.websiteURL}`;
+        address.textContent = `Address: ${member.address}`,
+        phonenumber.textContent = `Phone number: ${member.phonenumber}`;
+        websiteURL.textContent = `Website: ${member.websiteURL}`;
         membershiplevel.textContent = `${member.membershiplevel} member`;
         
         card.appendChild(image);
