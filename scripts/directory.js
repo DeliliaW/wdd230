@@ -1,19 +1,19 @@
 const url = 'https://deliliaw.github.io/wdd230/chamber/data/members.json';
-const cards = document.querySelector('.members');
+const memberCards = document.querySelector('.members');
 
 async function getMemberData()  {
     const response = await fetch(url);
     const data = await response.json();
-    console.log()
+    console.log(data);
     displayMembers(data.members);
 
 }
 
 getMemberData();
 
-const displayMembers = (member) => {
-    member.forEach ( (members) =>  {
-        let members = document.createElement('section');
+const displayMembers = (members) => {
+    members.forEach ( (member) =>  {
+        let card = document.createElement('section');
         let image = document.createElement('img');
         let name = document.createElement('h2');
         let address = document.createElement('p');
@@ -41,11 +41,5 @@ const displayMembers = (member) => {
 
         memberCards.appendChild(card);
 
-    }
-
-
-
-
-
-)
+    });
 }
