@@ -1,6 +1,13 @@
 const url = 'https://deliliaw.github.io/wdd230/chamber/data/members.json';
 const displayContainer = document.querySelector('#displayContainer');
 
+document.querySelectorAll('img').forEach(img => {
+    img.onload = function() {
+      img.style.width = this.naturalWidth + 'px';
+      img.style.height = this.naturalHeight + 'px';
+    }
+  });
+
 async function getMemberData()  {
     try {
     const response = await fetch(url);
@@ -29,8 +36,6 @@ const displayMembers = (members) => {
         image.setAttribute('src', member.logourl);
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '250');
-        image.setAttribute('height', '150');
         name.textContent = `${member.name} `;
         address1.textContent = `${member.address1}`;
         address2.textContent = `${member.address2}`;
