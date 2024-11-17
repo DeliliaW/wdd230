@@ -627,7 +627,7 @@ article p  {
   font-weight: 600;
 } 
 
-#displayContainer p.website {
+#displayContainer p.websiteURL {
   word-wrap: break-word; 
   overflow-wrap: break-word;
   white-space: normal;
@@ -667,7 +667,7 @@ article p  {
 	box-shadow: 0 0 10px #333;
 }
 
-.address1, .address2, .phone, .website {
+.address1, .address2, .phone, .websiteURL {
   margin: 0;
 }
 
@@ -692,7 +692,7 @@ article p  {
 }
 
 .list section:nth-child(even) {
-	background-color: #bed;
+	background-color:#DBE4EE;
 }
 
  
