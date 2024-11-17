@@ -5,7 +5,7 @@
         "name": "Critter Fixer Veterinary Hospital", 
         "address": "102 Starlight Drive Bonaire, GA 31005",
         "phonenumber": "(478)988-0883", 
-        "websiteURL": "https://critterfixerveterinaryhospital.com/",
+        "websiteURL": "https://critterfixerveterinaryhospital.com",
         "membershiplevel": "Silver",
         "contact": "Dr. Terrence Ferguson"
       },
@@ -14,7 +14,7 @@
         "name": "The Design Gallery",
         "address": "592 Carl Vinson Parkway Warner Robins, GA 31088",
         "phonenumber": "(478)929-0915",
-        "websiteURL": "https://www.thedesigngallery.biz/",
+        "websiteURL": "https://www.thedesigngallery.biz",
         "membershiplevel": "Bronze"
       },
       {
@@ -22,7 +22,7 @@
         "name": "Houston Healthcare",
         "address": "1601 Watson Boulevard Warner Robins, GA 31093", 
         "phonenumber": "(478)922-4281",
-        "websiteURL": "https://www.hhc.org/", 
+        "websiteURL": "https://www.hhc.org", 
         "membershiplevel": "Gold",
         "contact": "James Cummings"
       },  
@@ -40,7 +40,7 @@
        "name": "Museum of Aviation", 
       "address": "1742 Heritage Boulevard Robins AFB, GA 31098",
       "phonenumber": "(478)926-6870",
-      "websiteURL": "https://museumofaviation.org/",
+      "websiteURL": "https://museumofaviation.org",
       "membershiplevel": "Gold",
       "contact": "Ann Pearson"
     }, 
@@ -58,7 +58,7 @@
       "name": "Robins Financial Credit Union", 
       "address": "803 Watson Boulevard Warner Robins, GA 31093",
       "phonenumber": "(478)923-3773",
-      "websiteURL": "https://www.robinsfcu.org/",
+      "websiteURL": "https://www.robinsfcu.org",
       "membershiplevel": "Gold",
       "contact": "John Mitchell"
       } ]
