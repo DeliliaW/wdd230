@@ -167,7 +167,7 @@ h2, h3 {
 }
 
 .navbar a:visited {
-  color:#FFFFFF;
+  color:black;
   font-weight: 600;
 }
 
@@ -620,6 +620,7 @@ article h4 {
   font-style: italic;
   padding-top: .5rem;
   padding-bottom: .5rem;
+
 }
 
 article p  {
