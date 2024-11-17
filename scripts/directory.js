@@ -27,8 +27,7 @@ const displayMembers = (members) => {
         let card = document.createElement('section');
         let image = document.createElement('img');
         let name = document.createElement('h4');
-        let address1 = document.createElement('p');
-        let address2 = document.createElement('p');
+        let address = document.createElement('p');
         let phonenumber = document.createElement('p');
         let websiteURL = document.createElement('p');
         let membershiplevel = document.createElement('p');
@@ -37,16 +36,14 @@ const displayMembers = (members) => {
         image.setAttribute('alt', `Logo of ${member.name}`);
         image.setAttribute('loading', 'lazy');
         name.textContent = `${member.name} `;
-        address1.textContent = `${member.address1}`;
-        address2.textContent = `${member.address2}`;
+        address.textContent = `${member.address}`;
         phonenumber.textContent = `${member.phonenumber}`;
         websiteURL.textContent = `${member.websiteURL}`;
         membershiplevel.textContent = `${member.membershiplevel} member`;
         
         card.appendChild(image);
         card.appendChild(name);
-        card.appendChild(address1);
-        card.appendChild(address2);
+        card.appendChild(address);
         card.appendChild(phonenumber);
         card.appendChild(websiteURL);
         card.appendChild(membershiplevel);
