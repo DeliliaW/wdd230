@@ -592,6 +592,11 @@ input[type="radio"] {
   }
 }
 /*------------Directory-------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
 .directory {
 	margin: 0 auto;
@@ -634,12 +639,13 @@ input[type="radio"] {
 }
 
 .grid section {
-	margin: 0.1rem;
+	margin: .6rem;
 }
 
-.address, .phonenumber, .website {
+.address, .phone, .website {
   margin: 0;
 }
+
 
 .list {
 	display: flex;
