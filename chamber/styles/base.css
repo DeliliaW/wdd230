@@ -55,7 +55,7 @@ body {
   position: relative;
   width: 98vw;
   height: auto;
-  overflow: hidden;
+  /*overflow: hidden; */
 }
 .hero img {
   width: 98%; 
@@ -625,7 +625,8 @@ article p  {
 #displayContainer p.website {
   word-wrap: break-word; 
   overflow-wrap: break-word;
-  white-space: normal; 
+  white-space: normal;
+  max-width: 100%; 
 }
 
 .menu {
