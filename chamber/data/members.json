@@ -4,7 +4,7 @@
         "logourl":"https://deliliaw.github.io/wdd230/lesson09/images/critter-fixer.webp",
         "name": "Critter Fixer Veterinary Hospital", 
         "address1": "102 Starlight Drive",
-         "address2" :"Bonaire, Georgia 31005",
+         "address2" :"Bonaire, GA 31005",
         "phonenumber": "(478)988-0883", 
         "websiteURL": "https://critterfixerveterinaryhospital.com/",
         "membershiplevel": "Silver",
@@ -14,7 +14,7 @@
         "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/the-design-gallery.webp",
         "name": "The Design Gallery",
         "address1": "592 Carl Vinson Parkway" ,
-        "address2": " Warner Robins, Georgia 31088",
+        "address2": " Warner Robins, GA 31088",
         "phonenumber": "(478)929-0915",
         "websiteURL": "https://www.thedesigngallery.biz/",
         "membershiplevel": "Bronze"
