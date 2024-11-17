@@ -24,7 +24,7 @@ const displayMembers = (members) => {
         let address2 = document.createElement('p');
         let phonenumber = document.createElement('p');
         let websiteURL = document.createElement('p');
-        let membershiplevel = document.createElement('label');
+        let membershiplevel = document.createElement('p');
 
         image.setAttribute('src', member.logourl);
         image.setAttribute('alt', `Logo of ${member.name}`);

@@ -603,7 +603,20 @@ input[type="radio"] {
 	padding: 0.5rem;
 	max-width: 900px;
 	background-color: #fff;
-	font-family: Roboto, Helvetica, sans-serif;
+	font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+article h4 {
+  font-weight: 700;
+  font-style: italic;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+p .membershiplevel {
+color:#F17300;
 }
 
 .menu {
