@@ -167,7 +167,7 @@ h2, h3 {
 }
 
 .navbar a:visited {
-  color:#000;
+  color:#FFFFFF;
   font-weight: 600;
 }
 
@@ -611,6 +611,10 @@ input[type="radio"] {
   border-radius: 5px;
 }
 
+h3.mdirectory {
+  text-align: center;
+}
+
 article h4 {
   font-weight: 700;
   font-style: italic;
@@ -620,6 +624,7 @@ article h4 {
 
 article p  {
   padding-top: .3rem;
+  font-weight: 600;
 } 
 
 #displayContainer p.website {
