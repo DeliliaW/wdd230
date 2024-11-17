@@ -32,15 +32,16 @@ const displayMembers = (members) => {
         image.setAttribute('width', '250');
         image.setAttribute('height', '150');
         name.textContent = `${member.name} `;
-        address1.textContent = ` ${member.address1}`;
-        address2.textContent = `${member.address2} `;
-        phonenumber.textContent = ` ${member.phonenumber}`;
-        websiteURL.textContent = ` ${member.websiteURL}`;
+        address1.textContent = `${member.address1}`;
+        address2.textContent = `${member.address2}`;
+        phonenumber.textContent = `${member.phonenumber}`;
+        websiteURL.textContent = `${member.websiteURL}`;
         membershiplevel.textContent = `${member.membershiplevel} member`;
         
         card.appendChild(image);
         card.appendChild(name);
-        card.appendChild(address);
+        card.appendChild(address1);
+        card.appendChild(address2);
         card.appendChild(phonenumber);
         card.appendChild(websiteURL);
         card.appendChild(membershiplevel);
