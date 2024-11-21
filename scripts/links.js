@@ -12,14 +12,14 @@ async function getLinks()   {
  const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         let lessonElement = document.createElement('ul');
-        let lessonTitle = document.createElement('h4');
-        lessonTitle.textContent = `Lesson ${week.lesson}`;
+        let lessonTitle = document.createElement('p');
+        lessonTitle.textContent = ` ${week.lesson}:`;
         lessonElement.appendChild(lessonTitle);
 
         week.links.forEach((link) => {
             let linkElement = document.createElement('li');
             let anchor = document.createElement('a');
-            anchor.href = baseURL + link.url;
+            anchor.href = link.url;
             anchor.textContent = link.title;
             linkElement.appendChild(anchor);
             lessonElement.appendChild(linkElement);
