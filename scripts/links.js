@@ -11,11 +11,16 @@ async function getLinks()   {
 
  const displayLinks = (weeks) => {
     weeks.forEach((week) => {
-        let lessonElement = document.createElement('ul');
-        let lessonTitle = document.createElement('p');
-        lessonTitle.textContent = ` ${week.lesson}:`;
-        lessonElement.appendChild(lessonTitle);
+        let lessonWrapper = document.createElement('div');
+        lessonWrapper.classList.add('lesson-wrapper'); // Add the flex wrapper class
 
+        // Create and append the lesson title
+        let lessonTitle = document.createElement('p');
+        lessonTitle.classList.add('lesson-title'); // Style the title (optional)
+        lessonTitle.textContent = ` ${week.lesson}:`;
+        lessonWrapper.appendChild(lessonTitle);
+
+        let lessonElement = document.createElement('ul');
         week.links.forEach((link) => {
             let linkElement = document.createElement('li');
             let anchor = document.createElement('a');
@@ -25,7 +30,11 @@ async function getLinks()   {
             lessonElement.appendChild(linkElement);
         });
 
-        list.appendChild(lessonElement);
+        // Append the list to the lessonWrapper div
+        lessonWrapper.appendChild(lessonElement);
+
+        // Append the lessonWrapper to the main list container
+        list.appendChild(lessonWrapper);
     });
 }
 

@@ -67,7 +67,9 @@ a:-webkit-any-link {
 }
 
 li {
-    text-align: -webkit-match-parent;
+    display: inline-block;
+    margin-right: 10px;
+
 }
 
 .container {
@@ -83,7 +85,25 @@ li {
   
  ul {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
  }
+
+ .lesson-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Optional: Adds space between lessons */
+}
+
+.lesson-title {
+    margin-right: 15px; /* Space between the title and list items */
+    font-weight: regular;
+}
+
+li:not(:last-child)::after {
+    content: " | "; /* Add separator between list items */
+    margin-left: 10px; /* Space before the separator */
+}
 
  #card2 {
     grid-column: 4/5;
@@ -91,8 +111,9 @@ li {
     margin: 10px;
  } 
 
- p, #current-temp2 {
+ #temp2, #current-temp2 {
     text-align: center;
+    padding-top: 1rem;
  }
 
  figure {
@@ -107,9 +128,6 @@ li {
  .visits {
     padding-right: 5rem;
  }
-ul {
-    list-style-type: none;
-}
 
 .navbar {
     background: lightblue;
