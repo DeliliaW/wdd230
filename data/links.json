@@ -3,15 +3,15 @@
     {
       "lesson": "01",
       "links": [
-        { "url":"http://deliliaw.github.io/wdd230/lesson01/holygrail.html", "title": "Holy Layout" },
+        { "url":"https://deliliaw.github.io/wdd230/lesson01/holygrail.html", "title": "Holy Layout" },
         { "url":"https://codepen.io/Delilia/pen/ZEgzYBw", "title":"JS Pen" }
       ]
     },
         {
          "lesson": "02",
         "links": [
-        { "url":"http://deliliaw.github.io/wdd230lesson02/media-query.html", "title":"Media Queries" },
-        { "url":"http://deliliaw.github.io/wdd230lesson02/design-principles.html", "title":"Design Principles" }
+        { "url":"https://deliliaw.github.io/wdd230lesson02/media-query.html", "title":"Media Queries" },
+        { "url":"https://deliliaw.github.io/wdd230lesson02/design-principles.html", "title":"Design Principles" }
         ]
       },
         {
@@ -30,42 +30,42 @@
         {
         "lesson": "05",
         "links": [
-        { "url":"http://deliliaw.github.io/wdd230/lesson05/bom.html", "title":"Book of Mormon App" },
-        { "url":"http://deliliaw.github.io/wdd230/chamber/index.html", "title":"Chamber of Commerce"}
+        { "url":"https://deliliaw.github.io/wdd230/lesson05/bom.html", "title":"Book of Mormon App" },
+        { "url":"https://deliliaw.github.io/wdd230/chamber/index.html", "title":"Chamber of Commerce"}
         ]
       },
         {
         "lesson": "06",
         "links": [
-        { "url":"http://deliliaw.github.io/wdd230/lesson06/landscape-resized.webp", "title":"Landscape" },
-        { "url":"http://deliliaw.github.io/wdd230/lesson06/responsive-images.html", "title": "Responsive Images"}
+        { "url":"https://deliliaw.github.io/wdd230/lesson06/landscape-resized.webp", "title":"Landscape" },
+        { "url":"https://deliliaw.github.io/wdd230/lesson06/responsive-images.html", "title": "Responsive Images"}
         ]
       },
         {
         "lesson": "07",
         "links": [
-        { "url":"http://deliliaw.github.io/wdd230/lesson07/lazyload.html", "title":"Lazy Load Example" },
-        { "url":"http://deliliaw.github.io/wdd230/lesson07/bom-array.html", "title":"BOM Array" }
+        { "url":"https://deliliaw.github.io/wdd230/lesson07/lazyload.html", "title":"Lazy Load Example" },
+        { "url":"https://deliliaw.github.io/wdd230/lesson07/bom-array.html", "title":"BOM Array" }
         ]
       },
         {
         "lesson": "08",
         "links": [
-        { "url":"http://deliliaw.github.io/wdd230/lesson08/tablebuild.html", "title": "Table Build" },
-        { "url":"http://deliliaw.github.io/wdd230/lesson08/index.html", "title":"Form Build" }
+        { "url":"https://deliliaw.github.io/wdd230/lesson08/tablebuild.html", "title": "Table Build" },
+        { "url":"https://deliliaw.github.io/wdd230/lesson08/index.html", "title":"Form Build" }
         ]
       },
         {
         "lesson": "09",
         "links": [
-        { "url":  "http://deliliaw.github.io/wdd230/lesson09/new-ward-members.json", "title": "new-ward-members.json" },
-        { "url": "http://deliliaw.github.io/wdd230/lesson09/prophets.html","title": "Prophets" }
+        { "url":  "https://deliliaw.github.io/wdd230/lesson09/new-ward-members.json", "title": "new-ward-members.json" },
+        { "url": "https://deliliaw.github.io/wdd230/lesson09/prophets.html","title": "Prophets" }
         ]
         },
         {
         "lesson": "10",
         "links": [
-        {"url": "http://deliliaw.github.io/wdd230/lesson10/weather.html", "title": "Weather" }
+        {"url": "https://deliliaw.github.io/wdd230/lesson10/weather.html", "title": "Weather" }
         ]  
         }
         ]
