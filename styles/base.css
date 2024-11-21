@@ -72,9 +72,21 @@ h1 {
     margin: 10px;
  }
 
- .label {
-   padding-top: 1rem;
-   padding-left: 2rem;
+ p, #current-temp2 {
+    text-align: center;
+ }
+
+ figure {
+    justify-items: center;
+ }
+
+.label {
+   padding-top: 2rem;
+   padding-left: 6rem;
+ }
+
+ .visits {
+    padding-right: 5rem;
  }
 ul {
     list-style-type: none;

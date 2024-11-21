@@ -4,68 +4,68 @@
       "lesson": "01",
       "links": [
         { "url":"/lesson01/holygrail.html", "title": "Holy Layout" },
-        { "url":"https://codepen.io/Delilia/pen/ZEgzYBw", "title":"JS Pen" }
+        { "url":"/pen/ZEgzYBw", "title":"JS Pen" }
       ]
     },
         {
          "lesson": "02",
         "links": [
         { "url":"/lesson02/media-query.html", "title":"Media Queries" },
-        { "url":"/wdd230/lesson02/design-principles.html", "title":"Design Principles" }
+        { "url":"/lesson02/design-principles.html", "title":"Design Principles" }
         ]
       },
         {
         "lesson": "03",
         "links": [
-        { "url":"https://codepen.io/Delilia/pen/VwoeXYj", "title":"Hamburger Menu" },
-        { "url":"https://wireframe.cc/pro/pp/57189d184831638/", "title":"Chamber of Commerce wireframe" }
+        { "url":"/pen/VwoeXYj", "title":"Hamburger Menu" },
+        { "url":"/wireframe.cc/pro/pp/57189d184831638/", "title":"Chamber of Commerce wireframe" }
         ]
       },
         {
         "lesson": "04",
         "links": [
-        { "url":"https://codepen.io/Delilia/pen/mdNOmNg", "title": "Pseudo-class"}
+        { "url":"/pen/mdNOmNg", "title": "Pseudo-class"}
         ]
       },
         {
         "lesson": "05",
         "links": [
-        { "url":"/wdd230/lesson05/bom.html", "title":"Book of Mormon App" },
+        { "url":"/bom.html", "title":"Book of Mormon App" },
         { "url":"/chamber/index.html", "title":"Chamber of Commerce"}
         ]
       },
         {
         "lesson": "06",
         "links": [
-        { "url":"/lesson06/landscape-resized.webp", "title":"Landscape" },
-        { "url":"/lesson06/responsive-images.html", "title": "Responsive Images"}
+        { "url":"/landscape-resized.webp", "title":"Landscape" },
+        { "url":"/responsive-images.html", "title": "Responsive Images"}
         ]
       },
         {
         "lesson": "07",
         "links": [
-        { "url":"/lesson07/lazyload.html", "title":"Lazy Load Example" },
-        { "url":"/lesson07/bom-array.html", "title":"BOM Array" }
+        { "url":"/lazyload.html", "title":"Lazy Load Example" },
+        { "url":"/bom-array.html", "title":"BOM Array" }
         ]
       },
         {
         "lesson": "08",
         "links": [
-        { "url":"/lesson08/tablebuild.html", "title": "Table Build" },
-        { "url":"/lesson08/index.html", "title":"Form Build" }
+        { "url":"/tablebuild.html", "title": "Table Build" },
+        { "url":"/index.html", "title":"Form Build" }
         ]
       },
         {
         "lesson": "09",
         "links": [
-        { "url":  "/lesson09/new-ward-members.json", "title": "new-ward-members.json" },
-        { "url": "/lesson09/prophets.html","title": "Prophets" }
+        { "url":  "/new-ward-members.json", "title": "new-ward-members.json" },
+        { "url": "/prophets.html","title": "Prophets" }
         ]
         },
         {
         "lesson": "10",
         "links": [
-        { "url": "/lesson10/weather.html", "title": "Weather" }
+        { "url": "/weather.html", "title": "Weather" }
         ]  
         }
         ]
