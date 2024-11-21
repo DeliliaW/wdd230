@@ -61,12 +61,6 @@
         { "url":  "https://deliliaw.github.io/wdd230/lesson09/new-ward-members.json", "title": "new-ward-members.json" },
         { "url": "https://deliliaw.github.io/wdd230/lesson09/prophets.html","title": "Prophets" }
         ]
-        },
-        {
-        "lesson": "10",
-        "links": [
-        { "url": "https://deliliaw.github.io/wdd230/lesson10/weather.html", "title": "Weather" }
-        ]
         }
         ]
         } 
