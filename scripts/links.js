@@ -19,7 +19,7 @@ async function getLinks()   {
         week.links.forEach((link) => {
             let linkElement = document.createElement('li');
             let anchor = document.createElement('a');
-            anchor.href = baseURL + link.url;
+            anchor.href = link.url;
             anchor.textContent = link.title;
             linkElement.appendChild(anchor);
             lessonElement.appendChild(linkElement);
