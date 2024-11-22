@@ -130,6 +130,11 @@ li:not(:last-child)::after {
   text-align: center;
  }
 
+ .visits {
+    display: block;
+    margin-left: 200px; /* Ensure spacing */
+  }
+
 .navbar {
     background: lightblue;
     color: black;

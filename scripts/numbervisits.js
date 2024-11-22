@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-const visitsDisplay = document.querySelector(".visits");
+const visitsLabel = document.querySelector(".visits-label");
+const visitsCount = document.querySelector(".visits-count");
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 
-if (visitsDisplay) {
+if (visitsCount) {
   if(numVisits !== 0) {
     visitsDisplay.textContent = numVisits;
   } else {
-    visitsDisplay.textContent = ' First time visitor. Welcome! '
+    visitsCount.textContent = ' First time visitor. Welcome! '
  }
     numVisits++;
 
