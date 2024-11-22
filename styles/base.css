@@ -65,11 +65,6 @@ h1 {
     margin: 0;
 }
 
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-}
-
 li {
     display: inline-block;
     margin-right: 10px;
@@ -103,8 +98,7 @@ li {
 }
 
 .lesson-title {
-    margin-right: 10px; 
-    font-weight: regular;
+    margin-right: 10px;
 }
 
 li:not(:last-child)::after {
@@ -118,12 +112,6 @@ li:not(:last-child)::after {
     margin: 10px;
     border-radius: 6px;
  } 
-
-/*#card1, #card2 {
-    grid-column: 1 / -1;
-    margin: 10px auto;
-} */
-
 
  #temp2, #current-temp2 {
     text-align: center;
