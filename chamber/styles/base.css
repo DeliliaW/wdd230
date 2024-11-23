@@ -198,6 +198,11 @@ h2, h3 {
   padding: 10px;
 }
 
+#cantrell {
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
 #modeButton {
   background:#81A4CD;
   border: none;
