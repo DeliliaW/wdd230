@@ -4,8 +4,8 @@
      const weatherIcon = document.querySelector('#weather-icon');
      const captionDesc = document.querySelector('figcaption');
      const forecastContainer = document.querySelector('#forecastContainer');
-     const urlWR = 'https://api.openweathermap.org/data/2.5/weather?lat=32.59&lon=-83.7&units=imperial&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';
-     const urlW = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.59&lon=-83.7&units=imperial&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';
+     const urlWR = 'https://api.openweathermap.org/data/2.5/weather?lat=32.59&lon=-83.7&units=imperial&exclude=hourly,daily&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';
+     const urlW = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.59&lon=-83.7&units=imperial&exclude=hourly,daily&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';
     
 
     async function apiFetch() {
@@ -37,7 +37,7 @@
 
     function displayForecast(data)  {
         forecastContainer.innerHTML = ``;
-        
+
         data.list.forEach((forecast) => {
             const forecastItem = document.createElement('div');
             forecastItem.classList.add('forecast-item');
