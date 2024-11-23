@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentTemp = document.querySelector('#current-temp3');
     const weatherIcon = document.querySelector('#weather-icon3');
     const captionDesc = document.querySelector('figcaption');
-    const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=32.59&lon=-83.7&units=imperial&exclude=hourly,daily&appid=`d48b6333843a424ea53795c45c6bf743';
+    const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=32.59&lon=-83.7&exclude=hourly,daily&appid=d48b6333843a424ea53795c45c6bf743';
     ;
 
     async function apiFetch() {
