@@ -96,7 +96,7 @@
          <label><input type="radio" name="membership" value="Silver">Silver</label>
          <label><input type="radio" name="membership" value="Gold">Gold</label>
          <br>
-         <input type="hidden" name="spotlight" id="spotlight" >
+         <input type="hidden" id="formTimestamp" name="formTimestamp">
          <button  id="button" type="submit" aria-label="Log in button">Join Now</button>
          </fieldset>
          </div> 
@@ -163,9 +163,15 @@
 <script src="..//scripts/getdates.js"></script>
 <script src="..//scripts/hamburger.js"></script>
 <script src="..//scripts/darkmode.js"></script>
-<script src="..//scripts/windchill.js"></script>
 <script src="..//scripts/overlaytext-chamber.js"></script>
 <script src="..//scripts/datenow.js"></script>
+
+<script>
+    window.addEventListener('load', function () {
+        let timestamp = Date.now(); 
+        document.getElementById('formTimestamp').value = timestamp; 
+    });
+</script>
 
 </body>
 </html>
