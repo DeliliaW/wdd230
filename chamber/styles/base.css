@@ -188,19 +188,27 @@ h2, h3 {
 
 }
 
+#welcome-sign {
+  margin-top: 100px;
+  box-shadow: #054A91 0 3px 10px;
+  
+
+}
+
 #spotlight {
   display: flexbox;
   width:600px;
   height: 400px;
   text-align: center;
   box-shadow: #054A91 0 1px 5px;
-  justify-content: center; 
+  justify-content: center;
   align-items: center; 
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 15px;
+  padding-bottom: 45px;
   padding: 10px;
+  position: relative;
 }
 
 #spotlight h4 {
@@ -211,7 +219,7 @@ h2, h3 {
 
 #cantrell {
   border-radius: 6px;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 #modeButton {
