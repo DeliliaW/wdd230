@@ -35,7 +35,7 @@
     max-width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 header {
     background-color: #054A91;
@@ -129,7 +129,14 @@ header, main, footer {
 
 #hero-msg .join-now {
   font-size: 1.2rem;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin: 0;
+  background-color: #81A4CD;
 }
+
 
 .call-to-action {
   text-align: center;
@@ -151,7 +158,7 @@ h2, h3 {
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  margin-top: 40px;
+  margin-top: 100px;
   margin-left: 40px;
   padding-bottom: 15px;
 
@@ -179,7 +186,7 @@ h2, h3 {
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  margin-left: 800px;
+  margin-left: 900px;
   padding-bottom: 15px;
   padding: 10px;
 }
@@ -194,6 +201,7 @@ h2, h3 {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 550px;
   padding-bottom: 15px;
   padding: 10px;
 }
