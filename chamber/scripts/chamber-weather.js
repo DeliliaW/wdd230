@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
-                console.log("weather data:", data);
+                console.log("weather-data:", data);
                 displayResults(data);
             } else {
                 const errorResponse = await response.json();
             console.log("Error response:", errorResponse);
-            throw new Error(errorResponse.message || "Failed to fetch weather data");
+            throw new Error(errorResponse.message || "Failed to fetch weather-data");
         }
     } catch (error) {
         console.error("Error:", error);
