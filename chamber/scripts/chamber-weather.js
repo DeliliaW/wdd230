@@ -10,7 +10,7 @@
 
     async function apiFetch() {
         try {
-            const response = await fetch(urlWR);
+            const responseCurrent = await fetch(urlWR);
             if (responseCurrent.ok) throw Error(await responseCurrent.text());
             const currentData = await responseCurrent.json();
             displayCurrentWeather(currentData);
@@ -36,20 +36,20 @@
     } 
 
     function displayForecast(data)  {
-        forecastContainer.innerHTML = '';
+        forecastContainer.innerHTML = ``;
         data.list.forEach((forecast) => {
             const forecastItem = document.createElement('div');
-            forecastItem.classlist.add('forecast-item');
+            forecastItem.classList.add('forecast-item');
 
-            const forecastTemp = '$(forecast.main.temp.toFixec(1)} &deg;F';
-            const forecastIconSrc = 'https://openweathermap.org/img/wn/&{forecast.weather[0].icon}@2x.png';
+            const forecastTemp = `$(forecast.main.temp.toFixed(1)} &deg;F`;
+            const forecastIconSrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
             const desc = forecast.weather[0].description;
             const forecastTime = new Date(forecast.dt * 1000).toLocaleTimeString();
 
             forecastItem.innerHTML = `
             <h3>${forecastTime}</h3>
-            <img src="${forecastIconSrc}" alt="${forecastDesc}";
-            <p>${forecastDesc}</p>
+            <img src="${forecastIconSrc}" alt="${desc}";
+            <p>${desc}</p>
             <p>${forecastTemp}</p>
             `;
 
