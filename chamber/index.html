@@ -37,7 +37,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="./discover.html">Discover</a></li>
             <li><a href="./directory.html">Directory</a></li>
-            <li><a href="./join.html">Contact Us</a></li>
+            <li><a href="./join.html">Join</a></li>
             </ul>
         <button id="hamburger-toggle"  class="hamburger">
             <span class="icon-open">    
@@ -58,34 +58,42 @@
     </header>  
         <main class="main1">
 
-            <section id="hero-msg">
-                <h2 class="call-to-action">Join Now!</h2>
-                <div class="button-box">
-                    <a class="join-now" href="join.html">Join Now</a>
-                </div>
-            </section>
-            <section>
-                <h3>Current Events</h3>
-            </section>
-            <section>
-                <h3>Weather</h3>
-                <div id="weather"></div>
-            <div class="container">
-                <label for="current-temp3">Temperature: </label>
-                <!--<input type="number" id="temperature" required> -->
-                <br>
-                <label for="weather-icon3">Weather Conditions:</label>
-                <!--<input type="number" id="windSpeed" required>
-                <br>
-                <button id="calculateButton">Calculate Wind Chill</button>
-                <p id="result"></p> -->
+            <div id="hero-msg">
+                <h2 class="call-to-action">Welcome to Robins Regional Chamber of Commerce</h2>
+                    <h3>Our Mission</h3>
+                    <p id="welcome-mission">Bring businesses to our area and people to our businesses</p>
+                    <h3>Our Vision</h3>
+                    <p id="welcome-vision">Provide the needs of our community with businesses in our community </p><br>
+                    <div class="button-box"><a class="join-now" href="join.html">Share our vision!</a></div>
+            </div>
+            <div id="current-events">
+                <h2>Current Events</h2>
+                <h3>Robins Circle Luncheon</h3>
+                <p>November 18, 2024</p>
+                <p>Houston Lake Country Club</p><br>
+                <h3>Ribbon Cutting Middle Georgia Surgical Institute</h3>
+                <p>November 23, 2024</p>
+                <p>132 Byrd Way</p><br>
+              
+                <button id="see-more">Calendar</button>
+            </div>
+            <div class="line"></div>
+            <div id="chamber-weather">
+                <p id="place2"><b>Warner Robins, Georgia</b></p>
+                <p id="temp3"><span id="current-temp3"></span></p> 
+                <figure>
+                    <img id="weather-icon3" src="icon" alt="desc">
+                    <figcaption></figcaption>
+                </figure>
+             </div>
+  </main>
             </div>
             
-            </section>
-            <section>
+            </div>
+            <div id="spotlight">
                 <h3>Spotlights</h3>
-                <div id="spotlight">Spotlight</div>
-            </section> 
+                <p id="spot">Spotlight</p>
+            </div> 
            
     </main>
   <script src="..//scripts/getdates.js"></script>
