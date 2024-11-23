@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const currentTemp = document.querySelector('#current-temp3');
-    const weatherIcon = document.querySelector('#weather-icon3');
+    const currentTemp = document.querySelector('#current-temp');
+    const weatherIcon = document.querySelector('#weather-icon');
     const captionDesc = document.querySelector('figcaption');
-    const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.59&lon=-83.7&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';
+    const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.59&lon=-83.7&appid=d48b633843a424ea53795c45c6bf743';
     ;
 
     async function apiFetch() {
@@ -10,24 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
             const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
-                console.log("weather-data:", data);
+                console.log(data);
                 displayResults(data);
             } else {
-                const errorResponse = await response.json();
-            console.log("Error response:", errorResponse);
-            throw new Error(errorResponse.message || "Failed to fetch weather-data");
+            throw Error(await response.text());
         }
     } catch (error) {
-        console.error("Error:", error);
+        console.error(error);
     }
 }
 
     apiFetch();
 
     function displayResults(data) {
-        currentTemp.innerHTML = `${data.main.temp.toFixed(1)} &deg;F`; // Correct access to temp
-        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; // Correct access to icon
-        let desc = data.weather[0].description; // Correct access to description
+        currentTemp.innerHTML = `${data.main.toFixed(1)} &deg;F`; 
+        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; 
+        let desc = data.weather[0].description; 
         weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', desc);
         captionDesc.textContent = desc; 
