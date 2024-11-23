@@ -10,8 +10,8 @@
 
     async function apiFetch() {
         try {
-            const responseCurrent = await fetch(urlWR);
-            if (responseCurrent.ok) throw Error(await responseCurrent.text());
+            const response = await fetch(urlWR);
+            if (response.ok) throw Error(await response.text());
             const currentData = await responseCurrent.json();
             displayCurrentWeather(currentData);
 
@@ -37,6 +37,7 @@
 
     function displayForecast(data)  {
         forecastContainer.innerHTML = ``;
+        
         data.list.forEach((forecast) => {
             const forecastItem = document.createElement('div');
             forecastItem.classList.add('forecast-item');
