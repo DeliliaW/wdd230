@@ -11,11 +11,6 @@
             const response = await fetch(urlW);
             if (response.ok) {
                 const data = await response.json();
-                console.log(data);
-                //displayResults(data);
-                        //first day
-        console.log(`${data.list[0].main.temp}`);
-        console.log(`${data.list[0].weather[0].description}`);
             } else {
             throw Error(await response.text());
         }
@@ -38,8 +33,5 @@
      apiFetch();
  
 
-    function testF() {
-        console.log('Console test');
-    }
-    testF();
+   
 
