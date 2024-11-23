@@ -20,8 +20,8 @@ async function apiFetch()   {
 apiFetch ();
 
 function displayResults(data)   {
-    currentTemp.innerHTML = `${data.current.temp.toFixed(1)} &deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`;
+    currentTemp.innerHTML = `${data.main1.temp.toFixed(1)} &deg;F`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.main1.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
