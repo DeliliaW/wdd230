@@ -25,9 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     apiFetch();
 
     function displayResults(data) {
-        currentTemp.innerHTML = `${data.current.temp.toFixed(1)} &deg;F`; // Correct access to temp
-        const iconsrc = `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png`; // Correct access to icon
-        let desc = data.current.weather[0].description; // Correct access to description
+        currentTemp.innerHTML = `${data.main.temp.toFixed(1)} &deg;F`; // Correct access to temp
+        const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; // Correct access to icon
+        let desc = data.weather[0].description; // Correct access to description
         weatherIcon.setAttribute('src', iconsrc);
         weatherIcon.setAttribute('alt', desc);
         captionDesc.textContent = desc; 
