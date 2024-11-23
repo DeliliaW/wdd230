@@ -128,8 +128,6 @@ header, main, footer {
 }
 
 #hero-msg .join-now {
-  font-size: 1.2rem;
-  padding: 10px;
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
@@ -161,7 +159,6 @@ h2, h3 {
   margin-top: 100px;
   margin-left: 40px;
   padding-bottom: 15px;
-
 }
 
 #current-events h4 {
