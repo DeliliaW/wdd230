@@ -100,7 +100,7 @@ footer {
   border: 3px solid #054A91;
 }
 header, main, footer {
-  grid-column: 1/4;
+  grid-column: 1/5;
   margin: 1rem auto;
 }
 .main1 {
