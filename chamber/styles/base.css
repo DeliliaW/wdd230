@@ -339,10 +339,9 @@ h2, h3 {
 }
 
 #card1, #card2, #card3 {              /*   discover page */               
-  border: 1.5px solid #054A91;
+  box-shadow: #054A91 0 1px 5px;
   padding: 12px;
   margin: 10px;
-  background-color: #DBE4EE;
   text-align: center;
   border-radius: 6px;
 }
