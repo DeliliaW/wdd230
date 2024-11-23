@@ -185,7 +185,17 @@ h2, h3 {
 }
 
 #spotlight {
- text-align: center;
+  display: flexbox;
+  max-width: fit-content;
+  text-align: center;
+  box-shadow: #054A91 0 1px 5px;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  padding: 10px;
 }
 
 #modeButton {
