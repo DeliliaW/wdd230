@@ -109,7 +109,8 @@ header, main, footer {
 
 #hero-msg {
   color: #054A91;
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   max-width: fit-content;
   box-shadow: #054A91 0 1px 5px;
   justify-content: center; 
@@ -156,13 +157,13 @@ h2, h3 {
 }
 
 #current-events, #chamber-weather {
-  display: flexbox;
+  display: flex;
+  flex-direction: column;
   width: 400px;
   height: 600px;
   text-align: center;
   justify-content: center; 
   align-items: center; 
-  text-align: center;
   padding-bottom: 15px;
 }
 
@@ -184,7 +185,7 @@ h2, h3 {
 }
 
 #forecastContainer {
-  display: flexbox;
+  display: flex;
 
 }
 
