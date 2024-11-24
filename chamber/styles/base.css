@@ -195,30 +195,41 @@ h2, h3 {
 
 }
 
-#spotlight-home {
-  display: flexbox;
-  width:600px;
+#spotlight-home  {
+  display: flex;
+  width: 80%;
   height: 400px;
-  text-align: center;
   box-shadow: #054A91 0 1px 5px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center; 
-  text-align: center;
-  margin-left: auto;
+  margin-left: 150px;
   margin-right: auto;
-  padding-bottom: 45px;
+  margin-bottom: 100px;
   padding: 10px;
 }
 
-#spotlight h4 {
-  font-size: 1.2rem;
-  padding: 0;
-  margin: 0;
+#spotlight-home h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#spotlight-home h3 {
+  font-size: 1.5rem;
+}
+
+#spotlight-home #spot {
+  font-size: 1.1rem;
+  margin-top: 10px;
 }
 
 #cantrell {
-  border-radius: 6px;
-  margin-bottom: 50px;
+  max-width: 40%; /* Limit image width */
+  margin-left: 20px; /* Add space between text and image */
+}
+
+#cantrell img {
+  width: 100%; /* Make sure the image fits within the container */
+  height: auto; /* Keep the image aspect ratio */
 }
 
 #modeButton {
@@ -341,15 +352,6 @@ h2, h3 {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   margin-top: 40px;
-  grid-column: 1/2;
-  font-size: larger;
-  color: #054A91;
-  border: 2px solid #F17300;
-    border-radius: 6px;
-    margin: 2px 10px;
-    background-color: rgb(250, 246, 246);
-    padding: 10px;
-   
 }
 
 #card1, #card2, #card3 {              /*   discover page */               
@@ -362,6 +364,17 @@ h2, h3 {
 
 h3 {
   display: block;
+}
+
+#sidebar2 {             /*   discover page */
+ grid-column: 1/2;
+  font-size: larger;
+  color: #054A91;
+  border: 2px solid #F17300;
+    border-radius: 6px;
+    margin: 2px 10px;
+   
+   
 }
 
  .list1, .list2, .list3 {                  
@@ -380,7 +393,7 @@ h3 {
   flex-wrap: wrap;
   padding-left: 12%;
   gap: 40px;
-  max-width: 98%;
+  max-width: 80%;
   margin: auto;
   grid-column: 2/5; 
 }

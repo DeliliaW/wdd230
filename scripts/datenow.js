@@ -1,4 +1,4 @@
-ocument.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const lastVisitKey = 'lastVisit';
     const sidebarContent = document.querySelector('.sidebar'); // Select the sidebar element
 
