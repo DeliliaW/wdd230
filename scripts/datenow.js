@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const lastVisitKey = 'lastVisit';
-    const sidebarContent = document.querySelector('.sidebar'); // Select the sidebar element
+    const sidebarContent = document.querySelector('.sidebar2'); // Select the sidebar element
 
     if (!sidebarContent) {
         console.error('Element with class "sidebar" not found');
