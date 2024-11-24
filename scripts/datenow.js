@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const lastVisitKey = 'lastVisit';
-    const sidebarContent = document.getElementById('sidebar'); // Adjust this ID based on your HTML
+    const sidebarContent = document.querySelector('.sidebar'); // Use querySelector for class selection
+
+    if (!sidebarContent) {
+        console.error('Element with class "sidebar" not found');
+        return;  // Exit if the element is not found
+    }
 
     // Get the current date
     const currentDate = new Date();
