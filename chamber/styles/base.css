@@ -191,11 +191,11 @@ h2, h3 {
 #welcome-sign {
   margin-top: 100px;
   box-shadow: #054A91 0 3px 10px;
-  
+
 
 }
 
-#spotlight {
+#spotlight-home {
   display: flexbox;
   width:600px;
   height: 400px;
@@ -208,7 +208,6 @@ h2, h3 {
   margin-right: auto;
   padding-bottom: 45px;
   padding: 10px;
-  position: relative;
 }
 
 #spotlight h4 {
@@ -219,7 +218,7 @@ h2, h3 {
 
 #cantrell {
   border-radius: 6px;
-  margin-top: 7px;
+  margin-bottom: 50px;
 }
 
 #modeButton {
@@ -342,6 +341,15 @@ h2, h3 {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   margin-top: 40px;
+  grid-column: 1/2;
+  font-size: larger;
+  color: #054A91;
+  border: 2px solid #F17300;
+    border-radius: 6px;
+    margin: 2px 10px;
+    background-color: rgb(250, 246, 246);
+    padding: 10px;
+   
 }
 
 #card1, #card2, #card3 {              /*   discover page */               
@@ -354,17 +362,6 @@ h2, h3 {
 
 h3 {
   display: block;
-}
-
-.sidebar {             /*   discover page */
- grid-column: 1/2;
-  font-size: larger;
-  color: #054A91;
-  border: 2px solid #F17300;
-    border-radius: 6px;
-    margin: 2px 10px;
-    background-color: rgb(250, 246, 246);
-   
 }
 
  .list1, .list2, .list3 {                  
