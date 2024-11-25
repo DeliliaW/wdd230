@@ -1,6 +1,6 @@
 function shouldShowBanner () {
     const tody = new Date();
-    const dayOfWeek = today.getDay ();
+    const dayOfWeek = today.getDay (1);
     return dayOfWeek >= 1 && dayOfWeek <= 3;
 }
 
