@@ -107,6 +107,27 @@ header, main, footer {
    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+#banner  {
+  background-color: #DBE4EE;
+  color:#000;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+#close-banner  {
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
 #hero-msg {
   color: #054A91;
   display: flex;
@@ -197,20 +218,21 @@ h2, h3 {
 }
 
 #spotlight-home {
-  display: flex;                  /* Use flexbox for side-by-side layout */
-  justify-content: space-between;  /* Space between text and image */
-  align-items: center;            /* Vertically center items */
-  width: 80%;                      /* Keep the container at 80% width */
-  height: 400px;                   /* Fixed height (adjust as needed) */
+  display: flex;                      /* Flexbox for side-by-side layout */
+  justify-content: space-between;      /* Ensure space between text and image */
+  align-items: center;                /* Vertically center content */
+  width: 80%;                          /* Ensure the container is 80% of the parent */
+  height: 400px;                       /* Fixed height for consistent layout */
   box-shadow: #054A91 0 1px 5px;
-  margin: 0 auto;                  /* Center the container horizontally */
+  margin: 0 auto;                      /* Center horizontally */
   padding: 10px;
-  overflow: hidden;                /* Ensure no scrollbar */
+  overflow: hidden;                    /* Prevent scrollbars from appearing */
+  border: 1px solid red;               /* Temporary border for debugging */
 }
 
 #spotlight-home h2 {
   font-size: 2rem;
-  margin-right: 20px;  /* Space between text and image */
+  margin-right: 20px;                  /* Space between text and image */
 }
 
 #spotlight-home h3 {
@@ -221,16 +243,30 @@ h2, h3 {
   font-size: 1rem;
 }
 
+#spotlight-home div {
+  flex: 1;                             /* Let text container take available space */
+}
+
 #cantrell {
-  flex: 1;                      /* Allow the image container to grow and fill available space */
-  margin-left: 20px;             /* Space between text and image */
+  flex: 1;                             /* Allow the image container to expand */
+  margin-left: 20px;                   /* Space between text and image */
+  position: relative;                  /* Ensure positioning for image */
+  width: 50%;                           /* Adjust width to take up more space */
+  border: 1px solid green;             /* Temporary border for debugging */
 }
 
 #cantrell img {
-  width: 100%;                   /* Make image fill the container width */
-  height: auto;                  /* Maintain aspect ratio */
-  object-fit: cover;             /* Ensure image covers the entire container without stretching */
-  border-radius: 8px;            /* Optional: add rounded corners */
+  width: 100% !important;               /* Make image take full width of container */
+  height: 100% !important;              /* Ensure image fills the container's height */
+  object-fit: cover;                   /* Keep aspect ratio while covering the container */
+  border-radius: 8px;                  /* Optional: rounded corners */
+  display: block;                      /* Ensure it's treated as a block-level element */
+}
+
+#spotlight-home img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 #modeButton {
