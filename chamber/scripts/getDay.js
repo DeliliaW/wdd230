@@ -10,7 +10,7 @@ function closeBanner()  {
 }
 
 if (shouldShowBanner())  {
-    const banner = documen.querySelector('#banner');
+    const banner = document.querySelector('#banner');
     banner.style.display = "block";
 
     const closeButton = document.querySelector("close-banner");
