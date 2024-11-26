@@ -421,8 +421,8 @@ h3 {
   list-style: none;
   color:#054A91;
   text-align: center;
-
-}
+  line-height: 2rem;
+  }
 
 .dark-mode .list {
   color: #ffffff;
