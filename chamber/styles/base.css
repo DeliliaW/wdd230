@@ -394,10 +394,10 @@ h2, h3 {
   margin-top: 40px;
 }
 
-#card1, #card2, #card3 {              /*   discover page */               
+#card1, #card2, #card3, #card4 {              /*   discover page */               
   box-shadow: #054A91 0 1px 5px;
-  padding: 12px;
-  margin: 10px;
+  padding: 15px;
+  margin: 15px;
   text-align: center;
   border-radius: 6px;
 }
@@ -408,7 +408,7 @@ h3 {
 
 #sidebar2 {             /*   discover page */
  grid-column: 1/2;
-  font-size: larger;
+  font-size: 1.2rem;
   color: #054A91;
   border: 2px solid #F17300;
     border-radius: 6px;
@@ -417,10 +417,10 @@ h3 {
    
 }
 
- .list1, .list2, .list3 {                  
+ .list1, .list2, .list3, .list4 {                  
   list-style: none;
   color:#054A91;
-  text-align: left;
+  text-align: center;
 
 }
 
