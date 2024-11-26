@@ -108,11 +108,11 @@ header, main, footer {
 }
 
 #banner  {
-  background-color: #DBE4EE;
+  background-color:#cbd6e1;
   color:#000;
   padding: 15px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   position: fixed;
   top: 0;
   left: 0;
@@ -218,25 +218,26 @@ h2, h3 {
 }
 
 #spotlight-home {
-  display: flex;                      /* Flexbox for side-by-side layout */
+  display: flex; 
+  flex-direction: column;                     /* Flexbox for side-by-side layout */
   justify-content: space-between;      /* Ensure space between text and image */
   align-items: center;                /* Vertically center content */
-  width: 80%;                          /* Ensure the container is 80% of the parent */
+  width: 60%;                          /* Ensure the container is 80% of the parent */
   height: 400px;                       /* Fixed height for consistent layout */
   box-shadow: #054A91 0 1px 5px;
   margin: 0 auto;                      /* Center horizontally */
   padding: 10px;
   overflow: hidden;                    /* Prevent scrollbars from appearing */
-  border: 1px solid red;               /* Temporary border for debugging */
+  
 }
 
 #spotlight-home h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 20px;                  /* Space between text and image */
 }
 
 #spotlight-home h3 {
-  font-size: 1.5rem;
+  font-size: 1.1srem;
 }
 
 #spotlight-home p {
@@ -251,13 +252,12 @@ h2, h3 {
   flex: 1;                             /* Allow the image container to expand */
   margin-left: 20px;                   /* Space between text and image */
   position: relative;                  /* Ensure positioning for image */
-  width: 50%;                           /* Adjust width to take up more space */
-  border: 1px solid green;             /* Temporary border for debugging */
+  width: 20%;                           /* Adjust width to take up more space */
 }
 
 #cantrell img {
-  width: 100% !important;               /* Make image take full width of container */
-  height: 100% !important;              /* Ensure image fills the container's height */
+  width: 50%;               /* Make image take full width of container */
+  height: 50%;              /* Ensure image fills the container's height */
   object-fit: cover;                   /* Keep aspect ratio while covering the container */
   border-radius: 8px;                  /* Optional: rounded corners */
   display: block;                      /* Ensure it's treated as a block-level element */
