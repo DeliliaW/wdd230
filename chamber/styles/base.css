@@ -239,7 +239,7 @@ h2, h3 {
 }
 
 #spotlight-home h3 {
-  font-size: 1.1srem;
+  font-size: 1.1rem;
 }
 
 #spotlight-home p {
@@ -252,7 +252,8 @@ h2, h3 {
 
 #cantrell {
   flex: 1;                             /* Allow the image container to expand */
-  margin-left: 20px;                   /* Space between text and image */
+  margin-left: 20px;
+  margin-top: 30px;                   /* Space between text and image */
   position: relative;                  /* Ensure positioning for image */
   width: 20%;                           /* Adjust width to take up more space */
 }
