@@ -55,8 +55,8 @@ function displayForecast(data) {
     // Loop through the forecast data and display the next 3 days
     let dayIndex = 0;
     data.list.forEach((forecast) => {
-        // We're interested in the 12 PM data for each day, so we'll grab the first forecast that is close to that time.
-        if (forecast.dt_txt.includes('12:00:00')) {
+        // We're interested in the 3 PM data for each day, so we'll grab the first forecast that is close to that time.
+        if (forecast.dt_txt.includes('15:00:00')) {
             // Limit the forecast to only 3 days: tomorrow, day after tomorrow, and two days after tomorrow
             if (dayIndex >= 3) return;  // Stop processing after 3 forecast items
 

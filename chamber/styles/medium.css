@@ -1,3 +1,30 @@
-@media (min-width: 651px) {
-    
-}
+@media screen and (min-width: 651px) {
+        body {
+          font-size: 16px;
+        }
+      
+        header h1 {
+          font-size: 32px; 
+        }
+      
+        .navbar ul {
+          flex-direction: row; 
+          justify-content: space-between; 
+        }
+        .main-form {
+          display: block;
+        }
+        .join, .membership {
+          grid-column: 1 / -1;
+          margin-left: auto;
+          margin-right: auto;
+          width: 90%;
+        }
+        .membership h2, .membership h3, .membership h4 {
+          margin-bottom: 0%;
+          text-align: center;
+        }
+        .membership {
+          padding: 1rem;
+        }
+      }

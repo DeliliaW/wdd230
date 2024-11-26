@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 :root {
   --primary-color: #054A91;
-  --secondary-color: #81A4CD;
+  --secondary-color: #c1dbf8;
   --accent1-color: #F17300;
   --accent2-color: #DBE4EE;
 }
@@ -127,7 +127,7 @@ header, main, footer {
   color: red;
   position: absolute;
   top: 10px;
-  right: 75px;
+  right: 15px;
   z-index: 1001;
 }
 
@@ -140,7 +140,7 @@ header, main, footer {
   justify-content: center; 
   align-items: center; 
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 15px;
@@ -156,7 +156,7 @@ header, main, footer {
   font-weight: 600;
   text-decoration: none;
   margin: 0;
-  background-color: #81A4CD;
+  background-color: #e0e8f0;
 }
 
 
@@ -204,19 +204,18 @@ h2, h3 {
   background-color: #81A4CD;
 }
 
+#welcome-sign {
+  display: flex;
+  align-self: center;
+  box-shadow: #054A91 0 3px 10px;
+}
+
 .join-now:visited {
   color:black;
 }
 
 #forecastContainer {
   display: flex;
-
-}
-
-#welcome-sign {
-  margin-top: 100px;
-  box-shadow: #054A91 0 3px 10px;
-
 
 }
 
@@ -279,7 +278,7 @@ h2, h3 {
 
 #mode {
 	position: absolute;
-	top: 1em;
+	top: 3em;
 	right: 1em;
 	font-size: 3rem;
 	cursor: pointer;

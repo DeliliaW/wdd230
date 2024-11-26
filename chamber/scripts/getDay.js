@@ -15,7 +15,7 @@ if (shouldShowBanner())  {
     const banner = document.querySelector('#banner');
     banner.style.display = "block";
 
-    const closeButton = document.createElement("close-banner");
+    const closeButton = document.querySelector("#close-banner");
     closeButton.addEventListener("click", closeBanner);
 
 }
