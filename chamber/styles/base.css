@@ -36,7 +36,6 @@
     max-width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 header {
     background-color: #054A91;
@@ -58,7 +57,7 @@ body {
 #hero-box {
     grid-column:span;
 }
-.hero {
+.hero {                           /* holds hero image */
   position: relative;
   width: 98vw;
   height: auto;
@@ -127,7 +126,7 @@ header, main, footer {
   color: red;
 }
 
-#hero-msg {
+#hero-msg {                    /* Includes welcome, mission, vision, join button  */
   color: #054A91;
   display: flex;
   flex-direction: column;
@@ -147,7 +146,7 @@ header, main, footer {
   text-align: center;
 }
 
-#hero-msg .join-now {
+#hero-msg .join-now {             /*  join link */
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
@@ -156,7 +155,7 @@ header, main, footer {
 }
 
 
-.call-to-action {
+.call-to-action {                 /* Welcome message */
   text-align: center;
 } 
 
@@ -168,7 +167,7 @@ h2, h3 {
   text-align: center;
 }
 
-#events-weather-container {
+#events-weather-container {                     /* holds current events, welcome sign, and weather */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -193,7 +192,7 @@ h2, h3 {
   margin: 0;
 }
 
-#see-more {
+#see-more {             /* calendar button  */
   padding: 10px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -210,12 +209,12 @@ h2, h3 {
   color:black;
 }
 
-#forecastContainer {
+#forecastContainer {       /* holds forecast info */
   display: flex;
-
+  flex-direction: column;
 }
 
-#spotlight-home {
+#spotlight-home {            /* holds info on member businesses */
   display: flex; 
   flex-direction: column;                     
   justify-content: space-between;      
@@ -246,11 +245,11 @@ h2, h3 {
   flex: 1;                             
 }
 
-#cantrell {
+#cantrell {            /* div for image */
   flex: 1;                             
   margin-left: 20px;
   margin-top: 30px;                   
-  position: relative;                 
+  position: relative;              
   width: 20%;                           
 }
 
@@ -268,12 +267,12 @@ h2, h3 {
   height: auto;
 }
 
-#modeButton {
+#modeButton {                        /* darkmode  */
   background:#81A4CD;
   border: none;
   }
 
-#mode {
+#mode {                                    /* darkmode  */
 	position: absolute;
 	top: 3em;
 	right: 1em;
@@ -283,7 +282,7 @@ h2, h3 {
   background: 0;
 }
 
-.dark-mode {
+.dark-mode {                       /* darkmode  */
 	background-color: #000;
 	color: #fff;
 	border-color: #eee; 
@@ -413,7 +412,7 @@ h3 {
    
 }
 
- .list1, .list2, .list3, .list4 {                  
+ .list1, .list2, .list3, .list4 {          /* in sidebar */        
   list-style: none;
   color:#054A91;
   text-align: center;
@@ -445,21 +444,10 @@ h3 {
   display: block; 
 }
 
-.overlay {
-  position: absolute;
- margin-left: 13%;
-  transform: translate(-50%, -50%); 
-  color: #FFFFFF; 
-  background-color: rgba(0, 0, 0, 0.5); 
-  padding: 10px; 
-  border-radius: 5px; 
-  text-align: center; 
-  opacity: 0;
-  transition: opacity 0.3s; 
-}
-
-.image-container .overlay {
-  opacity: 1; 
+.image-container p {
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 2rem;
 }
  #container-visits {                   /*   discover page */
   background-color:#054A91;

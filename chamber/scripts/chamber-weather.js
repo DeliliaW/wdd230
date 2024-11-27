@@ -26,9 +26,9 @@ async function apiFetch() {
 }
 
 function displayCurrentWeather(data) {
-    currentTemp.innerHTML = `${data.main.temp.toFixed(1)} &deg;F`; // Display current temperature
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`; // Get weather icon
-    const desc = data.weather[0].description; // Get weather description
+    currentTemp.innerHTML = `${data.main.temp.toFixed(1)} &deg;F`; 
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const desc = data.weather[0].description; 
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
@@ -40,11 +40,11 @@ function displayForecast(data) {
     // Get today's date, tomorrow, the day after tomorrow, and two days after tomorrow
     const today = new Date();
     const tomorrow = new Date(today);
-    tomorrow.setDate(today.getDate() + 1);  // Set to tomorrow
+    tomorrow.setDate(today.getDate() + 1);  
     const dayAfterTomorrow = new Date(today);
-    dayAfterTomorrow.setDate(today.getDate() + 2);  // Set to the day after tomorrow
+    dayAfterTomorrow.setDate(today.getDate() + 2);  
     const twoDaysAfterTomorrow = new Date(today);
-    twoDaysAfterTomorrow.setDate(today.getDate() + 3);  // Set to two days after tomorrow
+    twoDaysAfterTomorrow.setDate(today.getDate() + 3);  
 
     // Format dates to a readable format (e.g., "Nov 23, 2024")
     const options = { weekday: 'short', month: 'short', day: 'numeric' };
@@ -70,17 +70,17 @@ function displayForecast(data) {
             // Get the formatted date based on the index
             let forecastTime = '';
             if (dayIndex === 0) {
-                forecastTime = formattedTomorrow;  // Tomorrow
+                forecastTime = formattedTomorrow;  
             } else if (dayIndex === 1) {
-                forecastTime = formattedDayAfterTomorrow;  // Day after tomorrow
+                forecastTime = formattedDayAfterTomorrow;  
             } else if (dayIndex === 2) {
-                forecastTime = formattedTwoDaysAfterTomorrow;  // Two days after tomorrow
+                forecastTime = formattedTwoDaysAfterTomorrow; 
             }
 
             // Display the date, high, and low temperatures on the same line
             forecastItem.innerHTML = `
-                <h3>${forecastTime}</h3>
-                <p>High: ${highTemp} | Low: ${lowTemp}</p>
+                <h4>${forecastTime}</h4> 
+                <p>High: ${highTemp} | Low: ${lowTemp}</p> 
             `;
 
             forecastContainer.appendChild(forecastItem);
