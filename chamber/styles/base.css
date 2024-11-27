@@ -263,10 +263,10 @@ h2, h3 {
 }
 
 .navbar {
- background-color: #F17300;
   color: #ffffff;
   position: relative;
   margin-inline-start: 750px;
+ 
 }
 
 .navbar ul {
@@ -289,7 +289,7 @@ h2, h3 {
   color:#ffffff;
   text-decoration: none;
   display:inline-block;
-
+  text-decoration: underline #F17300;
 }
 
 .navbar a:visited {
