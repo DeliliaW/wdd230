@@ -263,10 +263,10 @@ h2, h3 {
 }
 
 .navbar {
-  background:#81A4CD;
+ background-color: #F17300;
   color: #ffffff;
   position: relative;
-  border: 2px solid #F17300;
+  margin-inline-start: 750px;
 }
 
 .navbar ul {
@@ -274,9 +274,9 @@ h2, h3 {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .navbar .nav-toggle {
@@ -293,12 +293,12 @@ h2, h3 {
 }
 
 .navbar a:visited {
-  color:black;
+  color:#FFFFFF;
   font-weight: 600;
 }
 
 .navbar a:hover {
-  background:#F17300;
+  background:#81A4CD;
 }
 
 .navbar .hamburger {
