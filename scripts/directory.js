@@ -24,7 +24,7 @@ getMemberData();
 
 const displayMembers = (members) => {
     members.forEach ( (member) =>  {
-        let card = document.createElement('directory-card');
+        let card = document.createElement('displayContainer');
         let image = document.createElement('img');
         let name = document.createElement('h4');
         let address = document.createElement('p');
