@@ -528,7 +528,8 @@ h4  .dark-mode {
 .sign-up {
   color:#F17300;
   background-color: #054A91;
-  margin-top: -1rem;
+  margin-top: 3rem;
+  padding: 0;
 }
 
 .main-form {
