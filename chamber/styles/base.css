@@ -5,11 +5,7 @@
   --accent1-color: #F17300;
   --accent2-color: #DBE4EE;
 }
-.lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
+
   .lato-regular {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -19,11 +15,6 @@
     font-family: "Lato", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  .lato-regular-italic {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
   }
 
   * {
