@@ -216,21 +216,21 @@ h2, h3 {
 
 #spotlight-home {
   display: flex; 
-  flex-direction: column;                     /* Flexbox for side-by-side layout */
-  justify-content: space-between;      /* Ensure space between text and image */
-  align-items: center;                /* Vertically center content */
-  width: 60%;                          /* Ensure the container is 80% of the parent */
-  height: 400px;                       /* Fixed height for consistent layout */
+  flex-direction: column;                     
+  justify-content: space-between;      
+  align-items: center;                
+  width: 60%;                         
+  height: 400px;                      
   box-shadow: #054A91 0 1px 5px;
-  margin: 0 auto;                      /* Center horizontally */
+  margin: 0 auto;                      
   padding: 10px;
-  overflow: hidden;                    /* Prevent scrollbars from appearing */
+  overflow: hidden;                    
   
 }
 
 #spotlight-home h2 {
   font-size: 1.5rem;
-  margin-right: 20px;                  /* Space between text and image */
+  margin-right: 20px;                  
 }
 
 #spotlight-home h3 {
@@ -242,23 +242,23 @@ h2, h3 {
 }
 
 #spotlight-home div {
-  flex: 1;                             /* Let text container take available space */
+  flex: 1;                             
 }
 
 #cantrell {
-  flex: 1;                             /* Allow the image container to expand */
+  flex: 1;                             
   margin-left: 20px;
-  margin-top: 30px;                   /* Space between text and image */
-  position: relative;                  /* Ensure positioning for image */
-  width: 20%;                           /* Adjust width to take up more space */
+  margin-top: 30px;                   
+  position: relative;                 
+  width: 20%;                           
 }
 
 #cantrell img {
-  width: 50%;               /* Make image take full width of container */
-  height: 50%;              /* Ensure image fills the container's height */
-  object-fit: cover;                   /* Keep aspect ratio while covering the container */
-  border-radius: 8px;                  /* Optional: rounded corners */
-  display: block;                      /* Ensure it's treated as a block-level element */
+  width: 50%;              
+  height: 50%;              
+  object-fit: cover;                  
+  border-radius: 8px;                  
+  display: block;                      
 }
 
 #spotlight-home img {
