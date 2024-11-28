@@ -8,13 +8,13 @@ const urlW = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.59&lon=-83
 
 async function apiFetch() {
     try {
-        // Fetch current weather data
+        
         const response = await fetch(urlWR);
         if (!response.ok) throw Error(await response.text());
         const currentData = await response.json();
         displayCurrentWeather(currentData);
 
-        // Fetch forecast data
+       
         const responseForecast = await fetch(urlW);
         if (!responseForecast.ok) throw Error(await responseForecast.text());
         const forecastData = await responseForecast.json();
@@ -35,9 +35,9 @@ function displayCurrentWeather(data) {
 }
 
 function displayForecast(data) {
-    forecastContainer.innerHTML = '';  // Clear the forecast container
+    forecastContainer.innerHTML = '';  
 
-    // Get today's date, tomorrow, the day after tomorrow, and two days after tomorrow
+    
     const today = new Date();
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);  
@@ -46,30 +46,29 @@ function displayForecast(data) {
     const twoDaysAfterTomorrow = new Date(today);
     twoDaysAfterTomorrow.setDate(today.getDate() + 3);  
 
-    // Format dates to a readable format (e.g., "Nov 23, 2024")
+    
     const options = { weekday: 'short', month: 'short', day: 'numeric' };
     const formattedTomorrow = tomorrow.toLocaleDateString('en-US', options);
     const formattedDayAfterTomorrow = dayAfterTomorrow.toLocaleDateString('en-US', options);
     const formattedTwoDaysAfterTomorrow = twoDaysAfterTomorrow.toLocaleDateString('en-US', options);
 
-    // Loop through the forecast data and display the next 3 days
+    
     let dayIndex = 0;
     data.list.forEach((forecast) => {
-        // We're interested in the 3 PM data for each day, so we'll grab the first forecast that is close to that time.
+        console.log(forecasr.dt_txt, forecast.main.temp_min, forecast.main.temp_max);
         if (forecast.dt_txt.includes('15:00:00')) {
-            // Limit the forecast to only 3 days: tomorrow, day after tomorrow, and two days after tomorrow
-            if (dayIndex >= 3) return;  // Stop processing after 3 forecast items
+           
+            if (dayIndex >= 3) return;  
 
             const forecastItem = document.createElement('div');
             forecastItem.classList.add('forecast-item');
 
             console.log(forecast);
 
-            // Get high and low temperatures
-            const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;  // Get the high temperature
-            const lowTemp = `${forecast.main.temp_min.toFixed(1)} &deg;F`;  // Get the low temperature
-
-            // Get the formatted date based on the index
+            
+            const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;  
+            const lowTemp = `${forecast.main.temp_min.toFixed(1)} &deg;F`;  
+          
             let forecastTime = '';
             if (dayIndex === 0) {
                 forecastTime = formattedTomorrow;  
@@ -79,7 +78,7 @@ function displayForecast(data) {
                 forecastTime = formattedTwoDaysAfterTomorrow; 
             }
 
-            // Display the date, high, and low temperatures on the same line
+            
             forecastItem.innerHTML = `
                 <h4>${forecastTime}</h4> 
                 <p>High: ${highTemp} | Low: ${lowTemp}</p> 
