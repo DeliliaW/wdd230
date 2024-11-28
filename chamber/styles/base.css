@@ -5,16 +5,29 @@
   --accent1-color: #F17300;
   --accent2-color: #DBE4EE;
 }
+.lato-regular, .lato-bold {
+  font-family: "Lato", sans-serif;
+}
 
   .lato-regular {
-    font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-style: normal;
   }
+
   .lato-bold {
-    font-family: "Lato", sans-serif;
     font-weight: 700;
-    font-style: normal;
+  }
+
+  .border-box {
+    border-radius: 6px;
+    box-shadow: #054A91 0 1px 5px;
+  }
+
+  #sidebar2 {
+    border: 2px solid #F17300;
+  }
+
+  .bg-primary {
+    background-color: #054A91;
   }
 
   * {
@@ -148,7 +161,6 @@ header, main, footer {
 
 .join-now {
   padding: .5rem;
-  box-shadow: #054A91 0 1px 5px;
 }
 
 .call-to-action {                 /* Welcome message */
@@ -210,27 +222,23 @@ h2, h3 {
   flex-direction: column;
 }
 
-#spotlight-home {            /* holds info on member businesses */
+#spotlight-home {            
   display: flex;                      
   justify-content: space-between;      
-  align-items: center;                
-  width: 70%;                         
+  align-items: center;               
+  width: 90%;                         
   height: 300px;                      
   box-shadow: #054A91 0 1px 5px;
   margin: 0 auto;                      
   padding: 10px;
-  overflow: hidden;
-  background-color: #eaebed;                  
+  overflow: hidden;              
   
-}
-#member-spotlight {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.member-card  {
-    
-}
+} 
+ #member-spotlight {
+  text-align:left;
+  margin: 0;
+  padding: 0;
+ }
 
 #modeButton {                        /* darkmode  */
   background:#81A4CD;
@@ -256,7 +264,7 @@ h2, h3 {
 .navbar {
   color: #ffffff;
   position: relative;
-  margin-inline-start: 750px;
+  margin-inline-start: 0;
  
 }
 
@@ -265,7 +273,7 @@ h2, h3 {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: right;
+  justify-content:flex-end;
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -294,8 +302,8 @@ h2, h3 {
 
 .navbar .hamburger {
   position: absolute;
-  top: 0;
-  right: 0;
+  bottom: 0;
+  left: 0;
   border: 0;
   background: 0;
   cursor: pointer;
@@ -311,13 +319,7 @@ h2, h3 {
   display: none;
 }
 
-.spotlightHome {
-  width: 300px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
-}
+
 
 
 @media screen and (max-width: 650px) {
@@ -640,8 +642,11 @@ input[type="radio"] {
   }
 
   .navbar ul {
-    flex-direction: column; 
-    align-items: center; 
+    /*flex-direction: column; 
+    align-items: center; */
+    display: block;
+    width: 100%;
+    align-items: center;
   }
 
   #hero-msg {

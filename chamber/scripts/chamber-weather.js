@@ -63,6 +63,8 @@ function displayForecast(data) {
             const forecastItem = document.createElement('div');
             forecastItem.classList.add('forecast-item');
 
+            console.log(forecast);
+
             // Get high and low temperatures
             const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;  // Get the high temperature
             const lowTemp = `${forecast.main.temp_min.toFixed(1)} &deg;F`;  // Get the low temperature
