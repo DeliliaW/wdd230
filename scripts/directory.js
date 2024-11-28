@@ -73,7 +73,7 @@ const displaySpotlight = (members) => {
          
         }
         let card = document.createElement('div');
-        card.classList.add('#spotlightHome');
+        card.classList.add('spotlightHome');
         let image = document.createElement('img');
         let name = document.createElement('h4');
         let address = document.createElement('p');
