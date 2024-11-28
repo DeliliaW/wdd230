@@ -12,7 +12,6 @@ async function getMemberData()  {
     try {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
     displayMembers(data.members);
 } catch (error) {
     console.error(`Error fetching data:`, error);
@@ -108,12 +107,10 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 
 function showGrid()
 {
-	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
 }
