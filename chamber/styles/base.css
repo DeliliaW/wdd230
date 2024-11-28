@@ -793,8 +793,8 @@ article p  {
 	display: none; /* smaller viewports only */
 }
 
-.list section:nth-child(even) {
-	background-color:#DBE4EE;
+.list section:nth-child(odd) {
+  
 }
 
  
