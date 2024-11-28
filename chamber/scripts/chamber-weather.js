@@ -3,8 +3,8 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const forecastContainer = document.querySelector('#forecastContainer');
 
-const urlWR = 'https://api.openweathermap.org/data/2.5/weather?lat=32.59&lon=-83.7&units=imperial&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';  // Current weather
-const urlW = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.59&lon=-83.7&units=imperial&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';  // 3-day forecast
+const urlWR = 'https://api.openweathermap.org/data/2.5/weather?lat=32.59&lon=-83.69&units=imperial&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';  // Current weather
+const urlW = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.59&lon=-83.69&units=imperial&appid=aab874bc1cc2c1c2feb77bf991e1aa7e';  // 3-day forecast
 
 async function apiFetch() {
     try {
