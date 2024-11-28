@@ -55,7 +55,7 @@ function displayForecast(data) {
     
     let dayIndex = 0;
     data.list.forEach((forecast) => {
-        console.log(forecasr.dt_txt, forecast.main.temp_min, forecast.main.temp_max);
+        console.log(forecast.dt_txt, forecast.main.temp_min, forecast.main.temp_max);
         if (forecast.dt_txt.includes('15:00:00')) {
            
             if (dayIndex >= 3) return;  
