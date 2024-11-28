@@ -1,16 +1,7 @@
 const url = 'https://deliliaw.github.io/wdd230/chamber/data/members.json';
 const displayContainer = document.querySelector('#displayContainer');
 
-async function getMemberData() { 
-    try 
-    { const response = await fetch(url); 
-        const data = await response.json();
-         displayMembers(data.members); 
-        } catch (error) { 
-            console.error(`Error fetching data:`, error); 
-        } 
-    } 
-    getMemberData();
+
 
 
 function shuffleArray(array) {
@@ -63,3 +54,13 @@ const displaySpotlight = (members) => {
         spotlightCount++;
     });
 }
+async function getMemberData() { 
+    try 
+    { const response = await fetch(url); 
+        const data = await response.json();
+         displayMembers(data.members); 
+        } catch (error) { 
+            console.error(`Error fetching data:`, error); 
+        } 
+    } 
+    getMemberData();
