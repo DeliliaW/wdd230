@@ -1,6 +1,7 @@
 {
     "members": [
       {
+       
         "logourl":"https://deliliaw.github.io/wdd230/lesson09/images/critter-fixer.webp",
         "name": "Critter Fixer Veterinary Hospital", 
         "address": "102 Starlight Drive Bonaire, GA 31005",
@@ -10,6 +11,7 @@
         "contact": "Dr. Terrence Ferguson"
       },
       {
+      
         "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/the-design-gallery.webp",
         "name": "The Design Gallery",
         "address": "592 Carl Vinson Parkway Warner Robins, GA 31088",
@@ -18,6 +20,7 @@
         "membershiplevel": "Bronze"
       },
       {
+       
         "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/hhc-logo.webp",
         "name": "Houston Healthcare",
         "address": "1601 Watson Boulevard Warner Robins, GA 31093", 
@@ -27,6 +30,7 @@
         "contact": "James Cummings"
       },  
       {
+       
         "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/lowes-logo.webp",
         "name": "Lowe's", 
         "address": "2704 Watson Boulevard Warner Robins, GA 31093", 
@@ -36,8 +40,9 @@
         "contact": "Sue Warren"  
       },
       {
+       
       "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/museum-of-aviation.webp",
-       "name": "Museum of Aviation", 
+       "name":  "Museum of Aviation",
       "address": "1742 Heritage Boulevard Robins AFB, GA 31098",
       "phonenumber": "(478)926-6870",
       "websiteURL": "https://museumofaviation.org",
@@ -45,6 +50,7 @@
       "contact": "Ann Pearson"
     }, 
       {
+        
         "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/Pro-Aire.webp",
         "name": "Pro-Aire",
       "address": "1111 Leverett Road Warner Robins, GA 31088",
@@ -54,6 +60,7 @@
       "contact": "Amanda Sullivan" 
       },
       {
+        
       "logourl": "https://deliliaw.github.io/wdd230/lesson09/images/rfcu-logo-70.webp",
       "name": "Robins Financial Credit Union", 
       "address": "803 Watson Boulevard Warner Robins, GA 31093",

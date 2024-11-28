@@ -47,7 +47,6 @@ const displayMembers = (members) => {
         card.appendChild(phonenumber);
         card.appendChild(websiteURL);
         card.appendChild(membershiplevel);
-
         displayContainer.appendChild(card);
 
     });
