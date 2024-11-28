@@ -1,6 +1,16 @@
 const url = 'https://deliliaw.github.io/wdd230/chamber/data/members.json';
 const displayContainer = document.querySelector('#displayContainer');
 
+async function getMemberData() { 
+    try 
+    { const response = await fetch(url); 
+        const data = await response.json();
+         displayMembers(data.members); 
+        } catch (error) { 
+            console.error(`Error fetching data:`, error); 
+        } 
+    } 
+    getMemberData();
 
 
 function shuffleArray(array) {
@@ -19,9 +29,10 @@ const displaySpotlight = (members) => {
     let spotlightCount = 0;
     members.forEach ( (member) =>  {
         if (spotlightCount == 3 || (member.membershiplevel != "Gold" && member.membershiplevel != "Silver")) {
-            return;
-         
+            return; 
         }
+        console.log('Displaying member:', member);
+
         let card = document.createElement('div');
         card.classList.add('spotlightHome');
         let image = document.createElement('img');
