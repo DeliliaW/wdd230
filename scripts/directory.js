@@ -24,7 +24,8 @@ getMemberData();
 
 const displayMembers = (members) => {
     members.forEach ( (member) =>  {
-        let card = document.createElement('displayContainer');
+        let card = document.createElement('article');
+        card.classList.add('displayContainer');
         let image = document.createElement('img');
         let name = document.createElement('h4');
         let address = document.createElement('p');
@@ -62,7 +63,7 @@ function shuffleArray(array) {
     }
 }
 
-const spotlightHome = document.querySelector('spotlight-home');
+const spotlightHome = document.querySelector('#spotlight-home');
 
 const displaySpotlight = (members) => {
     shuffleArray(members);
@@ -72,7 +73,8 @@ const displaySpotlight = (members) => {
             return;
          
         }
-        let card = document.createElement('spotlight-home');
+        let card = document.createElement('div');
+        card.classList.add('#spotlightHome');
         let image = document.createElement('img');
         let name = document.createElement('h4');
         let address = document.createElement('p');
@@ -122,5 +124,9 @@ function showList()
 	display.classList.remove("grid");
 }
 
-gridbutton.addEventListener("click", showGrid); 
-listbutton.addEventListener("click", showList);
+if (gridbutton) {
+    gridbutton.addEventListener("click", showGrid);
+} 
+if (listbutton) {
+    listbutton.addEventListener("click", showList);
+}
