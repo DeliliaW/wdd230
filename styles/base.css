@@ -132,17 +132,9 @@ li:not(:last-child)::after {
   text-align: center;
  }
 
- .visits-label, .visits-count {
-    display: inline-block;
-    padding-top: 20px;
-  }
-
-  .visits-count {
-    padding-left: 10px;
-  }
-
-  .visits-label {
-    padding-left: 120px;
+ .visitsInfo {
+    display: flex;
+    justify-content: center;
   }
 
 .navbar {
@@ -242,6 +234,10 @@ li:not(:last-child)::after {
     margin-left: 100px;
     margin-right: 100px;
     padding-bottom: 20px;
+}
+
+#weather-icon2 {
+    background-color: #2fcff8;
 }
 
 h2, h3 {
