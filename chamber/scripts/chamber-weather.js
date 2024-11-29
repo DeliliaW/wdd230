@@ -21,7 +21,7 @@ async function apiFetch() {
         displayForecast(forecastData);
 
     } catch (error) {
-        console.error(error);
+        console.log(error);
     }
 }
 
