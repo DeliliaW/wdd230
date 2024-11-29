@@ -232,11 +232,12 @@ h2, h3 {
   justify-content: space-between;      
   align-items: center;               
   width: 90%;                         
-  height: 300px;                      
+  height: 300px;                  
   box-shadow: #054A91 0 1px 5px;
   margin: 0 auto;                      
   padding: 10px;
-  overflow: hidden;              
+  overflow: hidden;
+              
   
 } 
  #member-spotlight {
