@@ -235,8 +235,9 @@ li:not(:last-child)::after {
  
 }
 
-.weatherInfo {
-    background-color:#2fcff8;
+.weatherInfo { 
+    border: 2px solid #2fcff8;
+    box-shadow: #2fcff8 0 5px 10px;
     margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
