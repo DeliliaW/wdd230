@@ -222,6 +222,10 @@ h2, h3 {
   flex-direction: column;
 }
 
+#weather-icon {
+  background-color: #c1dbf8;
+}
+
 #spotlight-home {            
   display: flex;                      
   justify-content: space-between;      
