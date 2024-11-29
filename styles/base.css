@@ -199,44 +199,48 @@ li:not(:last-child)::after {
 @media screen and (max-width: 650px) {
     .navbar.open ul {
         display:block;
-    }
+}
 
-    .navbar.open .nav-toggle {
+.navbar.open .nav-toggle {
         display: block;
-    }
+}
 
-    .navbar.open a {
+.navbar.open a {
         display: block;
-    }
-    .navbar .nav-toggle {
+}
+ .navbar .nav-toggle {
         display: none;
-   } 
+} 
 
-   .navbar .hamburger {
+.navbar .hamburger {
     display: block;
-   }
+}
 
 
-   .navbar .hamburger .icon-open {
+.navbar .hamburger .icon-open {
         display: block; 
-   }
+ }
 
-   .navbar .hamburger .icon-close {
+.navbar .hamburger .icon-close {
+        display: none;
+ }
+
+.navbar.open .hamburger .icon-open {
     display: none;
-   }
+ }
 
-   .navbar.open .hamburger .icon-open {
-    display: none;
-   }
-
-   .navbar.open  .hamburger .icon-close {
-        display: block;
-   }
+.navbar.open  .hamburger .icon-close {
+    display: block;
+}
  
 }
 
 .weatherInfo {
-
+    background-color:#2fcff8;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-bottom: 20px;
 }
 
 h2, h3 {
