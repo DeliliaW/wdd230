@@ -224,6 +224,7 @@ h2, h3 {
 
 #weather-icon {
   background-color: #c1dbf8;
+  border-radius: 6px;
 }
 
 #spotlight-home {            
