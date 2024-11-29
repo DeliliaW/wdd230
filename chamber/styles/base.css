@@ -93,9 +93,9 @@ body {
   font-size: 24px; 
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px; 
-  border-radius: 5px; 
+  border-radius: 6px; 
   text-align: center; 
-}
+} 
 footer {
   background-color: #F17300;
   text-align: center;
