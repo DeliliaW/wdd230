@@ -633,6 +633,16 @@ input[type="radio"] {
   .membership h4 {
     font-size: 1rem;
   }
+  #spotlight-home {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 20px;
+  }
+  #member-spotlight {
+    text-align: center;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 950px) {
   body {
