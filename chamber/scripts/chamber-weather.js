@@ -54,7 +54,7 @@ function displayForecast(data) {
     
     let dayIndex = 0;
     data.list.forEach((forecast) => {
-        console.log(forecast.dt_txt, forecast.main.temp_min, forecast.main.temp_max);
+        
         if (forecast.dt_txt.includes('15:00:00')) {
            
             if (dayIndex >= 3) return;  
@@ -62,11 +62,12 @@ function displayForecast(data) {
             const forecastItem = document.createElement('div');
             forecastItem.classList.add('forecast-item');
 
-            //console.log(forecast);
+            
 
             
             const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;  
-            const lowTemp = `${forecast.main.temp_min.toFixed(1)} &deg;F`;  
+            const lowTemp = `${forecast.main.temp_min.toFixed(1)} &deg;F`;
+            
           
             let forecastTime = '';
             if (dayIndex === 0) {
