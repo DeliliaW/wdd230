@@ -21,7 +21,6 @@ async function apiFetch() {
         displayForecast(forecastData);
 
     } catch (error) {
-        console.log(error);
     }
 }
 
@@ -63,7 +62,7 @@ function displayForecast(data) {
             const forecastItem = document.createElement('div');
             forecastItem.classList.add('forecast-item');
 
-            console.log(forecast);
+            //console.log(forecast);
 
             
             const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;  
