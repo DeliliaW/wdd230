@@ -21,16 +21,16 @@
     <header>
         <h1>Robins Regional Chamber of Commerce</h1>
         <div id="mode">
-        <button id="modeButton">💡/🕶️</button>
+        <button id="modeButton" aria-label="Toggle light and dark mode">💡/🕶️</button>
         </div>
-        <nav id="navbar"  class="navbar">
+        <nav id="navbar"  class="navbar" aria-label="Main Navigation">
             <ul class="nav-toggle">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             </ul>
-        <button id="hamburger-toggle"  class="hamburger">
+        <button id="hamburger-toggle"  class="hamburger" aria-label="Toggle Navigation">
             <span class="icon-open">    
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -48,7 +48,7 @@
         </nav>
     </header>
        
-    <main id="discover-container">
+    <main id="discover-container" role="main">
     <div class="heading">
         <h2>Discover Warner Robins</h2>
     </div>
@@ -56,20 +56,20 @@
      <div class="card">
         <div  class="border" id="sidebar2">
             <div id="card1">Current Demographics</div>
-            <ul class="list1">
+            <ul class="list1" aria-labelledby="card1">
                 <li>Population: 85,853</li>
                 <li>Median Age: 32.4 years</li>
                 <li>Avg HH Income: $82,235</li>
             </ul><br>
             <div id="card2">Places to Go</div>
-              <ul class="list2">
+              <ul class="list2" aria-labelledby="card2">
                 <li>Bucee's</li>
                 <li>Monkey Joe's</li>
                 <li>Rigby's Water Park</li>
                 <li>Robins Air Force Base Museum</li>  
               </ul><br>
            <div id="card3">Things to Do</div>
-           <ul class="list3">
+           <ul class="list3" aria-labelledby="card3">
             <li>Go Karts</li>
             <li>Mini Golf</li>
             <li>Playgrounds</li>
@@ -78,7 +78,7 @@
             <li>Splash Park (in summer)</li>
           </ul><br>
            <div id="card4">Mark the Date</div>
-           <ul class="list4">
+           <ul class="list4" aria-labelledby="card4">
             <li>Restaurant openings</li>
             <li>Food Truck Thursdays</li>
             <li>Georgia National Fair (in nearby Perry)</li>

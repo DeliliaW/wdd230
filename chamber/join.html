@@ -20,16 +20,16 @@
     <header>
         <h1>Robins Regional Chamber of Commerce</h1>
         <div id="mode">
-        <button id="modeButton">💡/🕶️</button>
+        <button id="modeButton" aria-label="Toggle light and dark mode">💡/🕶️</button>
         </div>
-        <nav id="navbar"  class="navbar">
+        <nav id="navbar"  class="navbar" aria-label="Main Navigation">
             <ul class="nav-toggle">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             </ul>
-        <button id="hamburger-toggle"  class="hamburger">
+        <button id="hamburger-toggle"  class="hamburger" aria-label="Toggle Navigation">
             <span class="icon-open">    
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -52,7 +52,7 @@
     <main class="main-form">
       <section> 
         <h2 class="contact">Contact Form</h2>      
-        <form method="get" action="thankyou.html">
+        <form method="get" action="thankyou.html" aria-labelledby="contact-form">
             <div class="join">
         <fieldset>
           <legend><b>Contact Information</b></legend>
@@ -88,8 +88,11 @@
          <label><input type="radio" name="membership" value="Silver">Silver</label>
          <label><input type="radio" name="membership" value="Gold">Gold</label>
          <br>
-         <form type="hidden" id="timestamp" name="timestamp"></form>
-         <button  id="button" type="submit" aria-label="Log in button">Join Now</button>
+         <div class="visually-hidden">
+            <label id="timestamp-label" for="timestamp">Form Loaded Timestamp</label>
+            <input type="hidden" id="timestamp" name="timestamp" aria-labelledby="timestamp-label" value=""></form>
+         </div>
+         <button  id="button" type="submit" aria-label="Join Now button">Join Now</button>
          </fieldset>
          </div> 
         </form>     

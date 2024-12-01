@@ -20,16 +20,16 @@
     <header>
         <h1>Robins Regional Chamber of Commerce</h1>
         <div id="mode">
-        <button id="modeButton">💡/🕶️</button>
+        <button id="modeButton" aria-label="Toggle light and dark mode">💡/🕶️</button>
         </div>
-        <nav id="navbar"  class="navbar">
+        <nav id="navbar"  class="navbar" aria-label="Main Navigation">
             <ul class="nav-toggle">
             <li><a href="index.html">Home</a></li>
             <li><a href="./discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="./join.html">Join</a></li>
             </ul>
-        <button id="hamburger-toggle"  class="hamburger" aria-label="Toggle Menu">
+        <button id="hamburger-toggle"  class="hamburger" aria-label="Toggle Navigation">
             <span class="icon-open">    
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -49,13 +49,13 @@
     <div class="heading">
     <h2>Member Directory</h2>
     </div>
-    <main class="directory">
+    <main class="directory" role="main">
         <div class="menu">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
+            <button id="grid" aria-label="Grid view">⏹️Grid</button>
+            <button id="list"aria-label="List view">📄List</button>
         </div>
         <hr>
-        <article id="displayContainer" class="directoryCard">
+        <article id="displayContainer" class="directoryCard" aria-labelledby="member-directory">
          <h4 class="memberName"></h4>
          <p class="address1"></p>
          <p class="address2"></p>
