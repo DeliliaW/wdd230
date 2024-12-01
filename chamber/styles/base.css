@@ -276,7 +276,7 @@ h2, h3 {
 
 .active-nav-item {
   font-weight: bold;
-  color:#FFFFFF;
+  color:#F17300;
   text-decoration: underline;
 }
 
@@ -300,7 +300,7 @@ h2, h3 {
   color:#ffffff;
   text-decoration: none;
   display:inline-block;
-  text-decoration: underline #F17300;
+  /*text-decoration: underline #F17300; */
 }
 
 .navbar a:visited {
