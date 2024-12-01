@@ -1,36 +1,107 @@
-@media screen and (min-width: 651px) {
-        body {
-          font-size: 16px;
-        }
-      
-        header h1 {
-          font-size: 32px; 
-        }
-      
-        .navbar ul {
-          flex-direction: row; 
-          justify-content: space-between; 
-        }
-        .main-form {
-          display: block;
-        }
-        .join, .membership {
-          grid-column: 1 / -1;
-          margin-left: auto;
-          margin-right: auto;
-          width: 90%;
-        }
-        .membership h2, .membership h3, .membership h4 {
-          margin-bottom: 0%;
-          text-align: center;
-        }
-        .membership {
-          padding: 1rem;
-        }
-        .hover-effect:hover {
-          opacity: .6;
-          transform: scale(1.1);
-        }
-      }
-      
+
+@media screen and (min-width: 601px) and (max-width: 1159px) {
+  
+  body {
+      font-size: 16px; 
+  }
+
+  header h1 {
+      font-size: 36px; 
+  }
+
+  .navbar ul {
+      font-size: 1.4rem; 
+  }
+
+  #hero-msg {
+      padding: 20px; 
+      font-size: 1.3rem; 
+  }
+
+  .main1 {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .gallery {
+      padding-left: 5%; 
+      gap: 20px; 
+      max-width: 95%; 
+  }
+
+  .card {
+      grid-template-columns: 1fr 2fr 2fr; 
+  }
+
+  .card img {
+      width: 100%; 
+  }
+
+  .sidebar2 {
+      font-size: 20px; 
+      padding: 20px; 
+  }
+
+  
+  .list section {
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
+
+  .image-container {
+      flex: 0 1 calc(50% - 10px); 
+  }
+
+  #spotlight-home {
+      height: 300px; 
+  }
+
+  .directory {
+      padding: 1.5rem; 
+  }
+
+  
+    .main-form {
+      flex-direction: column;  
+      gap: 20px;  
+    }
+  
+    .join {
+      margin-left: 0; 
+      padding: 0 20px;  
+    }
+  
+    .contact {
+      margin-left: 0; 
+    }
+  
+    .join fieldset {
+      margin: 10px 0;  
+      padding-top: 5px;
+    }
+  
+    .join input[type="text"],
+    .join input[type="tel"],
+    .join textarea {
+      width: 100%;  
+      max-width: 100%;  
+    }
+  
+    .join #button {
+      width: 100%;  
+    }
+  
+    .membership {
+      margin-top: 20px;  
+    }
+  
+    .membership h2 {
+      margin-right: 0;  
+      font-size: 1.2rem;  
+    }
+  
+    .membership ul li {
+      margin-left: 20px;  
+    }
+  }
+
+
        

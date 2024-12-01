@@ -53,6 +53,7 @@ h1 {
     padding-top: 3%;
     padding-bottom: 3%;
 }
+
 body {
     max-width: 100%;
     font-family: "Lato";
@@ -464,7 +465,7 @@ h4  .dark-mode {
 .join {
   display: flex;
   flex-direction: column;
-  margin-left:200px;
+  padding: 0 10px;
 }
 
 .contact {
@@ -494,6 +495,8 @@ font-weight: bolder;
 width: 90%;
 max-width: 400px;
 appearance: none;
+font-size: 14px;
+padding: 10px;
 }
 
 .join label {
@@ -520,6 +523,8 @@ input[type="radio"] {
   color: #fff;
   width: 100%;
   max-width: 400px;
+  font-size: 14px;
+  padding: 12px;
 }
 .required {
   color: rgb(219, 13, 13);
@@ -530,8 +535,9 @@ input[type="radio"] {
   margin-top: 5px;
  }
  .membership h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: 60px;
+  font-size: 1.1rem;
  
  }
  .membership h3 {
@@ -545,6 +551,8 @@ input[type="radio"] {
  color:#054A91;
  list-style: square;
  margin-left: 40px;
+ font-size: 14px;
+ margin-left: 10px;
  
  }
 
@@ -592,93 +600,9 @@ input[type="radio"] {
 
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    font-size: 14px; 
-  }
 
-  header h1 {
-    font-size: 28px; 
-  }
+  
 
-  .navbar ul {
-    display: block;
-    width: 100%;
-    align-items: center;
-  }
-
-  #hero-msg {
-    padding: 20px; 
-  }
-  #discover-container {
-    grid-column: 1 / -1;
-    gap: 10px;
-  }
-  .sidebar {
-    grid-column: 1 / -1;
-    margin: 10px 0;
-    font-size: medium;
-  }
-  .sites {
-    grid-column: 1 / -1;
-    gap: 10px;
-  }
-  .main-form {
-    gap: 10px;
-  }
-  .membership, .join {
-    width: 100%;
-  }
-  .membership h2 {
-    font-size: 1.5rem;
-  }
-  .membership h3 {
-    font-size: 1.2rem;
-  }
-  .membership h4 {
-    font-size: 1rem;
-  }
-  #spotlight-home {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 20px;
-  }
-  #member-spotlight {
-    text-align: center;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 950px) {
-  body {
-    font-size: 16px;
-  }
-
-  header h1 {
-    font-size: 32px; 
-  }
-
-  .navbar ul {
-    flex-direction: row; 
-    justify-content: space-between; 
-  }
-  .main-form {
-    display: block;
-  }
-  .join, .membership {
-    grid-column: 1 / -1;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-  .membership h2, .membership h3, .membership h4 {
-    margin-bottom: 0%;
-    text-align: center;
-  }
-  .membership {
-    padding: 1rem;
-  }
-}
 /*------------Directory-------------*/
 
 .directory {
@@ -781,12 +705,28 @@ article p  {
 
 /*  --- @Media Queries  ---*/
 @media screen and (max-width: 600px) {
-
+  .home-page .discover-page {
+    display: block;
+    width: 100%;
+  }
+  .main1, .gallery, .list, .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main-form {
+    flex-direction: column;
+    width: 100%;
+  }
+  .image-container {
+    width: 100%;
+    margin-bottom: 20%;
+  }
   body {
     font-size: 14px;
   }
   header h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .navbar.open ul {
@@ -852,9 +792,11 @@ article p  {
   grid-column: 1 / -1;
   gap: 10px;
 }
-.main-form {
-  gap: 10px;
+
+.contact h2 {
+  font-size: 1.5rem;
 }
+
 .membership, .join {
   width: 100%;
 }
@@ -866,12 +808,18 @@ article p  {
 }
 .membership h4 {
   font-size: 1rem;
+} 
+.list section {
+  grid-template-columns: 1fr;
+}
+.sidebar2 {
+  font-size: 18px;
 }
 #spotlight-home {
   flex-direction: column;
   align-items: flex-start;
   height: auto;
-  padding: 20px;
+  padding: 10px;
 }
 #member-spotlight {
   text-align: center;
@@ -884,6 +832,9 @@ article p  {
  .gallery img:hover {
  opacity: 1;
  transform: none;
+ }
+ .directory {
+  padding: 10px;
  }
 }
  
