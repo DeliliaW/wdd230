@@ -59,17 +59,17 @@
           <p>Fields with an asterisk* are required</p>
           <br>
           <label for="fname">First name: <span class="required">*</span></label>
-          <input type="text" id="fname" name="fname" required aria-required="true" aria-label="first name input field">
+          <input type="text" id="fname" name="fname" autocomplete="given-name" required aria-required="true" aria-label="first name input field">
           <br>
           <label for="lname">Last name: <span class="required">*</span></label>
-          <input type="text" id="lname" name="lname" required aria-required="true" aria-label="last name input field">
+          <input type="text" id="lname" name="lname" autocomplete="last-name" required aria-required="true" aria-label="last name input field">
           <br>
           <label for="email">Email: <span class="required">*</span></label>
-          <input type="email" id="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required aria-required="true" aria-describedby="email-desc">
+          <input type="email" id="email" name="email" autocomplete="email-address" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required aria-required="true" aria-describedby="email-desc">
           <span id="email-desc" class="visually-hidden"></span>
          <br>
          <label for="phone">Phone: <span class="required">*</span></label>
-         <input type="tel" id="phone" name="phone" placeholder="1235551234">
+         <input type="tel" id="phone" name="phone" autocomplete="phone-number" placeholder="1235551234">
          <br>
         </fieldset>
          <fieldset>
