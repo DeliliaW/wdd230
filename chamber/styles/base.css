@@ -822,6 +822,18 @@ article p  {
  #hero-msg {
   padding: 20px; 
 }
+
+#welcome-sign {
+  display: none;
+}
+
+#current-events {
+  max-width: 100%;
+}
+
+#chamber-weather {
+  max-width: 100%;
+}
 #discover-container {
   grid-column: 1 / -1;
   gap: 10px;
