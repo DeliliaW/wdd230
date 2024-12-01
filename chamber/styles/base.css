@@ -451,8 +451,6 @@ h4  .dark-mode {
   width: 98%;
   background: #000;
   animation: fade 8s;
-  max-width: calc(44%-10px);
-  flex: 1 1 calc(44%-10px);
 }
 /*---------------FORM-----------------*/
 
