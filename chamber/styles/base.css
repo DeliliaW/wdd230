@@ -773,7 +773,17 @@ article p  {
 .list section:nth-child(odd) {
   
 }
-@media screen and (max-width: 650px) {
+
+/*  --- @Media Queries  ---*/
+@media screen and (max-width: 600px) {
+
+  body {
+    font-size: 14px;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+
   .navbar.open ul {
       display:block;
   }
@@ -808,6 +818,48 @@ article p  {
  .navbar.open  .hamburger .icon-close {
       display: block;
  } 
+
+ #hero-msg {
+  padding: 20px; 
+}
+#discover-container {
+  grid-column: 1 / -1;
+  gap: 10px;
+}
+.sidebar {
+  grid-column: 1 / -1;
+  margin: 10px 0;
+  font-size: medium;
+}
+.sites {
+  grid-column: 1 / -1;
+  gap: 10px;
+}
+.main-form {
+  gap: 10px;
+}
+.membership, .join {
+  width: 100%;
+}
+.membership h2 {
+  font-size: 1.5rem;
+}
+.membership h3 {
+  font-size: 1.2rem;
+}
+.membership h4 {
+  font-size: 1rem;
+}
+#spotlight-home {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  padding: 20px;
+}
+#member-spotlight {
+  text-align: center;
+  width: 100%;
+}
  .gallery img {
   max-width: 100%;
   flex: 1 1 100%;
