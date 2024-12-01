@@ -274,6 +274,12 @@ h2, h3 {
  
 }
 
+.active-nav-item {
+  font-weight: bold;
+  color:#F17300;
+  text-decoration: underline;
+}
+
 .navbar ul {
   margin: 0;
   padding: 0;

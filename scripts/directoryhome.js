@@ -22,7 +22,6 @@ const displaySpotlight = (members) => {
         if (spotlightCount == 3 || (member.membershiplevel != "Gold" && member.membershiplevel != "Silver")) {
             return; 
         }
-        console.log('Displaying member:', member);
 
         let card = document.createElement('div');
         card.classList.add('spotlightHome');
@@ -58,7 +57,6 @@ async function getMemberData() {
     try 
     { const response = await fetch(url); 
         const data = await response.json();
-        console.log(data);
          displaySpotlight(data.members); 
         } catch (error) { 
             console.error(`Error fetching data:`, error); 
