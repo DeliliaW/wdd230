@@ -277,7 +277,6 @@ h2, h3 {
 .active-nav-item {
   font-weight: bold;
   color:#F17300;
-  text-decoration: underline;
 }
 
 .navbar ul {
@@ -304,12 +303,12 @@ h2, h3 {
 }
 
 .navbar a:visited {
-  color:#FFFFFF;
+  color: #FFFFFF;
   font-weight: 600;
 }
 
 .navbar a:hover {
-  background:#81A4CD;
+  background: #81A4CD;
 }
 
 .navbar .hamburger {
