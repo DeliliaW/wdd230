@@ -5,6 +5,9 @@
   --accent1-color: #F17300;
   --accent2-color: #DBE4EE;
 }
+
+
+
 .lato-regular, .lato-bold {
   font-family: "Lato", sans-serif;
 }
@@ -16,26 +19,27 @@
   .lato-bold {
     font-weight: 700;
   }
-
-  .border-box {
-    border-radius: 6px;
-    box-shadow: #054A91 0 1px 5px;
-  }
-
-  #sidebar2 {
-    border: 2px solid #F17300;
-  }
-
-  .bg-primary {
-    background-color: #054A91;
-  }
-
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
   }
+
+  .border-box, #sidebar#2, #card1, #card2, #card3, #card4, .sidebar2, #weather-icon, .overlay-text {
+    border-radius: 6px;  
+  }
+
+   #card1, #card2, #card3, #card4, .gallery img, .sites, #hero-msg, #spotlight-home {
+    box-shadow: 0 1px 5px var(--primary-color);
+  }
+  .bg-primary, .join #button {
+    background-color: #054A91;
+  }
+ 
+  .sidebar2, #sidebar2, #hero-msg, h2, h3, h4, .list1, .list2, .list3, .list4, .join fieldset {
+    color:#054A91;
+  }
+  
 #content {
     max-width: 100%;
     margin: 0;
@@ -66,7 +70,6 @@ body {
   position: relative;
   width: 98vw;
   height: auto;
-  /*overflow: hidden; */
 }
 .hero img {
   width: 98%; 
@@ -94,7 +97,6 @@ body {
   font-size: 24px; 
   background-color: rgba(0, 0, 0, 0.5); 
   padding: 10px; 
-  border-radius: 6px; 
   text-align: center; 
 } 
 footer {
@@ -132,12 +134,10 @@ header, main, footer {
 }
 
 #hero-msg {                    /* Includes welcome, mission, vision, join button  */
-  color: #054A91;
   background-color: #eaebed;
   display: flex;
   flex-direction: column;
   max-width: fit-content;
-  box-shadow: #054A91 0 1px 5px;
   justify-content: center; 
   align-items: center; 
   text-align: center;
@@ -169,7 +169,6 @@ header, main, footer {
 } 
 
 h2, h3 {
-  color: #054A91;
   padding: 10px;
   margin: 10px 10px;
   display: inline-block;
@@ -225,7 +224,6 @@ h2, h3 {
 
 #weather-icon {
   background-color: #c1dbf8;
-  border-radius: 6px;
 }
 
 #spotlight-home {            
@@ -234,7 +232,6 @@ h2, h3 {
   align-items: center;               
   width: 90%;                         
   height: 300px;                  
-  box-shadow: #054A91 0 1px 5px;
   margin: 0 auto;                      
   padding: 10px;
   overflow: hidden;
@@ -300,7 +297,6 @@ h2, h3 {
   color:#ffffff;
   text-decoration: none;
   display:inline-block;
-  /*text-decoration: underline #F17300; */
 }
 
 .navbar a:visited {
@@ -338,22 +334,18 @@ h2, h3 {
 .sidebar2  {
   text-align: center;
   font-size: 22px;
-  color:#054A91;
   text-shadow: 1px 1px;
  background-color: #c1dbf8;
  padding: 25px;
  margin-left: 25px;
  margin-right: 25px;
- border-radius: 6px;
 }
 
 #sidebar2 {             /*   discover page */
   grid-column: 1/2;
-   font-size: 1.2rem;
-   color: #054A91;
-   border: 2px solid #F17300;
-     border-radius: 6px;
-     margin: 2px 10px;  
+  font-size: 1.2rem;
+  border: 2px solid #F17300;
+   margin: 2px 10px; 
  }
 
 .card {                               /*   discover page */
@@ -363,11 +355,9 @@ h2, h3 {
 }
 
 #card1, #card2, #card3, #card4 {              /*   discover page */               
-  box-shadow: #054A91 0 1px 5px;
   padding: 15px;
   margin: 15px;
   text-align: center;
-  border-radius: 6px;
 }
 
 h3 {
@@ -377,7 +367,6 @@ h3 {
 
  .list1, .list2, .list3, .list4 {          /* in sidebar */        
   list-style: none;
-  color:#054A91;
   text-align: center;
   line-height: 2rem;
   }
@@ -433,11 +422,6 @@ h3 {
   transform: scale(1.1);
 } 
 
-
-h4 {                     
-  color: #054A91 ;
-}
-
 h4  .dark-mode {
   color: #FFFFFF;
 }
@@ -472,7 +456,6 @@ h4  .dark-mode {
 .join fieldset {
   display: inline-block;
   flex-direction: column;
-  color: #054A91;
   padding-top: 10px;
   margin: 10px;
   background-color: rgb(250, 246, 246);
@@ -694,7 +677,7 @@ article p  {
 }
 
 .list section img {
-	display: none; /* smaller viewports only */
+	display: none; 
 }
 
 .list section:nth-child(odd) {
