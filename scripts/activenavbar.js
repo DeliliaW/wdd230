@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
     const pageTitle = document.title;
 
     const navItemMap = {
@@ -15,6 +15,5 @@ document.addEventListener("DOMContentLoaded", function () {
         currentNavItem.classList.add("active-nav-item");
     }
 
-});
+}); 
     
-

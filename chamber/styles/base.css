@@ -31,7 +31,7 @@
    #card1, #card2, #card3, #card4, .gallery img, .sites, #hero-msg, #spotlight-home {
     box-shadow: 0 1px 5px var(--primary-color);
   }
-  .bg-primary, .join #button {
+  .bg-primary, .join #button, header {
     background-color: #054A91;
   }
  
@@ -45,7 +45,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 header {
-    background-color: #054A91;
     margin: 0;
     position: relative;
 }
@@ -273,7 +272,6 @@ h2, h3 {
 
 .active-nav-item {
   font-weight: bold;
-  color:#F17300;
 }
 
 .navbar ul {
