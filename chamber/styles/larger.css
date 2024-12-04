@@ -155,8 +155,8 @@
       
       .membership ul, li {
         color: #054A91;
-        list-style: square;
-        margin-left: 40px;
+        list-style: none;
+        text-align: center;
       }
       
 }

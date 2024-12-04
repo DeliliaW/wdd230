@@ -6,8 +6,6 @@
   --accent2-color: #DBE4EE;
 }
 
-
-
 .lato-regular, .lato-bold {
   font-family: "Lato", sans-serif;
 }
@@ -19,13 +17,14 @@
   .lato-bold {
     font-weight: 700;
   }
+
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
 
-  .border-box, #sidebar#2, #card1, #card2, #card3, #card4, .sidebar2, #weather-icon, .overlay-text {
+  .border-box, #sidebar2, #card1, #card2, #card3, #card4, .sidebar2, #weather-icon, .overlay-text {
     border-radius: 6px;  
   }
 
