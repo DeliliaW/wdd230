@@ -1,0 +1,80 @@
+.quicksand-scootsfont {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.root {
+--salmon: #E48C72ff;
+--myrtle-green: #3E807Cff;
+--cadet-gray: #89A5B6ff;
+--green-blue: #3269A5ff;
+--khaki: rgb(232, 227, 218);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1  {
+    color: #3E807Cff;
+    text-align: center;
+    font-size: 48px;
+    font-style: italic;
+  }
+
+  #header-content {
+    background-color: rgb(232, 227, 218);
+  }
+
+
+
+  .navbar {
+    color: #E48C72ff;
+    position: relative;
+    margin-inline-start: 0;
+   
+  }
+  
+  .active-nav-item {
+    font-weight: bold;
+  }
+  
+  .navbar ul {
+    margin-right:140px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content:flex-end;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  .navbar .nav-toggle {
+    display: flex;
+  }
+  
+  .navbar a {
+    padding: 1rem;
+    margin: 0 20px;
+    color: #E48C72ff;
+    text-decoration: none;
+    display:inline-block;
+  }
+  
+  .navbar a:visited {
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  
+  .navbar a:hover {
+    background: #89A5B6ff;
+  }
+  
+  .hero {
+    max-width: 100%;
+    justify-self: center;
+  }
