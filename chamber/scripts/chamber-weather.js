@@ -53,7 +53,6 @@ function displayForecast(data) {
 
     
     let dayIndex = 0;
-    console.log(data.list);
     data.list.forEach((forecast) => {
        
         if (forecast.dt_txt.includes('15:00:00')) {

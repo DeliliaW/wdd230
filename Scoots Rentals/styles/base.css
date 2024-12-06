@@ -6,11 +6,10 @@
 }
 
 .root {
---salmon: #E48C72ff;
---myrtle-green: #3E807Cff;
---cadet-gray: #89A5B6ff;
---green-blue: #3269A5ff;
---khaki: rgb(232, 227, 218);
+  --burnt-sienna: #E48964ff;
+  --battleship-gray: #857C66ff;
+  --celestial-blue: #5B94BAff;
+  --hookers-green: #518680ff;
 }
 
 * {
@@ -20,10 +19,11 @@
   }
 
   h1  {
-    color: #3E807Cff;
-    text-align: center;
+    color: #518680ff;
+    text-align: left;
     font-size: 48px;
     font-style: italic;
+    padding: 30px  20px;
   }
 
   #header-content {
@@ -33,7 +33,7 @@
 
 
   .navbar {
-    color: #E48C72ff;
+    color: #E48964ff;
     position: relative;
     margin-inline-start: 0;
    
@@ -60,13 +60,13 @@
   .navbar a {
     padding: 1rem;
     margin: 0 20px;
-    color: #E48C72ff;
+    color: #000;
     text-decoration: none;
     display:inline-block;
   }
   
   .navbar a:visited {
-    color: #FFFFFF;
+    color: #000;
     font-weight: 600;
   }
   
