@@ -1,6 +1,6 @@
 {
     "rentalPrices" : { 
-    "rentalType" :  [
+    "rentalVehicle" :  [
 {
     "rentalType" : "scooter",
     "name" : "Honda Metro",
