@@ -1,0 +1,61 @@
+{
+    "rentalPrices" : { 
+    "rentalType" :  [
+{
+    "rentalType" : "scooter",
+    "name" : "Honda Metro",
+    "maxPersons" : 1,
+    "reservationHalf" : 20,
+    "reservationFull" : 30,
+    "walkinHalf" : 25,
+    "walkinFull" : 35
+  },
+  {
+    "rentalType" : "scooter",
+    "name": "Honda Dio",
+    "maxPersons" : 2,
+    "reservationHalf" : 30,
+    "reservationFull" : 40,
+    "walkinHalf" : 35,
+    "walkinFull" : 45
+  },
+  {
+    "rentalType" : "scooter",
+    "name": "Honda PCX150",
+    "maxPersons" : 2,
+    "reservationHalf" : 40,
+    "reservationFull" : 50,
+    "walkinHalf" : 45,
+    "walkinFull" : 55
+  },
+  { 
+    "rentalType" : "ATV",
+    "name": "Honda PCXPioneer 1000",
+    "maxPersons" : 4,
+    "reservationHalf" : 50,
+    "reservationFull" : 70,
+    "walkinHalf" : 60,
+    "walkinFull" : 80
+  },
+  {
+    "rentalType" : "Jeep",
+    "name": "Wrangler 2-door manual open air",
+    "maxPersons" : 4,
+    "reservationHalf" : 60,
+    "reservationFull" : 85,
+    "walkinHalf" : 70,
+    "walkinFull" : 90
+  },
+  {
+    "rentalType" : "Jeep",
+    "name": "Wrangler 4-door manual with A/C",
+    "maxPersons" : 5,
+    "reservationHalf" : 70,
+    "reservationFull" : 100,
+    "walkinHalf" : 85,
+    "walkinFull" : 125
+   }
+ ]
+ }
+}
+
