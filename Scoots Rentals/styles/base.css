@@ -26,10 +26,6 @@
     padding: 30px  20px;
   }
 
-  #header-content {
-    background-color: rgb(232, 227, 218);
-  }
-
 
 
   .navbar {
@@ -51,6 +47,7 @@
     justify-content:flex-end;
     font-size: 2rem;
     font-weight: 400;
+    
   }
   
   .navbar .nav-toggle {
