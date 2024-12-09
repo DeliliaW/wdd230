@@ -38,6 +38,13 @@
     font-style: italic;
     padding: 30px;
   }
+
+  h2 {
+    color: #20838d;
+    justify-self: center;
+    background-color: #FFDDD2;
+    padding: 10px;
+  }
   
   .active-nav-item {
     font-weight: bold;
@@ -101,11 +108,18 @@
     grid-column: 1/2;
   }
 
+  #place, #temp, #humidity, #weather-icon3 {
+    grid-column: 1/2;
+    
+  }
+
+  #weather-icon3 {
+    background-color:#97eae1;
+  }
+
   /*---------Rentals------------*/
-  h2 {
-    color: #518680ff;
-    justify-self: center;
-    background-color: rgb(249, 234, 200);
+  #h2rental {
+    margin-top: 20px;
   }
 
 
