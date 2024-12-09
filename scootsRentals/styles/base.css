@@ -83,7 +83,12 @@
   }
   
   .hero {
-    max-width: 100%;
+    justify-self: center;
+    position: relative;
+  }
+
+  #hero-img {
+    width: 100%;
     height: auto;
     justify-self: center;
     position: relative;
@@ -110,11 +115,13 @@
 
   #place, #temp, #humidity, #weather-icon3 {
     grid-column: 1/2;
+
     
   }
 
   #weather-icon3 {
     background-color:#97eae1;
+    border-radius: 6px;
   }
 
   /*---------Rentals------------*/

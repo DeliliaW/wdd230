@@ -32,19 +32,18 @@
                 <li class="nav-item" id="directory"><a href="Reservations.html">Reservations</a></li>
                 <li class="nav-item" id="join"><a href="Contact.html">Contact Us</a></li>
                 </ul>
-          <div id="">
-              <div class="hero">
-                <picture>
-                    <source media="" srcset="">
-                    <source media="" srcset="">
-                    <img src="images/Cozumel-sign-large.webp" alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image"  aria-label="Cozumel-directional-sign"> 
-                </picture>
-                <div class="overlay-text">Adventure Awaits...</div> 
-               </div>
-            </div>     
     </header>
  <main>
-    
+    <div id="hero-img">
+        <div class="hero">
+          <picture>
+              <source media="" srcset="">
+              <source media="" srcset="">
+              <img src="images/Cozumel-sign-large.webp"  alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image"  aria-label="Cozumel-directional-sign"> 
+          </picture>
+          <div class="overlay-text">Adventure Awaits...</div> 
+         </div>
+      </div>     
     <div class="main-home" id="call-to-action">
       <img src="">
       <p></p>
@@ -56,10 +55,14 @@
     </div>
     <div class="main-home" id="weather-cozumel">
             <h2 id="weatherToday">Weather</h2>
+        <div class="weather-info" id="hot">
             <h3 id="place">Current Temperature</h3>
             <p id="temp"><span id="current-temp3"></span></p>
-            <h3>Humidity Level: </h3>
+        </div>
+        <div class="weather-info" id="humid">
+            <h3>Humidity Level</h3>
             <p id="humidity"><span id="current-humidity"></span></p>
+        </div>   
             <figure>
                 <img id="weather-icon3" src="" alt="weather icon">
                 <figcaption></figcaption>
