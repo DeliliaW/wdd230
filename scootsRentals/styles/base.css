@@ -20,9 +20,11 @@
     margin: 0;
   }
 
+
+
   .main-home {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   #header-content  {
@@ -34,7 +36,7 @@
     text-align: left;
     font-size: 60px;
     font-style: italic;
-    padding: 30px  100px;
+    padding: 30px;
   }
   
   .active-nav-item {
@@ -75,12 +77,28 @@
   
   .hero {
     max-width: 100%;
+    height: auto;
     justify-self: center;
+    position: relative;
   }
 
   .overlay-text {
-    opacity: 50%;
-    
+    opacity: 80%;
+    text-shadow: #20838d 5px 5px;
+    background-color: #E29578;
+    position: absolute;
+    top: 15%;
+    left: 1050px;
+    margin-right: 120px;
+    padding: 10px;
+    font-size: 80px;
+    color: #FFFFFF;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-style: italic;
+  }
+
+  #weather-cozumel {
+    grid-column: 1/2;
   }
 
   /*---------Rentals------------*/

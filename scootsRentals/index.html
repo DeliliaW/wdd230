@@ -16,6 +16,10 @@
     <meta property="og:image" content="https://deliliaw.github.io/wdd230/brigham-young-university-idaho.jpg">
 </head>
 <body>
+    <div id="banner" class="banner">
+        <p></p>
+        <span id="close-banner" class="close-btn">❌</span>
+    </div>
     <header id="header-content">
         <h1 id="company-name">Scoots Rentals</h1>
             <!--<div id="mode">
@@ -33,13 +37,14 @@
                 <picture>
                     <source media="" srcset="">
                     <source media="" srcset="">
-                    <img src="images/Cozumel-sign-large.webp" alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image" aria-label="Cozumel-directional-sign"> 
+                    <img src="images/Cozumel-sign-large.webp" alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image"  aria-label="Cozumel-directional-sign"> 
                 </picture>
                 <div class="overlay-text">Adventure Awaits...</div> 
                </div>
             </div>     
     </header>
  <main>
+    
     <div class="main-home" id="call-to-action">
       <img src="">
       <p></p>
@@ -49,8 +54,16 @@
       <p></p>
       <img src="">
     </div>
-    <div class="main-home" id="weather-home">
-        <p>Current Temperature: </p>
+    <div class="main-home" id="weather-cozumel">
+            <h2 id="weatherToday">Weather</h2>
+            <h3 id="place">Current Temperature</h3>
+            <p id="temp"><span id="current-temp3"></span></p>
+            <figure>
+                <img id="weather-icon3" src="" alt="weather icon">
+                <figcaption></figcaption>
+            </figure>
+
+    </div>
         <p>Humidity Level: </p>
         <p>Tomorrow's Tempurature: </p>
     </div>
