@@ -78,7 +78,10 @@
     justify-self: center;
   }
 
-  
+  .overlay-text {
+    opacity: 50%;
+    
+  }
 
   /*---------Rentals------------*/
   h2 {
