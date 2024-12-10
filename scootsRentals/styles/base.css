@@ -45,6 +45,11 @@
     background-color: #FFDDD2;
     padding: 10px;
   }
+
+  h3 {
+    color: #20838d;
+    padding: 10px;
+  }
   
   .active-nav-item {
     font-weight: bold;
@@ -113,15 +118,20 @@
     grid-column: 1/2;
   }
 
-  #place, #temp, #humidity, #weather-icon3 {
+  .weather-info, p {
     grid-column: 1/2;
-
+    margin-left: 20px;
     
   }
 
   #weather-icon3 {
     background-color:#97eae1;
     border-radius: 6px;
+    margin-left: 20px;
+  }
+
+  figcaption {
+    margin-left: 35px;
   }
 
   /*---------Rentals------------*/

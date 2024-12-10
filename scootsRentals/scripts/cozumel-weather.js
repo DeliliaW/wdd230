@@ -42,7 +42,7 @@ function displayForecast(data) {
 
   const today = new Date();
   const tomorrow = new Date(today);
-  tomorrow.setDate(today.getDate() + 1);
+  tomorrow.setDate(today.getDate());
 
   const options = {weekday: 'short', month: 'short', day: 'numeric' };
   const formattedTomorrow = tomorrow.toLocaleDateString(`en-US`, options);
@@ -52,7 +52,7 @@ function displayForecast(data) {
 
     if (forecast.dt_txt.includes(`15:00:00`)) {
 
-      if (dayIndex >= 1) return;
+      if (dayIndex >= 0) return;
 
       const forecastItem = document.createElement('div');
       forecastItem.classList.add('weather-info');
