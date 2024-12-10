@@ -115,7 +115,11 @@
   }
 
   #call-to-action {
-    
+    display: flex;
+  }
+
+  #beach-flag {
+    margin: 40px 100px; 
   }
 
   #weather-cozumel {
