@@ -17,10 +17,10 @@ async function apiFetch()   {
     const responseForecast = await fetch(urlF);
     if (response.ok)  {
     const forecastData = await responseForecast.json();
+    displayForecast(forecastData);
     }
     }
   } catch (error) {
-    console.log(error);
   }
 
 }
@@ -42,35 +42,28 @@ function displayForecast(data) {
 
   const today = new Date();
   const tomorrow = new Date(today);
-  tomorrow.setDate(today.getDate());
+  tomorrow.setDate(today.getDate() + 1);
 
   const options = {weekday: 'short', month: 'short', day: 'numeric' };
   const formattedTomorrow = tomorrow.toLocaleDateString(`en-US`, options);
 
-  let dayIndex = 0;
+  let forecastItem = null;
   data.list.forEach((forecast) => {
 
     if (forecast.dt_txt.includes(`15:00:00`)) {
 
-      if (dayIndex >= 0) return;
-
-      const forecastItem = document.createElement('div');
+      forecastItem = document.createElement('div');
       forecastItem.classList.add('weather-info');
 
       const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;
 
-      let forecastTime = '';
-      if (dayIndex === 0) {
-        forecastTime = formattedTomorrow;
-      }
-
       forecastItem.innerHTML = `
       <h4>${forecastTime}</h4>
       <p>High: ${highTemp}`;
+
+      weatherTomorrow.appendChild(forecastItem);
     }
 
 
   });
 }
-
-apiFetch();
