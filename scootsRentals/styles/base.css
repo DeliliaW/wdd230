@@ -120,13 +120,12 @@
     justify-content: center;
   }
 
-  #beach-flag {
+  #rocky-coastline {
     margin: 40px 200px;
     box-shadow: #DB7A57 2px 5px 10px;
     border-radius: 8px;
     position: absolute;
     left: 80px;
-    opacity: .7;
   }
 
   #explore {
@@ -141,12 +140,14 @@
     border-radius: 20px;
     position: absolute;
     top: 60px;
+    left: 750px;
   }
 
   .reserve {
     color:#20838d;
     background-color: #FFDDD2;
     margin-left: 30%;
+    text-decoration: none;
   }
 
   #weather-cozumel {
