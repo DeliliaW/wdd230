@@ -25,7 +25,7 @@
   .main-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     background-color: aliceblue;
   }
 
@@ -232,28 +232,30 @@
 
   .main-weather {
     grid-column: 1/2;
-    grid-row: 3;
+    grid-row: 6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: #20838d 2px 5px 10px 2px;
   }
 
   .weather-info, p {
-    grid-column: 1/2;
-    grid-row: 3;
-    margin-left: 20px;
-    
+    grid-column: 1/4;
+    grid-row: 6;
   }
 
   #weather-icon3 {
     background-color:skyblue;
     border-radius: 6px;
-    margin-left: 20px;
+    text-align: center;
+    margin-left: 230px;
   }
 
-  figcaption {
-    margin-left: 35px;
-  }
-
-
-
+footer {
+  background-color: #FFDDD2;
+  text-align: center;
+  padding: 20px;
+}
   /*---------Rentals------------*/
   #h2rental {
     margin-top: 20px;
