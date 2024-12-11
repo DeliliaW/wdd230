@@ -38,32 +38,34 @@ function displayResults(data)   {
     captionDesc.textContent = desc;
 }
 function displayForecast(data) {
-  weatherTomorrow.innerHTML = '';
+    weatherTomorrow.innerHTML = '';
 
-  const today = new Date();
-  const tomorrow = new Date(today);
-  tomorrow.setDate(today.getDate() + 1);
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
 
-  const options = {weekday: 'short', month: 'short', day: 'numeric' };
-  const formattedTomorrow = tomorrow.toLocaleDateString(`en-US`, options);
+    const options = {weekday: 'short', month: 'short', day: 'numeric' };
+    const formattedTomorrow = tomorrow.toLocaleDateString(`en-US`, options);
 
-  let forecastItem = null;
-  data.list.forEach((forecast) => {
+    let foundTomorrowForecast = false;
 
-    if (forecast.dt_txt.includes(`15:00:00`)) {
+    data.list.forEach((forecast) => {
+      const forecastDate = new Date(forecast.dt_txt);
+      const forecastHour = forecastDate.getHours();
 
-      forecastItem = document.createElement('div');
-      forecastItem.classList.add('weather-info');
+      if (!foundTomorrowForecast && forecastDate.toLocaleDateString() === tomorrow.toLocaleDateString() && forecastHour === 15) {
+        const forecastItem = document.createElement('div');
+        forecastItem.classList.add('weather-info');
+
 
       const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;
 
       forecastItem.innerHTML = `
-      <h4>${forecastTime}</h4>
+      <h4>${formattedTomorrow}</h4>
       <p>High: ${highTemp}`;
 
       weatherTomorrow.appendChild(forecastItem);
+      foundTomorrowForecast = true; 
     }
-
-
-  });
+});
 }
