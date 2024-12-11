@@ -140,7 +140,7 @@
 
   #rocky-coastline {
     margin: 50px 200px;
-    left: 60px;
+    left: 50px;
   }
 
   .main-home p {
@@ -156,10 +156,9 @@
   #explore {                     /* ----1st paragraph -----*/
     margin-bottom: 200px;
     margin-top: 120px;
-    padding: 50px;
+    padding: 30px;
     top: 60px;
     left: 750px;
-   
   }
 
   #exploring {                   /* ----2nd paragraph -----*/
@@ -178,7 +177,7 @@
     background-color: #FFDDD2;
     margin-left: 30%;
     margin-top: 20px;
-    text-decoration: none;
+    text-decoration: underline;
   }
 
   #rental-desc {
@@ -195,11 +194,12 @@
     position: absolute;
   }
 
-  #terminal-p, #ferry-p, #convenience {
+  #terminal-p, #ferry-p, #convenience, #party-size {
     background-color: aliceblue;
-    box-shadow: none;
+    box-shadow: #DB7A57 2px 5px 10px;
     position: absolute;
-    border-radius: none;
+    border-radius: 20px;
+    padding: 10px;
   }
 
   #terminal-p {
@@ -223,11 +223,14 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 350px;
-    box-shadow: none;
-    background-color: aliceblue;
   }
 
-  #weather-cozumel {
+  #party-size {
+    margin-left: 350px;
+    margin-top: 520px;
+  }
+
+  .main-weather {
     grid-column: 1/2;
     grid-row: 3;
   }
