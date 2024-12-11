@@ -181,7 +181,24 @@
     text-decoration: none;
   }
 
+  #rental-desc {
+    grid-column: 1/4;
+    grid-row: 3;
+    display: flex;
+    position:relative;
+    justify-content: center;
+  }
+
+  #terminal  {
+    margin-top: 400px;
+    left: 30px;
+  }
   
+  
+  #ferry {
+    margin-top: 700px;
+    left: 850px;
+  }
 
   #weather-cozumel {
     grid-column: 1/2;
