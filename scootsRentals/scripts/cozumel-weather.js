@@ -61,7 +61,6 @@ function displayForecast(data) {
       const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;
 
       forecastItem.innerHTML = `
-      <h4>${formattedTomorrow}</h4>
       <p>High: ${highTemp}`;
 
       weatherTomorrow.appendChild(forecastItem);
