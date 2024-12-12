@@ -44,6 +44,7 @@
   h2 {
     color: #20838d;
     background-color: #FFDDD2;
+    box-shadow: #20838d 2px 5px 10px;
     padding: 10px;
   }
 
@@ -85,7 +86,7 @@
   }
   
   .navbar a:hover {
-    background: #89A5B6ff;
+    background: #b9fff7;
   }
   
   .hero {
@@ -164,12 +165,12 @@
   #exploring {                   /* ----2nd paragraph -----*/
     padding: 25px;
     margin-top: 420px;
-    left: 200px;
+    left: 230px;
   }
 
   #boat-on-beach {
     margin-top: 200px;
-    left: 1000px; 
+    left: 950px; 
   }
 
   .reserve {
