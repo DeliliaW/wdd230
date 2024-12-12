@@ -185,12 +185,11 @@
     grid-row: 3;
     display: flex;
     position:relative;
-    justify-content: space-between;
   }
 
   #terminal  {
     margin-top: 400px;
-    left: 150px;
+    left: 130px;
     position: absolute;
   }
 
@@ -198,35 +197,32 @@
     background-color: aliceblue;
     box-shadow: #DB7A57 2px 5px 10px;
     position: absolute;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
   }
 
   #terminal-p {
-    margin-top: 750px;
-    left:130px;
+    margin: 750px 0px 0px 290px;
   }
   
   #ferry {
     margin-top: 400px;
-    left: 800px;
+    left: 850px;
   }
 
   #ferry-p {
-    margin-top: 420px;
-    left: 1100px;
+    margin: 750px 20px 0px 950px;
   }
 
   #convenience {
     grid-column: 2/3;
     font-size: 1.5rem;
     color:#20838d;
-    margin-top: 350px;
+    margin: 350px 450px 50px;
   }
 
   #party-size {
-    margin-left: 420px;
-    margin-top: 520px;
+    margin: 820px 420px 30px;
   }
 
   .main-weather {
