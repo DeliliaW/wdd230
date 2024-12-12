@@ -101,6 +101,11 @@
     position: relative;
   }
 
+  .responsive-image {
+    max-width: 100%; 
+    height: auto;
+  }
+
   .overlay-text {
     opacity: 100%;
     text-shadow: #20838d 5px 5px;
@@ -133,7 +138,6 @@
   }
 
   .main-home img {
-    
     box-shadow: #DB7A57 2px 5px 10px;
     border-radius: 8px;
     position: absolute; 
@@ -164,20 +168,20 @@
 
   #exploring {                   /* ----2nd paragraph -----*/
     padding: 25px;
-    margin-top: 220px;
-    left: 230px;
+    margin-top: 400px;
+    left: 100px;
   }
 
   #boat-on-beach {
     margin-top: 50px;
-    left: 950px; 
+    left: 800px; 
   }
 
   .reserve {
     color:#20838d;
     background-color: #FFDDD2;
     margin-left: 30%;
-    margin-top: 20px;
+    margin-top: 400px;
     text-decoration: underline;
   }
 
@@ -189,7 +193,7 @@
   }
 
   #terminal  {
-    margin-top: 400px;
+    margin-top: 200px;
     left: 130px;
     position: absolute;
   }
@@ -205,16 +209,16 @@
   }
 
   #terminal-p {
-    margin: 750px 0px 0px 290px;
+    margin: 550px 0px 0px 290px;
   }
   
   #ferry {
-    margin-top: 400px;
+    margin-top: 200px;
     left: 850px;
   }
 
   #ferry-p {
-    margin: 750px 20px 0px 500px;
+    margin: 550px 20px 0px 500px;
   }
 
   #terminal-p, #ferry-p {
@@ -226,24 +230,25 @@
   #convenience {
     grid-column: 2/3;
     font-size: 1.7rem;
-    margin: 350px 450px 50px;
+    margin: 70px 450px 50px;
   }
 
   #party-size {
-    margin: 820px 420px 30px;
+    margin: 770px 420px 30px;
   }
 
   .main-weather {
     grid-column: 2/3;
-    grid-row: 6;
+    grid-row: 5;
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .weather-info, p {
     grid-column: 2/3;
-    grid-row: 6;
+    grid-row: 5;
   }
 
   #weather-icon3 {
