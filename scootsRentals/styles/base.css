@@ -25,7 +25,7 @@
   .main-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     background-color: aliceblue;
   }
 
@@ -144,7 +144,7 @@
     left: 50px;
   }
 
-  .main-home p {
+  #explore, #exploring {
     color:#20838d;
     font-size: 30px;
     background-color: #b9fff7;
@@ -194,12 +194,14 @@
     position: absolute;
   }
 
-  #terminal-p, #ferry-p, #convenience, #party-size {
+  #convenience, #party-size {
+    color:#20838d;
     background-color: aliceblue;
     box-shadow: #DB7A57 2px 5px 10px;
     position: absolute;
     border-radius: 10px;
     padding: 5px;
+    font-size: 30px;
   }
 
   #terminal-p {
@@ -212,13 +214,18 @@
   }
 
   #ferry-p {
-    margin: 750px 20px 0px 950px;
+    margin: 750px 20px 0px 500px;
+  }
+
+  #terminal-p, #ferry-p {
+    font-size: 1.7rem;
+    z-index: 1;
+    color: #FFFFFF;
   }
 
   #convenience {
     grid-column: 2/3;
-    font-size: 1.5rem;
-    color:#20838d;
+    font-size: 1.7rem;
     margin: 350px 450px 50px;
   }
 
