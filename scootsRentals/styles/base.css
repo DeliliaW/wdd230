@@ -224,6 +224,9 @@
     font-size: 1.2rem;
     z-index: 1;
     color: #FFFFFF;
+    background-color: #DB7A57;
+    padding: 3px;
+    border-radius: 5px;
   }
 
   #convenience {
