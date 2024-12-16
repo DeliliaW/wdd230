@@ -275,6 +275,7 @@ footer {
     letter-spacing: 1px;
     font-size: 1.2rem;
     justify-self: center;
+    margin: 20px;
 
   }
 
@@ -311,7 +312,11 @@ footer {
   caption {
     padding: 10px;
   }
+ 
+  .ride {
+    margin-left: 200px;
 
+  }
 
 
 
