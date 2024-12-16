@@ -208,7 +208,7 @@
   }
 
   #terminal-p {
-    margin: 550px 0px 0px 290px;
+    margin: 550px 0px 0px 350px;
   }
   
   #ferry {
@@ -221,7 +221,7 @@
   }
 
   #terminal-p, #ferry-p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     z-index: 1;
     color: #FFFFFF;
   }
