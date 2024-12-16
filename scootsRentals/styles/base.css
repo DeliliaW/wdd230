@@ -266,9 +266,51 @@ footer {
   /*---------Rentals------------*/
   #h2rental {
     margin-top: 20px;
+    text-align: center;
   }
 
+  table {
+    border-collapse: collapse;
+    border: 2px solid #20838d;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    justify-self: center;
 
+  }
+
+  #theading {
+    background-color:#20838d;
+    font-size: larger;
+  }
+
+  #empty {
+    background-color: #FFFFFF;
+  }
+  
+  td, th {
+    border: 1px solid #20838d;
+    padding: 10px 20px;
+  }
+  
+  th {
+    background-color: #b9fff7;
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f8e4dd;
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: #FFFFFF;
+  }
+  
+  caption {
+    padding: 10px;
+  }
 
 
 
