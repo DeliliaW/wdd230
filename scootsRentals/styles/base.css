@@ -324,22 +324,24 @@ footer {
 
   }
 
-
-
-
-
   /*----------Reservations--------*/
-  .services {
-    display: flex;
-   padding-left: 150px;
-   padding-top: 50px;
-    background-color: #b9fff7;
-   margin: 30px 80px;
+  .main-rez {
+    display: grid;
+    grid-template-columns: 2;
   }
 
+  .services {
+   grid-column: 1/2;
+   padding: 30px;
+    background-color: #b9fff7;
+   margin: 30px;
+  }
 
   #service-list {
-    list-style-type: none; 
+    list-style-type: square;
+    line-height: 2rem;
+    font-size: 1.2rem;
+
   }
 
   /*----------Contact------------*/
