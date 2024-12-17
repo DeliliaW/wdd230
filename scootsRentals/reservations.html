@@ -26,7 +26,7 @@
                 <li class="nav-item" id="home"><a href="index.html">Home</a></li>
                 <li class="nav-item" id="rentals"><a href="rentals.html">Rentals</a></li>
                 <li class="nav-item" id="directory"><a href="Reservations.html">Reservations</a></li>
-                <li class="nav-item" id="join"><a href="Contact.html">Contact Us</a></li>
+                <li class="nav-item" id="join"><a href="Contact.html">Contact</a></li>
                 </ul>      
     </header>
     <h2 class="heading" id="h2rez">Reservations</h2>
@@ -51,43 +51,53 @@
        
             <h3 class="heading" id="rezcontact">Contact Information</h3>
             <p>Fields with an asterisk* are required</p>
-            <label for="fname">First name: <span class="required">*</span></label>
-            <input type="text" id="fname" name="fname"  required aria-required="true" aria-label="first name input field">
+            <label for="fname">First name: <span class="required">*</span></label><br>
+            <input type="text" class="big-textbox" id="fname" name="fname"  required aria-required="true" aria-label="first name input field">
             <br>
-            <label for="lname">Last name: <span class="required">*</span></label>
-            <input type="text" id="lname" name="lname"  required aria-required="true" aria-label="last name input field">
+            <label for="lname">Last name: <span class="required">*</span></label><br>
+            <input type="text" class="big-textbox" id="lname" name="lname"  required aria-required="true" aria-label="last name input field">
             <br>
-            <label for="email">Email: <span class="required">*</span></label>
-            <input type="email" id="email" name="email"  placeholder="someone@gmail.com" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required aria-required="true" aria-describedby="email-desc">
+            <label for="email">Email: <span class="required">*</span></label><br>
+            <input type="email" class="big-textbox" id="email" name="email"  placeholder="someone@gmail.com" pattern="[a-zA-Z0-9_.\-]+@byui.edu" required aria-required="true" aria-describedby="email-desc">
             <span id="email-desc" class="visually-hidden"></span>
            <br>
-           <label for="phone">Phone: <span class="required">*</span></label>
-           <input type="tel" id="phone" name="phone"  placeholder="1235551234">
+           <label for="phone">Phone: <span class="required">*</span></label><br>
+           <input type="tel" class="big-textbox" id="phone" name="phone"  placeholder="1235551234">
            <br>
-           <label for="rental-type">Rental Type: <span class="required">*</span></label> 
-           <input type="text" id="" name=""  placeholder="">
+           <label for="rental-type">Rental Type: <span class="required">*</span></label><br>
+           <select class="big-textbox" id="vehicle" name="vehicle">
+               <option value="" disabled selected>Select an option</option>
+               <option value="Honda Metro Scooter">Honda Metro</option>
+               <option value="Honda Dio Scooter">Honda Dio</option>
+               <option value="Honda PCX150 Scooter">Honda PCX150</option>
+               <option value="Honda Pioneer 1000 ATV">Honda Pioneer ATV</option> 
+               <option value="Jeep Wrangler 2 Door">Jeep 2 Door</option> 
+               <option value="Jeep Wrangler 4 Door">Jeep 4 Door</option> 
+            </select> 
            <br>
-           <label for="number-people">Number of People: <span class="required">*</span></label> 
-           <input type="number" id="" name=""  placeholder="">
+           <label for="number-people">Number of People: <span class="required">*</span></label><br> 
+           <input type="number" class="big-textbox" id="numguests" name="numguests"  placeholder="2">
            <br>
-           <label for="date">Rental Date: <span class="required">*</span></label> 
-           <input type="" id="" name=""  placeholder="">
+           <label for="date">Rental Date: <span class="required">*</span></label><br> 
+           <input type="date" class="big-textbox" id="rezdate" name="rezdate"  placeholder="">
            <br>
-           <label for="period">Rental Period: <span class="required">*</span></label> 
-           <input type="number" id="" name=""  placeholder="">
+           <label for="period">Rental Period: <span class="required">*</span></label><br> 
+           <input type="number" class="big-textbox" id="rezlength" name="rezlength"  placeholder="3"> day(s)
            <br>
-           <label for="State/Country">Home State/Country: <span class="required">*</span></label> 
-           <input type="text" id="" name=""  placeholder="">
+           <label for="State/Country">Home State/Country: <span class="required">*</span></label><br> 
+           <input type="text" class="big-textbox" id="place" name="place"  placeholder="Florida">
            <br>
-           <label for="Cruise-line">Cruise Line: <span class="required">*</span></label> 
-           <input type="text" id="" name=""  placeholder="">
+           <label for="Cruise-line">Cruise Line: </label><br> 
+           <input type="text" class="big-textbox" id="cruiseco" name="cruiseco"  placeholder="Royal Caribbean"> if applicable
            <br>
-           <label for="special-accomodations">Special Accomodations/Comments: </label> 
-           <input type="text-area" id="" name=""  placeholder="">
-          
+           <label for="special-accomodations">Special Accomodations/Comments: </label><br> 
+           <textarea rows="4" cols="40" id="extra" name="extra"  placeholder=""></textarea><br>
+           <button  id="button" type="submit" aria-label="Reservation button">Reserve Now</button>    
     </form>
 </div>
-
+<div class="mapcontainer">
+    <iframe src="" width="450" height="250" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
 
 
