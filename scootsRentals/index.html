@@ -30,7 +30,8 @@
                 <li class="nav-item" id="rentals"><a href="rentals.html">Rentals</a></li>
                 <li class="nav-item" id="directory"><a href="Reservations.html">Reservations</a></li>
                 <li class="nav-item" id="join"><a href="Contact.html">Contact</a></li>
-                </ul>   
+                </ul>
+            </nav>       
         <div id="hero-img">
              <div class="hero">
                 <picture>
@@ -39,7 +40,28 @@
                  <img src="images/Cozumel-sign-large.webp"  alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image"  aria-label="Cozumel-directional-sign"> 
                 </picture>
                 <div class="overlay-text">Adventure Awaits...</div> 
+            </div><br>
+            <h2 id="weatherToday">Weather</h2>
+            <div class="main-weather" id="weather-cozumel">
+               
+            <div class="main-weather" id="hot">
+                <h3 id="place">Current Temperature</h3>
+                <p id="temp"><span id="current-temp3"></span></p>
             </div>
+            <div class="main-weather" id="humid">
+                <h3>Humidity Level</h3>
+                <p id="humidity"><span id="current-humidity"></span></p>
+            </div> 
+            <div class="main-weather" id="tomorrow-temp">
+                <h3>Tomorrow's Temperature</h3>
+                <p id="forecast"><span id="tomorrow"></span></p>
+            </div>  
+                <figure>
+                 <h3 id="current">Current Conditions</h3>
+                    <img class="main-weather" id="weather-icon3" src="" alt="weather icon">
+                    <figcaption id="desc"></figcaption>
+                </figure>
+        </div>
         </div> 
     </header>
  <main class="main-container">
@@ -60,26 +82,7 @@
         <p id="ferry-p">Playa del Carmen ferry dock</p>
         <p id="party-size">Choose your ride! Our Honda scooters, ATV, and Jeep Wranglers<br> accomodate anywhere from 1 to 5 people at a very attractive price. <br>What are you waiting for?<a class="reserve" href="reservations.html">Let's Go!</a></p>
         </div>
-        <div class="main-weather" id="weather-cozumel">
-            <h2 id="weatherToday">Weather</h2>
-        <div class="main-weather" id="hot">
-            <h3 id="place">Current Temperature</h3>
-            <p id="temp"><span id="current-temp3"></span></p>
-        </div>
-        <div class="main-weather" id="humid">
-            <h3>Humidity Level</h3>
-            <p id="humidity"><span id="current-humidity"></span></p>
-        </div> 
-        <div class="main-weather" id="tomorrow-temp">
-            <h3>Tomorrow's Temperature</h3>
-            <p id="forecast"><span id="tomorrow"></span></p>
-        </div>  
-            <figure>
-             <h3>Current Conditions</h3>
-                <img class="main-weather" id="weather-icon3" src="" alt="weather icon">
-                <figcaption></figcaption>
-            </figure>
-    </div>
+       
  </main>
 <script src="scripts/cozumel-weather.js"></script>
 <script src="../scripts/getdates.js"></script>
