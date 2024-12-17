@@ -278,7 +278,7 @@ footer {
   color:#20838d;
 }
   /*---------Rentals------------*/
-  #h2rental, #h2rez {
+  #h2rental, #h2rez, #intouch {
     margin-top: 20px;
     text-align: center;
     margin-left: 180px;
@@ -393,13 +393,20 @@ footer {
   }
 
   /*----------Contact------------*/
- #intouch {
-  background-color: #b9fff7;
-  text-align: center;
+
+  main {
+    background-color: aliceblue;
+    grid-template-columns: 3;
+  } 
+
+ #two, #coname, #coname2 {
+  grid-column: 1/2;
+   justify-items: center;
  }
 
-
-
+ .mapcontainer {
+  grid-column: 1/4;
+ }
 
   #modeButton {                        /* darkmode  */
     background:#b9fff7;
