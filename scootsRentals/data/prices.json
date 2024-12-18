@@ -3,7 +3,7 @@
     "rentalVehicle" :  [
 {
     "rentalType" : "scooter",
-    "name" : "Honda Metro",
+    "name" : "Honda Metropolitan Scooter (49cc)",
     "maxPersons" : 1,
     "reservationHalf" : 20,
     "reservationFull" : 30,
@@ -12,7 +12,7 @@
   },
   {
     "rentalType" : "scooter",
-    "name": "Honda Dio",
+    "name": "Honda Dio Scooter (110cc)",
     "maxPersons" : 2,
     "reservationHalf" : 30,
     "reservationFull" : 40,
@@ -21,7 +21,7 @@
   },
   {
     "rentalType" : "scooter",
-    "name": "Honda PCX150",
+    "name": "Honda PCX150 Scooter (149cc)",
     "maxPersons" : 2,
     "reservationHalf" : 40,
     "reservationFull" : 50,
