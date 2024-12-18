@@ -10,7 +10,7 @@ function loadData() {
          return response.json();
     })
     .then(data => {
-        const tableBody = document.querySelector('#rentaltable');
+        const tableBody = document.getElementById('rentaltable').getElementsByTagName('tbody');
 
         tableBody.innerHTML = "";
 
