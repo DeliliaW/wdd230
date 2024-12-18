@@ -130,8 +130,7 @@
 
   .main-weather {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
     text-align: center;
     margin-top: 12px;
     margin-bottom: 5px;
@@ -143,12 +142,14 @@
 
   #weather-icon3 {
     background-color: skyblue;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: -20px;
+    justify-self: center;
   }
 
   #desc {
-    margin-left: 350px;
+    justify-self: center;
+    font-size: 1.3rem;
   }
 
   #call-to-action {
@@ -198,12 +199,12 @@
 
   #exploring {                   /* ----2nd paragraph -----*/
     padding: 25px;
-    margin-top: 400px;
+    margin-top: 450px;
     left: 100px;
   }
 
   #boat-on-beach {
-    margin-top: 50px;
+    margin-top: 100px;
     left: 800px; 
   }
 
@@ -223,7 +224,7 @@
   }
 
   #terminal  {
-    margin-top: 200px;
+    margin-top: 270px;
     left: 130px;
     position: absolute;
   }
@@ -239,16 +240,16 @@
   }
 
   #terminal-p {
-    margin: 550px 0px 0px 350px;
+    margin: 630px 0px 0px 350px;
   }
   
   #ferry {
-    margin-top: 200px;
+    margin-top: 270px;
     left: 850px;
   }
 
   #ferry-p {
-    margin: 550px 20px 0px 500px;
+    margin: 630px 20px 0px 500px;
   }
 
   #terminal-p, #ferry-p {
@@ -263,7 +264,7 @@
   #convenience {
     grid-column: 2/3;
     font-size: 1.7rem;
-    margin: 70px 450px 50px;
+    margin: 150px 450px 50px;
   }
 
   #party-size {
@@ -418,13 +419,14 @@ footer {
 
  #address1, #address2 {
     line-height: 1.3rem;
+    font-size: 1.2rem;
  }
 
   #comment {
     grid-column: 2/3;
     grid-row: 1;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0px;
  }
 
  .mapcontainer {
@@ -452,6 +454,7 @@ footer {
     color: #fff;
     border-color: #eee; 
   }
+
 
   /*----------Media Queries-------*/
   @media screen and (max-width: 640px) {
