@@ -15,11 +15,12 @@
     <meta property="og:image" content="https://deliliaw.github.io/wdd230/brigham-young-university-idaho.jpg">
 </head>
 <body>
-    <div id="banner" class="banner">
-        <p class="temp-max">Today's High temperature: </p>
-        <span id="close-banner" class="close-btn">❌</span>
-    </div>
     <header id="header-content">
+        <div id="banner" class="banner">
+            <h3 id="tmax">Today's High Temperature: </h3>
+            <p class="currentMax"><span id="temp-max"></span></p>
+            <span id="close-banner" class="close-btn">❌</span>
+        </div>
         <h1 id="company-name">Scoots Rentals</h1>
             <div id="mode">
             <button id="modeButton" aria-label="Toggle light and dark mode">💡/🕶️</button>
@@ -84,6 +85,7 @@
         </div>
        
  </main>
+<script src="scripts/closeBanner.js"></script> 
 <script src="scripts/cozumel-weather.js"></script>
 <script src="../scripts/getdates.js"></script>
 <script src="../scripts/darkmode.js"></script>

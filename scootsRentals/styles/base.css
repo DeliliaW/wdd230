@@ -18,8 +18,30 @@
     padding: 0;
     margin: 0;
   }
+  
+  #banner {
+    background-color: #DB7A57;
+  }
 
+  #tmax {
+    color: #FFFFFF;
+    text-shadow: #20838d 5px 5px;
+    text-align: center;
+    font-size: 1.4rem;
+  }
 
+  #temp-max {
+    color:#FFFFFF;
+    font-size: 1.3rem;
+    margin-left: 48%;
+    
+
+  }
+
+  .close-btn  {
+    cursor: pointer;
+    color: #20838d;
+  }
 
   .main-container {
     display: grid;
@@ -453,6 +475,10 @@ footer {
     background-color: #000;
     color: #fff;
     border-color: #eee; 
+  }
+
+  .darkmode, #temp, #humidity, #forecast {
+    color: #000;
   }
 
 
