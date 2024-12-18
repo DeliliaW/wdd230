@@ -2,7 +2,7 @@ const url = "https://deliliaw.github.io/wdd230/scootsRentals/data/prices.json";
 
 
 function loadData() {
-    fetch('prices.json')
+    fetch('data/prices.json')
     .then(response => {
         if (!response.ok) {
             throw new Error ('Network response was not ok');
