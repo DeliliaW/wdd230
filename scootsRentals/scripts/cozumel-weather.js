@@ -42,66 +42,62 @@ function displayResults(data)   {
 }
 
 function displayForecast(data) {
-    weatherTomorrow.innerHTML = '';
+  weatherTomorrow.innerHTML = ''; 
 
-    const today = new Date();
-    const todayString = today.toLocaleDateString();
+  const today = new Date();
+  const todayString = today.toLocaleDateString(); 
 
-    let todayMaxTemp = -Infinity;
-    let foundToday = false;
+  console.log('Today:', todayString); // Debugging statement
 
+  let todayMaxTemp = -Infinity; 
+  let foundForecastForToday = false;
+
+  
   data.list.forEach((forecast) => {
-    const forecastDate = new Date(forecast.dt_txt);
+    const forecastDate = new Date(forecast.dt_txt); 
     const forecastDateString = forecastDate.toLocaleDateString(); 
 
     
-     if (forecastDateString === todayString) {
-      foundToday = true;
-      const temp = forecast.main.temp_max; 
-      
-      console.log('Temp max for this forecast:', temp);
-      
-      if (temp > todayMaxTemp) {
-        todayMaxTemp = temp; 
-        
-      }
+    if (forecastDateString === todayString && forecastDate.getHours() === 15) {
+      foundForecastForToday = true; 
+      const tempAt3PM = forecast.main.temp_max; 
+
+      console.log('Temp at 3 PM:', tempAt3PM); // Debugging statement
+
+      todayMaxTemp = tempAt3PM;
     }
   });
 
   
-  
-  if (!foundToday) {
-  
-    currentMax.innerHTML = "No data available for today's high temp";
+  if (!foundForecastForToday) {
+    console.log("No 3 PM forecast data found for today.");
+    currentMax.innerHTML = "No data available";
   } else {
-    
-    currentMax.innerHTML = `${todayMaxTemp.toFixed(1)} &deg;F`;
+   
+    currentMax.innerHTML = ` ${todayMaxTemp.toFixed(1)} &deg;F`;
   }
 
-    const tomorrow = new Date(today);
-    tomorrow.setDate(today.getDate() + 1);
+  const tomorrow = new Date(today);
+  tomorrow.setDate(today.getDate() + 1);
 
-    const options = {weekday: 'short', month: 'short', day: 'numeric' };
-    const formattedTomorrow = tomorrow.toLocaleDateString(`en-US`, options);
+  const options = { weekday: 'short', month: 'short', day: 'numeric' };
+  const formattedTomorrow = tomorrow.toLocaleDateString(`en-US`, options);
 
-    let foundTomorrowForecast = false;
+  let foundTomorrowForecast = false;
 
-    data.list.forEach((forecast) => {
-      const forecastDate = new Date(forecast.dt_txt);
-      const forecastHour = forecastDate.getHours();
+  data.list.forEach((forecast) => {
+    const forecastDate = new Date(forecast.dt_txt);
+    const forecastHour = forecastDate.getHours();
 
-      if (!foundTomorrowForecast && forecastDate.toLocaleDateString() === tomorrow.toLocaleDateString() && forecastHour === 15) {
-        const forecastItem = document.createElement('div');
-        forecastItem.classList.add('weather-info');
-
+    if (!foundTomorrowForecast && forecastDate.toLocaleDateString() === tomorrow.toLocaleDateString() && forecastHour === 15) {
+      const forecastItem = document.createElement('div');
+      forecastItem.classList.add('weather-info');
 
       const highTemp = `${forecast.main.temp_max.toFixed(1)} &deg;F`;
 
-      forecastItem.innerHTML = `
-      <p>High: ${highTemp}`;
-
+      forecastItem.innerHTML = `<p>High: ${highTemp}</p>`;
       weatherTomorrow.appendChild(forecastItem);
-      foundTomorrowForecast = true; 
+      foundTomorrowForecast = true;
     }
-});
+  });
 }
