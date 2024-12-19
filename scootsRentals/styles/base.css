@@ -124,6 +124,24 @@
   .navbar a:hover {
     background: #dffffb;
   }
+
+  .navbar .hamburger {
+    position: absolute;
+    top: 2;
+    right: 10;
+    border: 0;
+    background: 0;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .navbar .hamburger svg {
+    background: #fff; 
+  }
+  
+  .navbar .hamburger .icon-close {
+    display: none;
+  }
   
   .hero {
     justify-self: center;
@@ -480,9 +498,9 @@ footer {
     position: absolute;
     top: 3em;
     right: 1em;
-    font-size: 3rem;
+    /*font-size: 3rem; */
     cursor: pointer;
-    font-size: 1.5rem;
+    /*font-size: 1.5rem; */
     background: 0;
   }
   
@@ -499,5 +517,42 @@ footer {
 
   /*----------Media Queries-------*/
   @media screen and (max-width: 640px) {
-    
+    .navbar.open ul {
+      display:block;
+  }
+
+  .navbar.open .nav-toggle {
+      display: block;
+  }
+
+  .navbar.open a {
+      display: block;
+  }
+  .navbar .nav-toggle {
+      display: none;
+ } 
+
+ .navbar .hamburger {
+    display: block;
+ }
+
+ .navbar .hamburger .icon-open {
+      display: block; 
+ }
+
+ .navbar .hamburger .icon-close {
+    display: none;
+ }
+
+ .navbar.open .hamburger .icon-open {
+    display: none;
+ }
+
+ .navbar.open  .hamburger .icon-close {
+      display: block;
+ } 
+
+ #modebutton {
+  
+ }
   }
