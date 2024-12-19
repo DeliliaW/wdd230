@@ -21,6 +21,13 @@
   
   #banner {
     background-color: #DB7A57;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  #banner.hidden {
+    display: none;
   }
 
   #tmax {
@@ -39,6 +46,9 @@
   }
 
   .close-btn  {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     color: #20838d;
   }
@@ -48,6 +58,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-color: aliceblue;
+  }
+
+  header {
+    padding: 20px;
+    transition: padding-top 0.3s ease;
   }
 
   #header-content, footer  {

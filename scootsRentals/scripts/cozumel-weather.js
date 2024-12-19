@@ -33,16 +33,51 @@ function displayResults(data)   {
     currentMax.innerHTML = `${data.main.temp_max.toFixed(1)} &deg;F`;
     currentTemp.innerHTML = `${data.main.temp.toFixed(1)} &deg;F`;
     currentHumidity.innerHTML = `${data.main.humidity.toFixed(0)} %`;
+    
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
 }
+
 function displayForecast(data) {
     weatherTomorrow.innerHTML = '';
 
     const today = new Date();
+    const todayString = today.toLocaleDateString();
+
+    let todayMaxTemp = -Infinity;
+    let foundToday = false;
+
+  data.list.forEach((forecast) => {
+    const forecastDate = new Date(forecast.dt_txt);
+    const forecastDateString = forecastDate.toLocaleDateString(); 
+
+    
+     if (forecastDateString === todayString) {
+      foundToday = true;
+      const temp = forecast.main.temp_max; 
+      
+      console.log('Temp max for this forecast:', temp);
+      
+      if (temp > todayMaxTemp) {
+        todayMaxTemp = temp; 
+        
+      }
+    }
+  });
+
+  
+  
+  if (!foundToday) {
+  
+    currentMax.innerHTML = "No data available for today's high temp";
+  } else {
+    
+    currentMax.innerHTML = `${todayMaxTemp.toFixed(1)} &deg;F`;
+  }
+
     const tomorrow = new Date(today);
     tomorrow.setDate(today.getDate() + 1);
 
