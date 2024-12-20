@@ -40,7 +40,7 @@
   #temp-max {
     color:#FFFFFF;
     font-size: 1.3rem;
-    margin-left: 48%;
+    margin-left: 30px;
     
 
   }
@@ -48,9 +48,8 @@
   .close-btn  {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 5px;
     cursor: pointer;
-    color: #20838d;
   }
 
   .main-container {
@@ -99,7 +98,7 @@
     list-style: none;
     display: flex;
     justify-content:flex-end;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     
   }
@@ -127,16 +126,17 @@
 
   .navbar .hamburger {
     position: absolute;
-    top: 2;
-    right: 10;
+    top: 0;
+    left: 0;
     border: 0;
     background: 0;
     cursor: pointer;
     display: none;
+    z-index: 1;
   }
   
   .navbar .hamburger svg {
-    background: #fff; 
+    background: #DB7A57;
   }
   
   .navbar .hamburger .icon-close {
@@ -155,11 +155,6 @@
     position: relative;
   }
 
-  .responsive-image {
-    max-width: 100%; 
-    height: auto;
-  }
-
   .overlay-text {
     opacity: 100%;
     text-shadow: #20838d 5px 5px;
@@ -169,7 +164,7 @@
     left: 1050px;
     margin-right: 120px;
     padding: 10px;
-    font-size: 80px;
+    font-size: 5rem;
     color: #FFFFFF;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     font-style: italic;
@@ -204,7 +199,7 @@
 
   #desc {
     justify-self: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   #call-to-action {
@@ -226,12 +221,13 @@
   .main-home img {
     box-shadow: #DB7A57 2px 5px 10px;
     border-radius: 8px;
-    position: absolute; 
+    position: absolute;
+    display: flex; 
   }
 
   #rocky-coastline {
-    margin: 50px;
-    left: 20px;
+    margin: 3rem;
+    left: 1rem;
   }
 
   #explore, #exploring {
@@ -259,8 +255,8 @@
   }
 
   #boat-on-beach {
-    margin-top: 100px;
-    left: 800px; 
+    margin-top: 6rem;
+    left: 50rem; 
   }
 
   .reserve {
@@ -399,11 +395,10 @@ footer {
 
   .services {
    grid-column: 1/2;
-   padding-left: 30px;
+   padding: 30px;
+   
     background-color: #dffffb;
    margin: 30px;
-   display: inline-block;
-   margin-right: 20%;
   }
 
   #service-list {
@@ -423,9 +418,18 @@ footer {
     justify-items: left;
   }
 
+  .services, .rezform {
+    margin-right: auto;
+  }
+
+  .services {
+    margin-left: auto;
+  }
+
   #agreements, #rezcontact {
     font-size: 1.3rem;
   }
+
   .big-textbox {
     width: 180px;
     height: 25px;
@@ -447,6 +451,10 @@ footer {
     max-width: 320px;
     font-size: 20px;
     padding: 12px;
+  }
+
+  #button {
+    padding: 3px;
   }
 
   /*----------Contact------------*/
@@ -498,9 +506,8 @@ footer {
     position: absolute;
     top: 3em;
     right: 1em;
-    /*font-size: 3rem; */
+    font-size: 3rem;
     cursor: pointer;
-    /*font-size: 1.5rem; */
     background: 0;
   }
   
@@ -517,7 +524,13 @@ footer {
 
   /*----------Media Queries-------*/
   @media screen and (max-width: 640px) {
-    .navbar.open ul {
+    
+  header {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+    
+  .navbar.open ul {
       display:block;
   }
 
@@ -529,7 +542,7 @@ footer {
       display: block;
   }
   .navbar .nav-toggle {
-      display: none;
+     display: none;
  } 
 
  .navbar .hamburger {
@@ -537,7 +550,7 @@ footer {
  }
 
  .navbar .hamburger .icon-open {
-      display: block; 
+    display: block; 
  }
 
  .navbar .hamburger .icon-close {
@@ -549,10 +562,122 @@ footer {
  }
 
  .navbar.open  .hamburger .icon-close {
-      display: block;
- } 
-
- #modebutton {
-  
+    display: block;
+ 
  }
+
+ #mode {
+    font-size: 1rem;
+ }
+
+ .hero {
+    position: relative;
+    width: 100%;
+ }
+
+ #hero-img {
+    width: 100%;
+    height: auto;
+ }
+
+ h2, h3 {
+    font-size: 1.2rem;
+ }
+
+ table {
+  width: 100%;
+  font-size: 1rem;
+ }
+
+ td, th {
+  padding: 8px;
+ }
+
+ #explore, #exploring {
+  font-size: 1.5rem; 
+  margin: 10px;
+  padding: 20px;
+}
+
+#explore {
+  margin-top: 10px;
+}
+
+#exploring {
+  margin-top: 10px;
+}
+
+.column {
+  width: 100%;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+.main-contact,
+  .main-rez {
+    grid-column: 1 / -1;
+    gap: 10px;
   }
+
+  .services, .rezform {
+    grid-column: 1 / -1;
+  }
+
+  .location, .contact-form, .map-container {
+    grid-column: 1 / -1;
+  }
+
+caption {
+  font-size: 1.2rem;
+}
+
+#party-size {
+  margin-top: 10px;
+}
+
+#mode {
+  top: 0;
+  right: 0;
+}
+
+footer {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+
+.big-textbox {
+  width: 100%; 
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+button {
+  font-size: 1.2rem; 
+  padding: 15px;
+  width: 100%;
+}
+
+.overlay-text {
+  font-size: 5vw;
+  text-shadow: none;
+  top: 10%; 
+  left: 80%; 
+  transform: translateX(-50%); 
+  margin-right: 8;
+  padding: 5px;  
+}
+
+#tmax {
+  text-shadow: none;
+}
+}
+
