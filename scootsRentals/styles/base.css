@@ -41,8 +41,6 @@
     color:#FFFFFF;
     font-size: 1.3rem;
     margin-left: 30px;
-    
-
   }
 
   .close-btn  {
@@ -382,9 +380,13 @@ footer {
     padding: 10px;
   }
  
-  .ride {
-    margin-left: 200px;
-    position: relative;
+  #ride {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+
   }
 
   /*----------Reservations--------*/
@@ -520,7 +522,9 @@ footer {
   .darkmode, #temp, #humidity, #forecast {
     color: #000;
   }
-
+  .dark-mode, th, td {
+    color: #000;
+  }
 
   /*----------Media Queries-------*/
   @media screen and (max-width: 640px) {
@@ -585,26 +589,61 @@ footer {
  }
 
  table {
-  width: 100%;
+  max-width: 98%;
   font-size: 1rem;
+  margin: 0;
  }
 
  td, th {
   padding: 8px;
  }
 
- #explore, #exploring {
-  font-size: 1.5rem; 
-  margin: 10px;
-  padding: 20px;
+ #call-to-action, #beach-boat, #rental-desc {
+  grid-column: 1 / -1;
+  grid-row: auto;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .main-home img {
+  position: static;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+ }
+ 
+
+ #explore, #exploring, #terminal, #ferry, #convenience, #party-size {
+  position: static;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  padding: 15px;
+  width: 90%;
+  max-width: 90%;
 }
 
 #explore {
-  margin-top: 10px;
-}
+  margin-top: 20px;
+  margin-bottom: 20px;
+} 
 
 #exploring {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.reserve {
+  margin-left: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#terminal-p, #ferry-p {
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .column {
@@ -621,12 +660,21 @@ footer {
   width: 100%;
   height: auto;
 }
+
 .main-contact,
   .main-rez {
     grid-column: 1 / -1;
     gap: 10px;
   }
 
+  #ride {
+   width: 60%;
+   max-width: 639px;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   margin-right: 5rem;
+  }
   .services, .rezform {
     grid-column: 1 / -1;
   }
@@ -637,10 +685,6 @@ footer {
 
 caption {
   font-size: 1.2rem;
-}
-
-#party-size {
-  margin-top: 10px;
 }
 
 #mode {
@@ -679,5 +723,6 @@ button {
 #tmax {
   text-shadow: none;
 }
+
 }
 
