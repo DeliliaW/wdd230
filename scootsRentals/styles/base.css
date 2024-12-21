@@ -220,7 +220,7 @@
     box-shadow: #DB7A57 2px 5px 10px;
     border-radius: 8px;
     position: absolute;
-    display: flex; 
+    display: flex;
   }
 
   #rocky-coastline {
@@ -320,6 +320,14 @@
     margin: 770px 420px 30px;
   }
 
+  .lazy {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0;
+    transition: 0.5s; 
+  }
+
 footer {
   text-align: center;
   font-size: 1.3rem;
@@ -392,7 +400,7 @@ footer {
   /*----------Reservations--------*/
   .main-rez {
     display: grid;
-    grid-template-columns: repeat(2 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .services {
@@ -464,8 +472,8 @@ footer {
   .main-contact {
     background-color: aliceblue;
     display: grid;
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(2 1fr); 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
   } 
 
   #intouch {
@@ -720,7 +728,7 @@ button {
   top: 10%; 
   left: 80%; 
   transform: translateX(-50%); 
-  margin-right: 8;
+  margin-right: 8px;
   padding: 5px;  
 }
 

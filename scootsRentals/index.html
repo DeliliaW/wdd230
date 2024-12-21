@@ -51,7 +51,24 @@
         <div id="hero-img">
              <div class="hero">
                 <picture>
-                 <img src="images/Cozumel-sign-large.webp"  alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image"  aria-label="Cozumel-directional-sign"> 
+                    <source srcset="
+                    images/Cozumel-directional-sign-270x180.webp 270w, 
+                    images/Cozumel-directional-sign-669x446.webp 669w,
+                    images/Cozumel-directional-sign-990x660.webp 990w,
+                    images/Cozumel-directional-sign-1330x886.webp 1330w,
+                    images/Cozumel-directional-sign-1600x1066.webp 1600w,
+                    images/Cozumel-directional-sign-1840x1226.webp 1840w,
+                    images/Cozumel-directional-sign-2048x1364.webp 2048w"
+                    sizes="(max-width:)
+                           (max-width: 320px) 270px,
+                           (max-width: 640px) 669px,
+                           (max-width: 1024px) 990px,
+                           (max-width: 1200px) 1330px,
+                           (max-width: 1400px) 1600px,
+                           (max-width: 1600px) 1840px,
+                           2048px"
+                    type="image/webp">    
+                 <img src="images/Cozumel-sign-large.webp"  alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image"  aria-label="Cozumel-directional-sign" loading="lazy"> 
                 </picture>
                 <div class="overlay-text">Adventure Awaits...</div> 
             </div><br>
@@ -95,8 +112,7 @@
         <img src="images/Playa-del-Carmen-ferry-(1).webp" alt="Playa-del-Carmen-ferry" width="600" height="399" class="responsive-image" id="ferry" aria-label="Playa=del=Carmen-ferry" loading="lazy">
         <p id="ferry-p">Playa del Carmen ferry dock</p>
         <p id="party-size">Choose your ride! Our Honda scooters, ATV, and Jeep Wranglers<br> accomodate anywhere from 1 to 5 people at a very attractive price. <br>What are you waiting for?<a class="reserve" href="reservations.html">Let's Go!</a></p>
-        </div>
-       
+        </div>    
  </main>
  <script src="scripts/hamburger-scoots.js"></script>
 <script src="scripts/closeBanner.js"></script> 
@@ -109,6 +125,5 @@
     <p>&#169; <span id="year"></span>
     <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
 </footer>
-
 </body>
 </html>
