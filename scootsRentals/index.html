@@ -51,25 +51,35 @@
         <div id="hero-img">
              <div class="hero">
                 <picture>
-                    <source srcset="
-                    images/Cozumel-directional-sign-270x180.webp 270w, 
-                    images/Cozumel-directional-sign-669x446.webp 669w,
-                    images/Cozumel-directional-sign-990x660.webp 990w,
-                    images/Cozumel-directional-sign-1330x886.webp 1330w,
-                    images/Cozumel-directional-sign-1600x1066.webp 1600w,
-                    images/Cozumel-directional-sign-1840x1226.webp 1840w,
-                    images/Cozumel-directional-sign-2048x1364.webp 2048w"
-                    sizes="(max-width:)
-                           (max-width: 320px) 270px,
-                           (max-width: 640px) 669px,
-                           (max-width: 1024px) 990px,
-                           (max-width: 1200px) 1330px,
-                           (max-width: 1400px) 1600px,
-                           (max-width: 1600px) 1840px,
-                           2048px"
-                    type="image/webp">    
-                 <img src="images/Cozumel-sign-large.webp"  alt="Cozumel-directional-sign" width="1600" height="1066" class="responsive-image"  aria-label="Cozumel-directional-sign" loading="lazy"> 
+                    <source
+                        srcset="
+                            images/Cozumel-sign-270x180.webp 270w,
+                            images/Cozumel-sign-669x444.webp 669w,
+                            images/Cozumel-sign-990x656.webp 990w,
+                            images/Cozumel-sign-1330x882.webp 1330w,
+                            images/Cozumel-sign-1600x1061.webp 1600w,
+                            images/Cozumel-sign-1840x1220.webp 1840w,
+                            images/Cozumel-sign-2048x1358.webp 2048w
+                        "
+                        sizes="
+                            (min-width: 1420px) 1600px,
+                            (min-width: 1220px) 180px,
+                            (min-width: 660px) 1600px,
+                            calc(100vw - 30px)
+                        "
+                        type="image/webp"
+                    >
+                    <img
+                        src="images/Cozumel-sign-1600x1061.webp"
+                        alt="Cozumel-directional-sign"
+                        width="1600"
+                        height="1066"
+                        class="responsive-image"
+                        aria-label="Cozumel-directional-sign"
+                        loading="lazy"
+                    >
                 </picture>
+                
                 <div class="overlay-text">Adventure Awaits...</div> 
             </div><br>
             <h2 id="weatherToday">Weather</h2>
