@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         image.src = src;
         image.onload = () => {
             image.classList.remove('lazy');
-            image.style.opacity = 1; // Fade in effect
+            image.style.opacity = 1; 
         };
     };
 
@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 loadImage(entry.target);
-                imgObserver.unobserve(entry.target); // Stop observing once loaded
+                imgObserver.unobserve(entry.target); 
             }
         });
     });
 
     images.forEach(image => {
-        imgObserver.observe(image); // Start observing each lazy image
+        imgObserver.observe(image); 
     });
 });

@@ -88,6 +88,8 @@
   
   .active-nav-item {
     font-weight: bold;
+    color: #054A91;
+    text-decoration: underline;
   }
   
   .navbar ul {
