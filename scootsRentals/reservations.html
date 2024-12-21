@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale= 1">
@@ -80,7 +79,7 @@
            <label for="phone">Phone: <span class="required">*</span></label><br>
            <input type="tel" class="big-textbox" id="phone" name="phone"  placeholder="1235551234">
            <br>
-           <label for="rental-type">Rental Type: <span class="required">*</span></label><br>
+           <label for="vehicle">Rental Type: <span class="required">*</span></label><br>
            <select class="big-textbox" id="vehicle" name="vehicle">
                <option value="" disabled selected>Select an option</option>
                <option value="Honda Metro Scooter">Honda Metro</option>
@@ -91,29 +90,26 @@
                <option value="Jeep Wrangler 4 Door">Jeep 4 Door</option> 
             </select> 
            <br>
-           <label for="number-people">Number of People: <span class="required">*</span></label><br> 
-           <input type="number" class="big-textbox" id="numguests" name="numguests"  placeholder="2">
+           <label for="numguests">Number of People: <span class="required">*</span></label><br> 
+           <input type="number" class="big-textbox" id="numguests" name="number-people"  placeholder="2">
            <br>
-           <label for="date">Rental Date: <span class="required">*</span></label><br> 
-           <input type="date" class="big-textbox" id="rezdate" name="rezdate"  placeholder="">
+           <label for="rezdate">Rental Date: <span class="required">*</span></label><br> 
+           <input type="date" class="big-textbox" id="rezdate" name="date">
            <br>
-           <label for="period">Rental Period: <span class="required">*</span></label><br> 
-           <input type="number" class="big-textbox" id="rezlength" name="rezlength"  placeholder="3"> day(s)
+           <label for="rezlength">Rental Period: <span class="required">*</span></label><br> 
+           <input type="number" class="big-textbox" id="rezlength" name="period"  placeholder="3"> day(s)
            <br>
-           <label for="State/Country">Home State/Country: <span class="required">*</span></label><br> 
-           <input type="text" class="big-textbox" id="place" name="place"  placeholder="Florida">
+           <label for="place">Home State/Country: <span class="required">*</span></label><br> 
+           <input type="text" class="big-textbox" id="place" name="state-country"  placeholder="Florida">
            <br>
-           <label for="Cruise-line">Cruise Line: </label><br> 
-           <input type="text" class="big-textbox" id="cruiseco" name="cruiseco"  placeholder="Royal Caribbean"> if applicable
+           <label for="cruiseco">Cruise Line: </label><br> 
+           <input type="text" class="big-textbox" id="cruiseco" name="cruise-line"  placeholder="Royal Caribbean"> if applicable
            <br>
-           <label for="special-accomodations">Special Accomodations/Comments: </label><br> 
-           <textarea rows="4" cols="40" id="extra" name="extra"  placeholder=""></textarea><br>
+           <label for="extra">Special Accomodations/Comments: </label><br> 
+           <textarea rows="4" cols="40" id="extra" name="special-accomodations"  placeholder=""></textarea><br>
            <button  id="button" type="submit" aria-label="Reservation button">Reserve Now</button>    
     </form>
 </div>
-
-
-
 </main>
 <script src="scripts/hamburger-scoots.js"></script>
 <script src="../scripts/darkmode.js"></script>
@@ -124,6 +120,5 @@
     <p>&#169; <span id="year"></span>
     <p id="lastModified">Page last Updated: <span id="lastUpdatedDate"></span></p>
 </footer>
-
 </body>
 </html>
