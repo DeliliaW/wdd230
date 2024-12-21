@@ -88,7 +88,7 @@
   
   .active-nav-item {
     font-weight: bold;
-    color: #054A91;
+    color: #20838d;
     text-decoration: underline;
   }
   
@@ -99,10 +99,9 @@
     display: flex;
     justify-content:flex-end;
     font-size: 1.8rem;
-    font-weight: 400;
-    
+    font-weight: 400; 
   }
-  
+ 
   .navbar .nav-toggle {
     display: flex;
   }
