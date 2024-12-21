@@ -124,13 +124,13 @@
 
   .navbar .hamburger {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 7rem;
+    left: 18rem;
     border: 0;
     background: 0;
     cursor: pointer;
     display: none;
-    z-index: 1;
+    z-index: 2;
   }
   
   .navbar .hamburger svg {
@@ -615,7 +615,6 @@ footer {
   margin-bottom: 20px;
  }
  
-
  #explore, #exploring, #terminal, #ferry, #convenience, #party-size {
   position: static;
   margin: 10px 0;
@@ -722,6 +721,11 @@ button {
 
 #tmax {
   text-shadow: none;
+}
+
+.hamburger {
+  top: 10px;
+  right: 5px;
 }
 
 }
